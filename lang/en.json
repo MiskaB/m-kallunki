@@ -8,14 +8,14 @@
   },
   "hero": {
     "title": "Merja Kallunki",
-    "subtitle": "Artist",
+    "subtitle": "Artist and performer",
     "portfolioSubtitle": "Here will be portfolio",
     "eventsSubtitle": "Here will be events",
     "contactSubtitle": "Here will be contacts",
     "aboutSubtitle": "Here will be about information"
   },
   "main": {
-    "indexDescription": "Event list will appear here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "indexDescription": "Here is the general information. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "aboutDescription": "Learn more about Merja Kallunki and her work.",
     "portfolioDescription": "Explore the portfolio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "eventsDescription": "Event list will appear here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",

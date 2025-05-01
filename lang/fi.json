@@ -8,14 +8,14 @@
   },
   "hero": {
     "title": "Merja Kallunki",
-    "subtitle": "Kuvataiteilija",
+    "subtitle": "Taiteilija sekä esiintyjä",
     "portfolioSubtitle": "Täällä on portfolio",
     "eventsSubtitle": "Täällä on tapahtumat",
     "contactSubtitle": "Täällä on yhteystiedot",
     "aboutSubtitle": "Täällä on tietoa"
   },
   "main": {
-    "indexDescription": "Tapahtumaluettelo näkyy täällä. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "indexDescription": "Tässä on yleistä tietoa. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "aboutDescription": "Lisätietoja Merja Kallunkista ja hänen työstään.",
     "portfolioDescription": "Tutustu portfolioon. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "eventsDescription": "Tapahtumaluettelo näkyy täällä. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
