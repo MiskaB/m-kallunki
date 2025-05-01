@@ -39,6 +39,9 @@ document.addEventListener('DOMContentLoaded', () => {
         document.documentElement.lang = lang;
     };
 
+    // Initialize the default language (English)
+    updateLanguage('en');
+
     document.getElementById('en-btn').addEventListener('click', () => updateLanguage('en'));
     document.getElementById('fi-btn').addEventListener('click', () => updateLanguage('fi'));
 });
