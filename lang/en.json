@@ -1,0 +1,24 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "portfolio": "Portfolio",
+    "events": "Exhibitions",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Merja Kallunki",
+    "subtitle": "Artist",
+    "portfolioSubtitle": "Here will be portfolio",
+    "eventsSubtitle": "Here will be events",
+    "contactSubtitle": "Here will be contacts",
+    "aboutSubtitle": "Here will be about information"
+  },
+  "main": {
+    "indexDescription": "Event list will appear here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "aboutDescription": "Learn more about Merja Kallunki and her work.",
+    "portfolioDescription": "Explore the portfolio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "eventsDescription": "Event list will appear here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "contactDescription": "Get in touch. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  }
+}
