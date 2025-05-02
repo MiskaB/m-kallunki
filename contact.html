@@ -3,28 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact</title>
+  <title data-i18n="contact.heading"></title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <header>
-    <h1 data-i18n="nav.contact"></h1>
-    <p data-i18n="hero.contactSubtitle">Here will be contacts</p>
+    <h1 data-i18n="contact.heading"></h1>
     <select id="language-switcher">
       <option value="en">🇬🇧 English</option>
       <option value="fi">🇫🇮 Suomi</option>
     </select>
   </header>
+
   <nav>
     <a href="index.html" data-i18n="nav.home"></a>
     <a href="about.html" data-i18n="nav.about"></a>
     <a href="portfolio.html" data-i18n="nav.portfolio"></a>
-    <a href="events.html" data-i18n="nav.events"></a>
+    <a href="events.html" data-i18n="nav.exhibitions"></a>
     <a href="contact.html" data-i18n="nav.contact"></a>
   </nav>
+
   <main>
-    <p data-i18n="main.contactDescription">Get in touch. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <section>
+      <h2 data-i18n="contact.heading"></h2>
+      <ul>
+        <li><strong data-i18n="contact.websiteLabel"></strong> <a href="https://merjakallunki.fi" target="_blank">https://merjakallunki.fi</a></li>
+        <li><strong data-i18n="contact.instagramLabel"></strong> <a href="https://instagram.com/merja_kallunki" target="_blank">@merja_kallunki</a></li>
+        <li><strong data-i18n="contact.facebookLabel"></strong> <a href="https://facebook.com/merjakallunki" target="_blank">Merja Kallunki</a></li>
+      </ul>
+    </section>
   </main>
+
   <script src="js/lang.js"></script>
 </body>
 </html>

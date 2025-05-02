@@ -3,22 +3,96 @@
     "home": "Etusivu",
     "about": "Tietoa",
     "portfolio": "Portfoliota",
-    "events": "Näyttelyt",
+    "exhibitions": "Näyttelyt",
     "contact": "Yhteystiedot"
   },
-  "hero": {
+  "home": {
     "title": "Merja Kallunki",
-    "subtitle": "Taiteilija sekä esiintyjä",
-    "portfolioSubtitle": "Täällä on portfolio",
-    "eventsSubtitle": "Täällä on tapahtumat",
-    "contactSubtitle": "Täällä on yhteystiedot",
-    "aboutSubtitle": "Täällä on tietoa"
+    "heading": "Merja Kallunki",
+    "subheading": "Hengitys, kehotyöskentely, trauma- ja energiahoito",
+    "introHeader": "Tervetuloa",
+    "intro": "Tervetuloa kehollisen tietoisuuden ja luontoyhteyden maailmaan."
   },
-  "main": {
-    "indexDescription": "Tässä on yleistä tietoa. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "aboutDescription": "Lisätietoja Merja Kallunkista ja hänen työstään.",
-    "portfolioDescription": "Tutustu portfolioon. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "eventsDescription": "Tapahtumaluettelo näkyy täällä. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "contactDescription": "Ota yhteyttä. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  "about": {
+    "heading": "Tietoa Merjasta",
+    "bioHeader": "Kuka on Merja?",
+    "bioPoints": [
+      "Kuvataiteilija ja kokonaisvaltaisen terapian ohjaaja",
+      "Syvällinen kokemus traumatyöstä, hermoston säätelystä ja tunnetason työskentelystä",
+      "Työskentelee yksilöiden ja ryhmien kanssa",
+      "Tuo luontoyhteyden, intuition ja kehollisen tietoisuuden osaksi työtä"
+    ],
+    "approachHeader": "Lähestymistapa ja filosofia",
+    "approachPoints": [
+      "Mielen, kehon, tunteiden ja energian yhdistäminen",
+      "Yksilöllinen, asiakaslähtöinen työskentely",
+      "Kerrostunut, kehollinen traumatyöskentely",
+      "Korostaa hyväksyntää, kehotietoisuutta ja kehon luonnollista viisautta"
+    ],
+    "educationHeader": "Koulutus",
+    "educationText": "Varsinaiselta akateemiselta koulutukselta olen sosionomi (AMK) ja erityisluokanope Helsingin yliopistosta. Olen myös opiskellut psykologiaa aineopintoihin saakka ja käynyt lyhyempiä koulutuksia vanhemmuuden tukemisesta.\n\nOlen opiskellut vuosien varrella paljon, joten osaamiseni kumpuaa useista suuntauksista, kuten NLP-valmennusta masteriin saakka, Prananadi-energiahoitoa ja syvähengitystyöskentelyä.\n\nLisäksi oon sertifioitu Biodynamic Breathwork & Trauma Release-hengitystyöskentelyn ohjaaja, jota opiskelin Virossa ja Puolassa sekä opiskellut Myofascial Energetic Release bodyworkia Puolan Integral Body Institutessa.\n\nViimeisimpänä olen kiinnostunut japanilaisesta shibari-sidonnasta yhtenä kehollisena työskentelymuotona.\n\nViimeisen vuoden aikana oon päässyt ohjaamaan breath- ja bodyworkia koulutuksiin Suomen ulkopuolella, kuten Viroon ja Englantiin."
+  },
+  "portfolio": {
+    "heading": "Portfolio (Palvelut & Työpajat)",
+    "breathworkTitle": "🫁 Hengitystyöskentely",
+    "breathworkGeneralPhilosophy": "Yleinen filosofia:",
+    "breathworkPhilosophyPoints": [
+      "Hengitys yhdistää kehon ja hengen",
+      "Muuttaa tietoisuudentilaa ja pääsee theta/delta-tiloihin",
+      "Tuo rauhaa, läsnäoloa ja oivalluksia",
+      "Auttaa vapauttamaan traumoja ja tunnetason jännitteitä"
+    ],
+    "breathworkMethods": "Menetelmät:",
+    "breathworkMethodPoints": [
+      "Biodynaaminen hengitystyöskentely (BBTRS): Hengitys, liike, ääni, kosketus, tunnetyö ja meditaatio. Trauma-tietoinen ohjaus.",
+      "Pohjoinen shamanistinen hengitystyöskentely: Shamanistinen rummutus ja syvä hengitys seremoniassa.",
+      "Somaattinen liike & hengitys: Liikemeditaatio (tärinä, vapaa tanssi). Parantaa kehotietoisuutta ja tuntemuksia.",
+      "Shibari + hengitystyöskentely: Köysityöskentely syventää kehorajoja ja turvallisuutta hengitystyöskentelyn aikana."
+    ],
+    "breathworkBenefits": "Raportoidut hyödyt:",
+    "breathworkBenefitPoints": [
+      "Rentoutuminen",
+      "Ahdistuksen ja negatiivisten ajatusten väheneminen",
+      "Tunnetason integraatio",
+      "Suurempi itsetietoisuus"
+    ],
+    "bodyworkTitle": "🧘 Kehotyöskentely",
+    "bodyworkDescription": "MER – Myofascial Energetic Release: Syväkudos- ja lihaskalvotyöskentely. Yhdistää hengityksen, kehon lukemisen, trauman vapauttamisen ja kraniosakraalitekniikat. Asiakaskeskeinen ja trauma-tietoinen. Auttaa vapauttamaan kudoksiin varastoituneita jännitysmalleja.",
+    "bodyworkShibari": "Shibari-inspiroitu kehotyöskentely: Kosketus- ja köysiterapia. Vahvistaa kehorajoja. Käytetään yhdessä valmennuksen tai hengitystyöskentelyn kanssa.",
+    "otherServicesTitle": "📦 Muut palvelut",
+    "traumaHealing": "Traumatyö: Yhdistää hengitystyöskentelyn, kehotyöskentelyn ja keskustelun. Syvempää kuin yksittäinen istunto. Perustuu asiakkaan tarpeisiin ja valmiuteen. Rakentaa turvallisuuden ja paranemisen kapasiteettia.",
+    "coaching": "Valmennus: Perustuu psykologiaan, sosiaalityöhön ja somaattiseen ymmärrykseen. Keskittyy hyväksyntään ennen muutosta. Aiheita: kehon hyväksyntä, vanhemmuus, nuorisotyö. Käytännöllistä ja kehollista ohjausta.",
+    "prananadi": "Prananadi-energiahoito: Tiibetiläinen energiahoitoperinne. Kädet päällä tehtävä energian tasapainotus. Parhaat tulokset henkilökohtaisesti."
+  },
+  "contact": {
+    "heading": "📞 Yhteystiedot",
+    "websiteLabel": "🌐 Verkkosivusto:",
+    "instagramLabel": "📸 Instagram:",
+    "facebookLabel": "📘 Facebook:"
+  },
+  "events": {
+    "heading": "Näyttelyt",
+    "futureEventTitle": "Kehollisuus hengitystyöskentelyn ja shibarin avulla",
+    "eventDescription": "Viikonloppuretriitti, joka yhdistää hengitystyöskentelyn, shibari-työpajat ja somaattiset harjoitukset syventämään kehon ja tunteiden yhteyttä.",
+    "eventLocation": "Sijainti: Nikkilän Temppeli",
+    "eventDates": "Ajankohta: 16.-18. toukokuuta 2025",
+    "eventDetailsHeader": "Retriitin kohokohdat",
+    "eventDetails": [
+      "Somaattiset liikkeet kokemuksen syventämiseksi",
+      "Biodynaaminen hengitystyöskentely kehon ja hermoston tasapainottamiseksi",
+      "Itsesidonta tai parin kanssa sidonta (jos kokemusta on)",
+      "Felt sense -teorian syventäminen",
+      "Sininen tee -seremonia & shibari-esitys yhteydestä ja kommunikaatiosta",
+      "Sauna ja järvi - hemmottelua keholle ja mielelle"
+    ],
+    "eventScheduleHeader": "Alustava aikataulu",
+    "eventSchedule": [
+      "Perjantai 16:00: Aloituspiiri ja ohjattu harjoitus",
+      "Perjantai 18:30: Päivällinen",
+      "Lauantai 08:00: Aamumeditaatio",
+      "Lauantai 09:30: Aamiainen",
+      "Lauantai 11:00: Työpaja",
+      "Sunnuntai 08:00: Sininen tee -seremonia + aamumeditaatio"
+    ]
   }
 }

@@ -3,28 +3,55 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Events</title>
+  <title data-i18n="events.heading"></title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <header>
-    <h1 data-i18n="nav.events"></h1>
-    <p data-i18n="hero.eventsSubtitle">Here will be events</p>
+    <h1 data-i18n="events.heading"></h1>
     <select id="language-switcher">
       <option value="en">🇬🇧 English</option>
       <option value="fi">🇫🇮 Suomi</option>
     </select>
   </header>
+
   <nav>
     <a href="index.html" data-i18n="nav.home"></a>
     <a href="about.html" data-i18n="nav.about"></a>
     <a href="portfolio.html" data-i18n="nav.portfolio"></a>
-    <a href="events.html" data-i18n="nav.events"></a>
+    <a href="events.html" data-i18n="nav.exhibitions"></a>
     <a href="contact.html" data-i18n="nav.contact"></a>
   </nav>
+
   <main>
-    <p data-i18n="main.eventsDescription">Event list will appear here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <section>
+      <h2 data-i18n="events.futureEventTitle"></h2>
+      <p data-i18n="events.eventDescription"></p>
+      <p><strong data-i18n="events.eventLocation"></strong></p>
+      <p><strong data-i18n="events.eventDates"></strong></p>
+
+      <h3 data-i18n="events.eventDetailsHeader"></h3>
+      <ul>
+        <li data-i18n="events.eventDetails.0"></li>
+        <li data-i18n="events.eventDetails.1"></li>
+        <li data-i18n="events.eventDetails.2"></li>
+        <li data-i18n="events.eventDetails.3"></li>
+        <li data-i18n="events.eventDetails.4"></li>
+        <li data-i18n="events.eventDetails.5"></li>
+      </ul>
+
+      <h3 data-i18n="events.eventScheduleHeader"></h3>
+      <ul>
+        <li data-i18n="events.eventSchedule.0"></li>
+        <li data-i18n="events.eventSchedule.1"></li>
+        <li data-i18n="events.eventSchedule.2"></li>
+        <li data-i18n="events.eventSchedule.3"></li>
+        <li data-i18n="events.eventSchedule.4"></li>
+        <li data-i18n="events.eventSchedule.5"></li>
+      </ul>
+    </section>
   </main>
+
   <script src="js/lang.js"></script>
 </body>
 </html>

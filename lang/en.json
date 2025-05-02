@@ -3,22 +3,97 @@
     "home": "Home",
     "about": "About",
     "portfolio": "Portfolio",
-    "events": "Exhibitions",
+    "exhibitions": "Exhibitions",
     "contact": "Contact"
   },
-  "hero": {
+  "home": {
     "title": "Merja Kallunki",
-    "subtitle": "Artist and performer",
-    "portfolioSubtitle": "Here will be portfolio",
-    "eventsSubtitle": "Here will be events",
-    "contactSubtitle": "Here will be contacts",
-    "aboutSubtitle": "Here will be about information"
+    "heading": "Merja Kallunki",
+    "subheading": "Breath, bodywork, trauma and energy healing",
+    "introHeader": "Welcome",
+    "intro": "Welcome to the world of embodied awareness and nature connection."
   },
-  "main": {
-    "indexDescription": "Here is the general information. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "aboutDescription": "Learn more about Merja Kallunki and her work.",
-    "portfolioDescription": "Explore the portfolio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "eventsDescription": "Event list will appear here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "contactDescription": "Get in touch. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  "about": {
+    "heading": "About Merja",
+    "bioHeader": "Who is Merja?",
+    "bioPoints": [
+      "Visual artist and holistic therapist",
+      "Deep experience in trauma, nervous system regulation, and emotional integration",
+      "Works with individuals and groups",
+      "Brings nature connection, intuition, and somatic awareness"
+    ],
+    "approachHeader": "Approach & Philosophy",
+    "approachPoints": [
+      "Integration of mind, body, emotion, and energy",
+      "Personalized, client-led work",
+      "Layered, embodied trauma healing",
+      "Emphasis on acceptance, body awareness, and body’s natural intelligence"
+    ],
+    "educationHeader": "Education",
+    "educationText": "My formal academic background includes a degree in Social Services (AMK) and a qualification as a special education teacher from the University of Helsinki. I have also studied psychology to an advanced level and attended shorter courses on supporting parenting.\n\nOver the years, I have studied extensively, so my expertise stems from several different fields, such as NLP coaching up to a master’s level, Prananadi energy healing, and deep breathing techniques.\n\nAdditionally, I am a certified Biodynamic Breathwork & Trauma Release facilitator, a program I studied in Estonia and Poland, and I have also trained in Myofascial Energetic Release bodywork at the Integral Body Institute in Poland.\n\nRecently, I have become interested in Japanese shibari bondage as a form of somatic work.\n\nIn the past year, I have had the opportunity to lead breath and bodywork training outside of Finland, including in Estonia and England."
+  },
+  "portfolio": {
+    "heading": "Portfolio (Services & Workshops)",
+    "breathworkTitle": "🫁 Breathwork",
+    "breathworkGeneralPhilosophy": "General philosophy:",
+    "breathworkPhilosophyPoints": [
+      "Breath connects the physical and spiritual",
+      "Alters consciousness and accesses theta/delta states",
+      "Brings calm, presence, and insight",
+      "Helps release trauma and emotional tension"
+    ],
+    "breathworkMethods": "Methods:",
+    "breathworkMethodPoints": [
+      "Biodynamic Breathwork (BBTRS): Breath, movement, sound, touch, emotional release, and meditation. Trauma-sensitive facilitation.",
+      "Northern Shamanic Breathwork: Shamanic drums and deep breathing in ceremony.",
+      "Somatic Movement & Breath: Movement meditation (shaking, unwinding, free dance). Improves felt-sense and body awareness.",
+      "Shibari + Breathwork: Rope work to deepen body boundaries and safety during breathwork."
+    ],
+    "breathworkBenefits": "Reported benefits:",
+    "breathworkBenefitPoints": [
+      "Relaxation",
+      "Decreased anxiety and negative thoughts",
+      "Emotional integration",
+      "Greater self-awareness"
+    ],
+    "bodyworkTitle": "🧘 Bodywork",
+    "bodyworkDescription": "MER – Myofascial Energetic Release: Deep tissue and fascia work. Combines breath, body reading, trauma release, and craniosacral techniques. Client-centered and trauma-aware. Helps release tension patterns stored in tissue.",
+    "bodyworkShibari": "Shibari-Inspired Bodywork: Touch- and rope-based therapy. Strengthens body boundaries. Used in combination with coaching or breathwork.",
+    "otherServicesTitle": "📦 Other Services",
+    "traumaHealing": "Trauma Healing: Integrates breathwork, bodywork, discussion. Deeper than a single session. Based on client needs and readiness. Builds capacity for safety and healing.",
+    "coaching": "Coaching: Grounded in psychology, social work, and somatic understanding. Focus on acceptance before change. Topics: body acceptance, parenting, youth work. Practical and embodied guidance.",
+    "prananadi": "Prananadi Energy Healing: Tibetan lineage energy healing. Hands-on energy balancing. Done in person for best results."
+  },
+  "contact": {
+    "heading": "📞 Contact",
+    "description": "Get in touch. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "websiteLabel": "🌐 Website:",
+    "instagramLabel": "📸 Instagram:",
+    "facebookLabel": "📘 Facebook:"
+  },
+  "events": {
+    "heading": "Events",
+    "futureEventTitle": "Embodiment with Breathwork & Shibari",
+    "eventDescription": "A weekend retreat combining breathwork, shibari workshops, and somatic practices to deepen your connection with your body and emotions.",
+    "eventLocation": "Location: Nikkilä Temple",
+    "eventDates": "Dates: May 16-18, 2025",
+    "eventDetailsHeader": "Retreat Highlights",
+    "eventDetails": [
+      "Somatic movement exercises to deepen the experience",
+      "Biodynamic breathwork for balancing the body and nervous system",
+      "Self-tying or partner tying (if experienced)",
+      "Felt sense theory exploration",
+      "Blue tea ceremony & shibari performance on connection and communication",
+      "Sauna and lake relaxation for body and mind"
+    ],
+    "eventScheduleHeader": "Preliminary Schedule",
+    "eventSchedule": [
+      "Friday 16:00: Opening circle and guided practice",
+      "Friday 18:30: Dinner",
+      "Saturday 08:00: Morning meditation",
+      "Saturday 09:30: Breakfast",
+      "Saturday 11:00: Workshop",
+      "Sunday 08:00: Blue tea ceremony + morning meditation"
+    ]
   }
 }

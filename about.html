@@ -3,28 +3,50 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About</title>
+  <title data-i18n="about.heading"></title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <header>
-    <h1 data-i18n="nav.about"></h1>
-    <p data-i18n="hero.aboutSubtitle">Here will be about information</p>
+    <h1 data-i18n="about.heading"></h1>
     <select id="language-switcher">
       <option value="en">🇬🇧 English</option>
       <option value="fi">🇫🇮 Suomi</option>
     </select>
   </header>
+
   <nav>
     <a href="index.html" data-i18n="nav.home"></a>
     <a href="about.html" data-i18n="nav.about"></a>
     <a href="portfolio.html" data-i18n="nav.portfolio"></a>
-    <a href="events.html" data-i18n="nav.events"></a>
+    <a href="events.html" data-i18n="nav.exhibitions"></a>
     <a href="contact.html" data-i18n="nav.contact"></a>
   </nav>
+
   <main>
-    <p data-i18n="main.aboutDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae velit ex.</p>
+    <h2 data-i18n="about.bioHeader"></h2>
+    <ul>
+      <li data-i18n="about.bioPoints.0"></li>
+      <li data-i18n="about.bioPoints.1"></li>
+      <li data-i18n="about.bioPoints.2"></li>
+      <li data-i18n="about.bioPoints.3"></li>
+    </ul>
+
+    <h2 data-i18n="about.approachHeader"></h2>
+    <ul>
+      <li data-i18n="about.approachPoints.0"></li>
+      <li data-i18n="about.approachPoints.1"></li>
+      <li data-i18n="about.approachPoints.2"></li>
+      <li data-i18n="about.approachPoints.3"></li>
+    </ul>
+
+    <h2 data-i18n="about.educationHeader"></h2>
+    <p data-i18n="about.educationText"></p>
   </main>
+
+  <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/C4nIdrgs3M6/" data-instgrm-version="14" style="width:100%; max-width:540px; margin:auto;"></blockquote>
+  <script async src="//www.instagram.com/embed.js"></script>
+
   <script src="js/lang.js"></script>
 </body>
 </html>
