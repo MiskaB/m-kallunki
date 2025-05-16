@@ -11,7 +11,19 @@
     "heading": "Merja Kallunki",
     "subheading": "Hengitys, kehotyöskentely, trauma- ja energiahoito",
     "introHeader": "Tervetuloa",
-    "intro": "Tervetuloa kehollisen tietoisuuden ja luontoyhteyden maailmaan."
+    "intro": "Tervetuloa kehollisen tietoisuuden ja luontoyhteyden maailmaan.",
+    "section1": {
+      "heading": "Hengitystyöskentely",
+      "text": "Syvennä yhteyttä itseesi ja vapauta kehosi jännityksiä hengityksen avulla."
+    },
+    "section2": {
+      "heading": "Kehotyöskentely",
+      "text": "Koe kehollinen läsnäolo ja löydä uusia tapoja olla kehossasi."
+    },
+    "section3": {
+      "heading": "Trauma- ja energiahoito",
+      "text": "Tukea ja ohjausta syvempään paranemiseen ja energian tasapainottamiseen."
+    }
   },
   "about": {
     "heading": "Tietoa Merjasta",

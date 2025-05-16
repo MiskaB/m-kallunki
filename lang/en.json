@@ -11,7 +11,19 @@
     "heading": "Merja Kallunki",
     "subheading": "Breath, bodywork, trauma and energy healing",
     "introHeader": "Welcome",
-    "intro": "Welcome to the world of embodied awareness and nature connection."
+    "intro": "Welcome to the world of embodied awareness and nature connection.",
+    "section1": {
+      "heading": "Breathwork",
+      "text": "Deepen your connection to yourself and release tension through conscious breathing."
+    },
+    "section2": {
+      "heading": "Bodywork",
+      "text": "Experience embodied presence and discover new ways of being in your body."
+    },
+    "section3": {
+      "heading": "Trauma & Energy Healing",
+      "text": "Support and guidance for deeper healing and energy balancing."
+    }
   },
   "about": {
     "heading": "About Merja",
