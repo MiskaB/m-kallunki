@@ -24,20 +24,20 @@
     "welcome": "Tervetuloa tilaan, jossa parantuminen kohtaa itsensä löytämisen. Olitpa täällä oppimassa hengitystyöskentelystä, tutkimassa traumatyöskentelyä tai etsimässä valmennusta, tämä sivusto tarjoaa oivalluksia ja työkaluja matkasi tueksi."
   },
   "about": {
-    "heading": "Tietoa Merjasta",
+    "heading": "Tietoa Merja Kallunkista",
     "bioHeader": "Elämäkerta",
-    "bioText": "Olen kotoisin Lapista. Kävin koulut Rovaniemellä, mutta käytännössä olen viettänyt suurimman osan lapsuudestani Sallassa. Isäni oli saamelaisesta suvusta ja poronhoito oli läsnä lapsuudenkodissani. Omaan vahvan olemuksen ja yhteyden luontoon, koska olen elänyt läsnä luonnon kanssa. Oon lähes koko aikuisikäni asunut Helsingissä, vaikkakin kotini on Lapissa. Fyysisen kehon kokemukset ovat olleet mielenkiintoni kohteena pitkään. Kehollisuus. Miten ja missä ovat kokemukset, tunteet ja traumat, sillä uskon, että kipu, jota ei suostuta tuntemaan, jää kehoon estäen energian vapaan virtaamisen. Tunteet liittyvät aina traumaan, enkä usko, että kukaan selviää tästä ilmiömaailmasta ilman traumoja. Kyse on ehkä enemmänkin siitä, miten syviä ne ovat.",
-    "quote": "Tietoinen mieli unohtaa, mutta keho muistaa kaiken. Olen itsessäni ja omassa kehossani käynyt läpi niin monta ihmisyyden teemaa ja kehollistanut traumakokemuksia ettei ihmisyydessä enää ole sellaisia teemoja, joita en uskalla toisen ihmisen vierellä katsoa.",
+    "bioText": "Merja Kallunki on ammattilainen, jolla on syvät juuret Lapissa, Suomessa. Kasvaminen saamelaisperheessä rikastutti hänen lapsuuttaan poronhoidon perinteillä ja syvällä yhteydellä luontoon. Tämä kasvatus antoi hänelle vahvan läsnäolon ja harmonian tunteen luonnon kanssa. Vaikka hän on viettänyt suurimman osan aikuiselämästään Helsingissä, hänen sydämensä on edelleen Lapissa, missä hänen itsensä löytämisen ja ammatillisen kasvun matkansa alkoi.",
+    "quote": "Tietoinen mieli unohtaa, mutta keho muistaa kaiken. Olen kehollistanut niin monia ihmisyyden teemoja ja traumoja itsessäni ja omassa kehossani, ettei ihmisyydessä ole enää sellaisia teemoja, joita en uskaltaisi katsoa toisen ihmisen vierellä.",
     "philosophyHeader": "Filosofia & Lähestymistapa",
-    "philosophyText": "Kehollinen kokemus, hengitystyöskentely ja kehotyöskentely ovat lähestymistapani ytimessä. Uskon, että kipu, jota ei suostuta tuntemaan, jää kehoon estäen energian vapaan virtaamisen. Työni yhdistää hengityksen, liikkeen, äänen, kosketuksen, tunteen ja meditaation tukemaan paranemista ja itsetuntemusta.",
+    "philosophyText": "Merjan työ pohjautuu syvästi keholliseen kokemukseen, hengitystyöskentelyyn ja kehotyöskentelyyn. Hän uskoo, että käsittelemätön kipu ja trauma jäävät kehoon estäen energian vapaan virtauksen. Hänen lähestymistapansa yhdistää hengityksen, liikkeen, äänen, kosketuksen, tunteen ja meditaation tukemaan paranemista ja itsetuntemusta. Käsittelemällä sekä fyysisiä että emotionaalisia trauman puolia Merja auttaa asiakkaitaan saavuttamaan syvemmän yhteyden itseensä.",
     "storyHeader": "Kuka on Merja Kallunki?",
     "storyPoints": [
-      "Suurimmat oppikokemukset olen tähän mennessä saanut addiktiosta, joka opetti pakenemaan.",
-      "Usean eri muodon väkivalta, joka opetti pelon voiman.",
-      "Isän saattohoitaminen, joka opetti kehorakkauden, hengityksen vuorottelun syntymän (sisäänhengitys), kuoleman (uloshengitys) ja tyhjyyden välillä sekä pysähtyneisyyden, ikuisuuden läsnäolon fyysisen kehon kuoleman edessä.",
-      "Tietysti myös omat lapset, joiden kipu on pakottanut kohtaamaan omansa, huutamaan, tuntemaan ja itkemään. Tuntemaan voimattomuutta. Antautumaan."
+      "Addiktio opetti hänelle pakenemisen taidon ja voiman voittaa se.",
+      "Väkivallan kokemukset paljastivat pelon voiman ja resilienssin.",
+      "Isänsä hoitaminen hänen viimeisinä päivinään syvensi hänen ymmärrystään elämästä, kuolemasta ja hengityksen ikuisesta rytmistä.",
+      "Hänen lastensa kamppailut ovat inspiroineet häntä kohtaamaan oman kipunsa, antautumaan ja vahvistumaan."
     ],
-    "storyConclusion": "Omasta kokemuksesta syntyy intohimo vapauttaa menneisyyden tarinasta ja tuoda valoa kokemuksiin, joita on vaikea sanoin selittää."
+    "storyConclusion": "Merjan henkilökohtainen matka ruokkii hänen intohimoaan auttaa muita. Hän on omistautunut ohjaamaan asiakkaitaan heidän omien tarinoidensa läpi, tuoden valoa kokemuksiin, joita on usein vaikea sanallistaa."
   },
   "portfolio": {
     "heading": "Portfolio (Palvelut & Työpajat)",
