@@ -5,6 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title data-i18n="about.heading"></title>
   <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      background-image: url("images/merja-bg-artistic.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      color: #2f2f2f;
+      font-family: "Georgia", serif;
+      padding: 20px;
+    }
+  
+    header, nav, main {
+      background-color: rgba(255, 255, 255, 0.85);
+      border-radius: 16px;
+      padding: 2em;
+      margin-bottom: 2em;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    }
+  
+    nav a {
+      margin-right: 20px;
+      text-decoration: none;
+      color: #3e3e3e;
+      font-weight: 600;
+      font-family: "Arial", sans-serif;
+    }
+  
+    select {
+      margin-left: 1em;
+      padding: 0.25em;
+    }
+  </style>
+  
 </head>
 <body>
   <header>
@@ -24,29 +58,33 @@
   </nav>
 
   <main>
-    <h2 data-i18n="about.bioHeader"></h2>
-    <ul>
-      <li data-i18n="about.bioPoints.0"></li>
-      <li data-i18n="about.bioPoints.1"></li>
-      <li data-i18n="about.bioPoints.2"></li>
-      <li data-i18n="about.bioPoints.3"></li>
-    </ul>
-
-    <h2 data-i18n="about.approachHeader"></h2>
-    <ul>
-      <li data-i18n="about.approachPoints.0"></li>
-      <li data-i18n="about.approachPoints.1"></li>
-      <li data-i18n="about.approachPoints.2"></li>
-      <li data-i18n="about.approachPoints.3"></li>
-    </ul>
-
-    <h2 data-i18n="about.educationHeader"></h2>
-    <p data-i18n="about.educationText"></p>
+    <section>
+      <h2 data-i18n="about.bioHeader">Biography</h2>
+      <p data-i18n="about.bioText">I’m from Lapland. I went to school in Rovaniemi, but in practice, I’ve spent most of my childhood in Salla. My father came from a Sámi family, and reindeer herding was part of my childhood home. I have a strong presence and connection to nature because I’ve lived in close connection with it. I’ve lived in Helsinki for nearly my entire adult life, although my home is in Lapland.</p>
+      <blockquote data-i18n="about.quote">“The conscious mind forgets, but the body remembers everything. I have embodied so many human themes and traumas in myself and my own body that there are no themes in humanity that I would not dare to look at alongside another person.”<br>– Merja Kallunki</blockquote>
+    </section>
+    <section>
+      <h2 data-i18n="about.philosophyHeader">Philosophy & Approach</h2>
+      <p data-i18n="about.philosophyText">Somatic experience, breathwork, and bodywork are at the core of my approach. I believe pain that is not allowed to be felt remains in the body, blocking energy. My work integrates breath, movement, sound, touch, emotion, and meditation to support healing and self-awareness.</p>
+    </section>
+    <section>
+      <h2 data-i18n="about.storyHeader">Who is Merja Kallunki?</h2>
+      <ul>
+        <li data-i18n="about.storyPoints.0">The greatest lessons I’ve learned so far have come from addiction, which taught me to escape.</li>
+        <li data-i18n="about.storyPoints.1">Violence in many forms, which taught me the power of fear.</li>
+        <li data-i18n="about.storyPoints.2">Caring for my father in his final days, which taught me body love, the rhythm of breathing between birth (inhalation), death (exhalation), and emptiness, as well as stillness, the presence of eternity in the face of the physical body’s death.</li>
+        <li data-i18n="about.storyPoints.3">Of course, my own children as well, whose pain has forced me to face my own, to scream, to feel, and to cry. To feel helpless. To surrender.</li>
+      </ul>
+      <p data-i18n="about.storyConclusion">From my own experience comes the passion to free myself from the story of the past and bring light to experiences that are hard to explain with words.</p>
+    </section>
   </main>
 
-  <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/C4nIdrgs3M6/" data-instgrm-version="14" style="width:100%; max-width:540px; margin:auto;"></blockquote>
+  <blockquote class="instagram-media"
+    data-instgrm-permalink="https://www.instagram.com/p/C4nIdrgs3M6/"
+    data-instgrm-version="14"
+    style="width:100%; max-width:540px; margin:auto;">
+  </blockquote>
   <script async src="//www.instagram.com/embed.js"></script>
-
   <script src="js/lang.js"></script>
 </body>
 </html>

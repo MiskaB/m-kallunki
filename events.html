@@ -5,6 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title data-i18n="events.heading"></title>
   <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      background-image: url("images/merja-bg-artistic.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      color: #2f2f2f;
+      font-family: "Georgia", serif;
+      padding: 20px;
+    }
+    header, nav, main {
+      background-color: rgba(255, 255, 255, 0.85);
+      border-radius: 16px;
+      padding: 2em;
+      margin-bottom: 2em;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    }
+    nav a {
+      margin-right: 20px;
+      text-decoration: none;
+      color: #3e3e3e;
+      font-weight: 600;
+      font-family: "Arial", sans-serif;
+    }
+    select {
+      margin-left: 1em;
+      padding: 0.25em;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -25,33 +55,29 @@
 
   <main>
     <section>
-      <h2 data-i18n="events.futureEventTitle"></h2>
-      <p data-i18n="events.eventDescription"></p>
-      <p><strong data-i18n="events.eventLocation"></strong></p>
-      <p><strong data-i18n="events.eventDates"></strong></p>
-
-      <h3 data-i18n="events.eventDetailsHeader"></h3>
+      <h2 data-i18n="events.upcomingTitle"></h2>
       <ul>
-        <li data-i18n="events.eventDetails.0"></li>
-        <li data-i18n="events.eventDetails.1"></li>
-        <li data-i18n="events.eventDetails.2"></li>
-        <li data-i18n="events.eventDetails.3"></li>
-        <li data-i18n="events.eventDetails.4"></li>
-        <li data-i18n="events.eventDetails.5"></li>
+        <li data-i18n="events.eventList.0"></li>
+        <li data-i18n="events.eventList.1"></li>
+        <li data-i18n="events.eventList.2"></li>
+        <li data-i18n="events.eventList.3"></li>
+        <li data-i18n="events.eventList.4"></li>
+        <li data-i18n="events.eventList.5"></li>
       </ul>
-
-      <h3 data-i18n="events.eventScheduleHeader"></h3>
+      <h3 data-i18n="events.workshopsTitle"></h3>
       <ul>
-        <li data-i18n="events.eventSchedule.0"></li>
-        <li data-i18n="events.eventSchedule.1"></li>
-        <li data-i18n="events.eventSchedule.2"></li>
-        <li data-i18n="events.eventSchedule.3"></li>
-        <li data-i18n="events.eventSchedule.4"></li>
-        <li data-i18n="events.eventSchedule.5"></li>
+        <li data-i18n="events.workshopsList.0"></li>
+        <li data-i18n="events.workshopsList.1"></li>
       </ul>
+      <h3 data-i18n="events.retreatTitle"></h3>
+      <p><strong data-i18n="events.retreatName"></strong><br>
+        <span data-i18n="events.retreatDate"></span><br>
+        <span data-i18n="events.retreatText"></span>
+      </p>
     </section>
   </main>
 
   <script src="js/lang.js"></script>
 </body>
 </html>
+

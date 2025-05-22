@@ -5,6 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title data-i18n="contact.heading"></title>
   <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      background-image: url("images/merja-bg-artistic.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      color: #2f2f2f;
+      font-family: "Georgia", serif;
+      padding: 20px;
+    }
+    header, nav, main {
+      background-color: rgba(255, 255, 255, 0.85);
+      border-radius: 16px;
+      padding: 2em;
+      margin-bottom: 2em;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    }
+    nav a {
+      margin-right: 20px;
+      text-decoration: none;
+      color: #3e3e3e;
+      font-weight: 600;
+      font-family: "Arial", sans-serif;
+    }
+    select {
+      margin-left: 1em;
+      padding: 0.25em;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -25,12 +55,17 @@
 
   <main>
     <section>
-      <h2 data-i18n="contact.heading"></h2>
+      <h2 data-i18n="contact.title"></h2>
       <ul>
-        <li><strong data-i18n="contact.websiteLabel"></strong> <a href="https://merjakallunki.fi" target="_blank">https://merjakallunki.fi</a></li>
-        <li><strong data-i18n="contact.instagramLabel"></strong> <a href="https://instagram.com/merja_kallunki" target="_blank">@merja_kallunki</a></li>
-        <li><strong data-i18n="contact.facebookLabel"></strong> <a href="https://facebook.com/merjakallunki" target="_blank">Merja Kallunki</a></li>
+        <li><strong data-i18n="contact.email_label"></strong> <a href="mailto:merja.rp.kallunki@gmail.com" data-i18n="contact.email"></a></li>
+        <li><strong data-i18n="contact.whatsapp_label"></strong> <span data-i18n="contact.whatsapp"></span></li>
+        <li><strong data-i18n="contact.website_label"></strong> <a href="https://merjakallunki.fi" target="_blank" data-i18n="contact.website"></a></li>
+        <li><strong data-i18n="contact.instagram_label"></strong> <a href="https://instagram.com/merja_kallunki" target="_blank" data-i18n="contact.instagram"></a></li>
+        <li><strong data-i18n="contact.facebook_label"></strong> <a href="https://facebook.com/merjakallunki" target="_blank" data-i18n="contact.facebook"></a></li>
+        <li><strong data-i18n="contact.telegram_label"></strong> <span data-i18n="contact.telegram"></span></li>
+        <li><strong data-i18n="contact.booking_label"></strong> <span data-i18n="contact.booking"></span></li>
       </ul>
+      <p data-i18n="contact.info"></p>
     </section>
   </main>
 

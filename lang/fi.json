@@ -9,90 +9,81 @@
   "home": {
     "title": "Merja Kallunki",
     "heading": "Merja Kallunki",
-    "subheading": "Hengitys, kehotyöskentely, trauma- ja energiahoito",
+    "subheading": "Hengitä sisään. Hengitä ulos.",
     "introHeader": "Tervetuloa",
-    "intro": "Tervetuloa kehollisen tietoisuuden ja luontoyhteyden maailmaan."
+    "intro": "Hengitystyöskentelyä Merja Kallunki. Olen kotoisin Lapista. Kävin koulut Rovaniemellä, mutta käytännössä olen viettänyt suurimman osan lapsuudestani Sallassa. Isäni oli saamelaisesta suvusta ja poronhoito oli läsnä lapsuudenkodissani. Omaan vahvan olemuksen ja yhteyden luontoon, koska olen elänyt läsnä luonnon kanssa. Oon lähes koko aikuisikäni asunut Helsingissä, vaikkakin kotini on Lapissa. Fyysisen kehon kokemukset ovat olleet mielenkiintoni kohteena pitkään. Kehollisuus. Miten ja missä ovat kokemukset, tunteet ja traumat, sillä uskon, että kipu, jota ei suostuta tuntemaan, jää kehoon estäen energian vapaan virtaamisen. Tunteet liittyvät aina traumaan, enkä usko, että kukaan selviää tästä ilmiömaailmasta ilman traumoja. Kyse on ehkä enemmänkin siitä, miten syviä ne ovat."
   },
   "about": {
     "heading": "Tietoa Merjasta",
-    "bioHeader": "Kuka on Merja?",
-    "bioPoints": [
-      "Kuvataiteilija ja kokonaisvaltaisen terapian ohjaaja",
-      "Syvällinen kokemus traumatyöstä, hermoston säätelystä ja tunnetason työskentelystä",
-      "Työskentelee yksilöiden ja ryhmien kanssa",
-      "Tuo luontoyhteyden, intuition ja kehollisen tietoisuuden osaksi työtä"
+    "bioHeader": "Elämäkerta",
+    "bioText": "Olen kotoisin Lapista. Kävin koulut Rovaniemellä, mutta käytännössä olen viettänyt suurimman osan lapsuudestani Sallassa. Isäni oli saamelaisesta suvusta ja poronhoito oli läsnä lapsuudenkodissani. Omaan vahvan olemuksen ja yhteyden luontoon, koska olen elänyt läsnä luonnon kanssa. Oon lähes koko aikuisikäni asunut Helsingissä, vaikkakin kotini on Lapissa. Fyysisen kehon kokemukset ovat olleet mielenkiintoni kohteena pitkään. Kehollisuus. Miten ja missä ovat kokemukset, tunteet ja traumat, sillä uskon, että kipu, jota ei suostuta tuntemaan, jää kehoon estäen energian vapaan virtaamisen. Tunteet liittyvät aina traumaan, enkä usko, että kukaan selviää tästä ilmiömaailmasta ilman traumoja. Kyse on ehkä enemmänkin siitä, miten syviä ne ovat.",
+    "quote": "Tietoinen mieli unohtaa, mutta keho muistaa kaiken. Olen itsessäni ja omassa kehossani käynyt läpi niin monta ihmisyyden teemaa ja kehollistanut traumakokemuksia ettei ihmisyydessä enää ole sellaisia teemoja, joita en uskalla toisen ihmisen vierellä katsoa.",
+    "philosophyHeader": "Filosofia & Lähestymistapa",
+    "philosophyText": "Kehollinen kokemus, hengitystyöskentely ja kehotyöskentely ovat lähestymistapani ytimessä. Uskon, että kipu, jota ei suostuta tuntemaan, jää kehoon estäen energian vapaan virtaamisen. Työni yhdistää hengityksen, liikkeen, äänen, kosketuksen, tunteen ja meditaation tukemaan paranemista ja itsetuntemusta.",
+    "storyHeader": "Kuka on Merja Kallunki?",
+    "storyPoints": [
+      "Suurimmat oppikokemukset olen tähän mennessä saanut addiktiosta, joka opetti pakenemaan.",
+      "Usean eri muodon väkivalta, joka opetti pelon voiman.",
+      "Isän saattohoitaminen, joka opetti kehorakkauden, hengityksen vuorottelun syntymän (sisäänhengitys), kuoleman (uloshengitys) ja tyhjyyden välillä sekä pysähtyneisyyden, ikuisuuden läsnäolon fyysisen kehon kuoleman edessä.",
+      "Tietysti myös omat lapset, joiden kipu on pakottanut kohtaamaan omansa, huutamaan, tuntemaan ja itkemään. Tuntemaan voimattomuutta. Antautumaan."
     ],
-    "approachHeader": "Lähestymistapa ja filosofia",
-    "approachPoints": [
-      "Mielen, kehon, tunteiden ja energian yhdistäminen",
-      "Yksilöllinen, asiakaslähtöinen työskentely",
-      "Kerrostunut, kehollinen traumatyöskentely",
-      "Korostaa hyväksyntää, kehotietoisuutta ja kehon luonnollista viisautta"
-    ],
-    "educationHeader": "Koulutus",
-    "educationText": "Varsinaiselta akateemiselta koulutukselta olen sosionomi (AMK) ja erityisluokanope Helsingin yliopistosta. Olen myös opiskellut psykologiaa aineopintoihin saakka ja käynyt lyhyempiä koulutuksia vanhemmuuden tukemisesta.\n\nOlen opiskellut vuosien varrella paljon, joten osaamiseni kumpuaa useista suuntauksista, kuten NLP-valmennusta masteriin saakka, Prananadi-energiahoitoa ja syvähengitystyöskentelyä.\n\nLisäksi oon sertifioitu Biodynamic Breathwork & Trauma Release-hengitystyöskentelyn ohjaaja, jota opiskelin Virossa ja Puolassa sekä opiskellut Myofascial Energetic Release bodyworkia Puolan Integral Body Institutessa.\n\nViimeisimpänä olen kiinnostunut japanilaisesta shibari-sidonnasta yhtenä kehollisena työskentelymuotona.\n\nViimeisen vuoden aikana oon päässyt ohjaamaan breath- ja bodyworkia koulutuksiin Suomen ulkopuolella, kuten Viroon ja Englantiin."
+    "storyConclusion": "Omasta kokemuksesta syntyy intohimo vapauttaa menneisyyden tarinasta ja tuoda valoa kokemuksiin, joita on vaikea sanoin selittää."
   },
   "portfolio": {
     "heading": "Portfolio (Palvelut & Työpajat)",
     "breathworkTitle": "🫁 Hengitystyöskentely",
-    "breathworkGeneralPhilosophy": "Yleinen filosofia:",
-    "breathworkPhilosophyPoints": [
-      "Hengitys yhdistää kehon ja hengen",
-      "Muuttaa tietoisuudentilaa ja pääsee theta/delta-tiloihin",
-      "Tuo rauhaa, läsnäoloa ja oivalluksia",
-      "Auttaa vapauttamaan traumoja ja tunnetason jännitteitä"
+    "breathworkText": "Hengitys on silta fyysisyyden ja henkisen aspektin välillä. Hengityksellä hapen ja hiilidioksidin suhde elimistössä muuttuu ja hengityksen avulla on mahdollista saavuttaa ei-tavanomaisia tietoisuuden tiloja. Syvähengitys nostaa Theta-taajuuksia, jotka mahdollistavat siirtymisen syvempään tietoisuuden tilaan. Hengitystyöskentely voi auttaa kokemaan rentoutumista, rauhaa ja intuition voimistumista. Se on vahva työkalu trauman purkamiseen ja tunnetason eheytymiseen.",
+    "bbtrsTitle": "BBTRS – BioDynamic Breathwork & Trauma Release System",
+    "bbtrsPoints": [
+      "Hengitys: Syvä hengitys yhteyden luomiseksi kehoon.",
+      "Liike: Trauma jäädyttää kehon; liike hengityksen aikana vapauttaa energiaa.",
+      "Ääni: Musiikki ja ääni auttavat vapauttamaan koko kehoa.",
+      "Kosketus: Tietoinen kosketus ja kehotyöskentely tukevat trauman vapautumista.",
+      "Tunne: Fasilitoija ohjaa tunteiden ilmaisua turvallisesti.",
+      "Meditaatio: Harjoitus päättyy meditaatioon tukien integraatiota."
     ],
-    "breathworkMethods": "Menetelmät:",
-    "breathworkMethodPoints": [
-      "Biodynaaminen hengitystyöskentely (BBTRS): Hengitys, liike, ääni, kosketus, tunnetyö ja meditaatio. Trauma-tietoinen ohjaus.",
-      "Pohjoinen shamanistinen hengitystyöskentely: Shamanistinen rummutus ja syvä hengitys seremoniassa.",
-      "Somaattinen liike & hengitys: Liikemeditaatio (tärinä, vapaa tanssi). Parantaa kehotietoisuutta ja tuntemuksia.",
-      "Shibari + hengitystyöskentely: Köysityöskentely syventää kehorajoja ja turvallisuutta hengitystyöskentelyn aikana."
-    ],
-    "breathworkBenefits": "Raportoidut hyödyt:",
-    "breathworkBenefitPoints": [
-      "Rentoutuminen",
-      "Ahdistuksen ja negatiivisten ajatusten väheneminen",
-      "Tunnetason integraatio",
-      "Suurempi itsetietoisuus"
-    ],
-    "bodyworkTitle": "🧘 Kehotyöskentely",
-    "bodyworkDescription": "MER – Myofascial Energetic Release: Syväkudos- ja lihaskalvotyöskentely. Yhdistää hengityksen, kehon lukemisen, trauman vapauttamisen ja kraniosakraalitekniikat. Asiakaskeskeinen ja trauma-tietoinen. Auttaa vapauttamaan kudoksiin varastoituneita jännitysmalleja.",
-    "bodyworkShibari": "Shibari-inspiroitu kehotyöskentely: Kosketus- ja köysiterapia. Vahvistaa kehorajoja. Käytetään yhdessä valmennuksen tai hengitystyöskentelyn kanssa.",
-    "otherServicesTitle": "📦 Muut palvelut",
-    "traumaHealing": "Traumatyö: Yhdistää hengitystyöskentelyn, kehotyöskentelyn ja keskustelun. Syvempää kuin yksittäinen istunto. Perustuu asiakkaan tarpeisiin ja valmiuteen. Rakentaa turvallisuuden ja paranemisen kapasiteettia.",
-    "coaching": "Valmennus: Perustuu psykologiaan, sosiaalityöhön ja somaattiseen ymmärrykseen. Keskittyy hyväksyntään ennen muutosta. Aiheita: kehon hyväksyntä, vanhemmuus, nuorisotyö. Käytännöllistä ja kehollista ohjausta.",
-    "prananadi": "Prananadi-energiahoito: Tiibetiläinen energiahoitoperinne. Kädet päällä tehtävä energian tasapainotus. Parhaat tulokset henkilökohtaisesti."
-  },
-  "contact": {
-    "heading": "📞 Yhteystiedot",
-    "websiteLabel": "🌐 Verkkosivusto:",
-    "instagramLabel": "📸 Instagram:",
-    "facebookLabel": "📘 Facebook:"
+    "breathworkShibari": "Hengitystyöskentelyä voidaan yhdistää shibariin (köysityöskentelyyn) kehorajojen vahvistamiseksi ja antautumisen sekä turvallisuuden tukemiseksi.",
+    "somaticMovementTitle": "Somatic Movement -meditaatio",
+    "somaticMovementText": "Liikemeditaatio sisältää shakingin, unwindingin ja free dancen. Jokainen osa vapauttaa jännitystä kehosta. Intuitiivinen liike neutraloi tallentuneita muistoja ja tunteita, ja meditatiivinen liike parantaa kehotuntemusta (Felt Sense).",
+    "merTitle": "MER – Myofascial Energetic Release",
+    "merText": "MER on syvä, kokonaisvaltainen tekniikka kehoon jääneen energian vapauttamiseen. Se yhdistää syväkudoshieronnan, tuetut venytykset, kraniosakraalihoidon, energiahoidon, nivelten vapauttamisen ja trauman parantamisen. Prosessi on asiakaslähtöinen ja räätälöity yksilöllisiin tarpeisiin.",
+    "traumaTitle": "Traumatyöskentely",
+    "traumaText": "Traumatyöskentely on hyvin yksilöllistä ja yhdistää hengitystyöskentelyn, kehotyöskentelyn, keskustelun ja muita menetelmiä tarpeen mukaan. Prosessi etenee aina asiakkaan toiveiden ja valmiuden mukaan, tukien kehotietoisuutta ja syvempää paranemista.",
+    "coachingTitle": "Valmennus",
+    "coachingText": "Valmennuksessa yhdistyy sosiaalityö, kasvatustieteet, psykologia ja NLP keholliseen lähestymistapaan. Keskiössä on hyväksyntä ennen muutosta, kehon yhteyden ja itsensä rakastamisen tukeminen. Valmennusta on saatavilla erilaisiin elämäntilanteisiin, myös vanhemmuuteen ja nuorisotyöhön.",
+    "prananadiTitle": "Prananadi-energiahoito",
+    "prananadiText": "Prananadi on tiibetiläinen energiahoitomenetelmä. Energia kanavoidaan käsien kautta, ja hoito tehdään parhaiten livenä. Hoito käyttää puhdistavaa ja energisoivaa energiaa auttaen löytämään uutta tasapainoa, elinvoimaa ja sisäistä harmoniaa.",
+    "shibariTitle": "Shibari-köysityöskentely",
+    "shibariText": "Shibari integroidaan työpajoihin, hengitystyöskentelyyn tai tehdään itsenäisenä harjoituksena. Se vahvistaa kehorajoja ja voidaan yhdistää hengitystyöskentelyyn voimakkaan kehollisen kokemuksen saamiseksi. Shibaria voi tehdä yksin tai parin kanssa, ja se on tapa tutkia turvallisuutta, antautumista ja kehotietoisuutta."
   },
   "events": {
-    "heading": "Näyttelyt",
-    "futureEventTitle": "Kehollisuus hengitystyöskentelyn ja shibarin avulla",
-    "eventDescription": "Viikonloppuretriitti, joka yhdistää hengitystyöskentelyn, shibari-työpajat ja somaattiset harjoitukset syventämään kehon ja tunteiden yhteyttä.",
-    "eventLocation": "Sijainti: Nikkilän Temppeli",
-    "eventDates": "Ajankohta: 16.-18. toukokuuta 2025",
-    "eventDetailsHeader": "Retriitin kohokohdat",
-    "eventDetails": [
-      "Somaattiset liikkeet kokemuksen syventämiseksi",
-      "Biodynaaminen hengitystyöskentely kehon ja hermoston tasapainottamiseksi",
-      "Itsesidonta tai parin kanssa sidonta (jos kokemusta on)",
-      "Felt sense -teorian syventäminen",
-      "Sininen tee -seremonia & shibari-esitys yhteydestä ja kommunikaatiosta",
-      "Sauna ja järvi - hemmottelua keholle ja mielelle"
+    "heading": "Tapahtumat",
+    "upcomingTitle": "Tulevat tapahtumat & työpajat",
+    "eventList": [
+      "Entheos 9.-11.5. Helsinki",
+      "Paluu Juurille - festarit 23.-25.5. Frantsila",
+      "Pasilan hyvinvointifestarit 24.5. Helsinki (aloitus työpaja)",
+      "Natural High Healing 3.-6.7. Uusikaupunki",
+      "Natural High 29.5.2025 Netherlands",
+      "Het Landjuweel 7.-10.8. Netherlands"
     ],
-    "eventScheduleHeader": "Alustava aikataulu",
-    "eventSchedule": [
-      "Perjantai 16:00: Aloituspiiri ja ohjattu harjoitus",
-      "Perjantai 18:30: Päivällinen",
-      "Lauantai 08:00: Aamumeditaatio",
-      "Lauantai 09:30: Aamiainen",
-      "Lauantai 11:00: Työpaja",
-      "Sunnuntai 08:00: Sininen tee -seremonia + aamumeditaatio"
-    ]
+    "workshopsTitle": "Työpajat Helsingissä (huhti-toukokuu)",
+    "workshopsList": [
+      "Ma 28.4. Expression from Safety, Uudenmaankatu 33",
+      "Ilmoittautuminen: merja.rp.kallunki@gmail.com tai WhatsApp 0400316541"
+    ],
+    "retreatTitle": "Erikoisretriitti",
+    "retreatText": "Embodiment with Breathwork & Shibari\nNikkilän Temppeli 16.-18.5.2025\nViikonloppuretriitti, jossa hengitystyöskentely, shibari-työpaja ja vaikuttava hengitysharjoitus, jossa voi halutessaan sitoa itsensä hengitysharjoitusta varten. Ytimessä kehokokemus (felt sense), kehollinen läsnäolo ja menneiden kokemusten integrointi. Hengitys ohjaa syvemmälle kehoon, köydet rajaavat fyysisen kokemuksen turvallisesti."
+  },
+  "contact": {
+    "heading": "Yhteystiedot & Sosiaalinen media",
+    "email": "merja.rp.kallunki@gmail.com",
+    "whatsapp": "0400316541",
+    "website": "https://merjakallunki.fi",
+    "instagram": "https://instagram.com/merja_kallunki",
+    "facebook": "https://facebook.com/merjakallunki",
+    "telegram": "Breathwork by Merja",
+    "booking": "Calendly Merja",
+    "description": "Löydät minut somesta ja voit varata ajan tai työpajan sähköpostilla tai Calendlyn kautta."
   }
 }

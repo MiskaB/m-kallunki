@@ -9,91 +9,81 @@
   "home": {
     "title": "Merja Kallunki",
     "heading": "Merja Kallunki",
-    "subheading": "Breath, bodywork, trauma and energy healing",
+    "subheading": "Breathe in. Breathe out.",
     "introHeader": "Welcome",
-    "intro": "Welcome to the world of embodied awareness and nature connection."
+    "intro": "Breathwork By Merja Kallunki. I’m from Lapland. I went to school in Rovaniemi, but in practice, I’ve spent most of my childhood in Salla. My father came from a Sámi family, and reindeer herding was part of my childhood home. I have a strong presence and connection to nature because I’ve lived in close connection with it. I’ve lived in Helsinki for nearly my entire adult life, although my home is in Lapland. Experiences of the physical body have been of interest to me for a long time. Somatic experience. How and where are experiences, emotions, and traumas stored, because I believe that pain which is not allowed to be felt remains in the body, blocking the free flow of energy. Emotions are always linked to trauma, and I don’t think anyone escapes this phenomenon without traumas. It’s perhaps more about how deep they are."
   },
   "about": {
     "heading": "About Merja",
-    "bioHeader": "Who is Merja?",
-    "bioPoints": [
-      "Visual artist and holistic therapist",
-      "Deep experience in trauma, nervous system regulation, and emotional integration",
-      "Works with individuals and groups",
-      "Brings nature connection, intuition, and somatic awareness"
+    "bioHeader": "Biography",
+    "bioText": "I’m from Lapland. I went to school in Rovaniemi, but in practice, I’ve spent most of my childhood in Salla. My father came from a Sámi family, and reindeer herding was part of my childhood home. I have a strong presence and connection to nature because I’ve lived in close connection with it. I’ve lived in Helsinki for nearly my entire adult life, although my home is in Lapland. Experiences of the physical body have been of interest to me for a long time. Somatic experience. How and where are experiences, emotions, and traumas stored, because I believe that pain which is not allowed to be felt remains in the body, blocking the free flow of energy. Emotions are always linked to trauma, and I don’t think anyone escapes this phenomenon without traumas. It’s perhaps more about how deep they are.",
+    "quote": "The conscious mind forgets, but the body remembers everything. I have embodied so many human themes and traumas in myself and my own body that there are no themes in humanity that I would not dare to look at alongside another person.",
+    "philosophyHeader": "Philosophy & Approach",
+    "philosophyText": "Somatic experience, breathwork, and bodywork are at the core of my approach. I believe pain that is not allowed to be felt remains in the body, blocking energy. My work integrates breath, movement, sound, touch, emotion, and meditation to support healing and self-awareness.",
+    "storyHeader": "Who is Merja Kallunki?",
+    "storyPoints": [
+      "The greatest lessons I’ve learned so far have come from addiction, which taught me to escape.",
+      "Violence in many forms, which taught me the power of fear.",
+      "Caring for my father in his final days, which taught me body love, the rhythm of breathing between birth (inhalation), death (exhalation), and emptiness, as well as stillness, the presence of eternity in the face of the physical body’s death.",
+      "Of course, my own children as well, whose pain has forced me to face my own, to scream, to feel, and to cry. To feel helpless. To surrender."
     ],
-    "approachHeader": "Approach & Philosophy",
-    "approachPoints": [
-      "Integration of mind, body, emotion, and energy",
-      "Personalized, client-led work",
-      "Layered, embodied trauma healing",
-      "Emphasis on acceptance, body awareness, and body’s natural intelligence"
-    ],
-    "educationHeader": "Education",
-    "educationText": "My formal academic background includes a degree in Social Services (AMK) and a qualification as a special education teacher from the University of Helsinki. I have also studied psychology to an advanced level and attended shorter courses on supporting parenting.\n\nOver the years, I have studied extensively, so my expertise stems from several different fields, such as NLP coaching up to a master’s level, Prananadi energy healing, and deep breathing techniques.\n\nAdditionally, I am a certified Biodynamic Breathwork & Trauma Release facilitator, a program I studied in Estonia and Poland, and I have also trained in Myofascial Energetic Release bodywork at the Integral Body Institute in Poland.\n\nRecently, I have become interested in Japanese shibari bondage as a form of somatic work.\n\nIn the past year, I have had the opportunity to lead breath and bodywork training outside of Finland, including in Estonia and England."
+    "storyConclusion": "From my own experience comes the passion to free myself from the story of the past and bring light to experiences that are hard to explain with words."
   },
   "portfolio": {
     "heading": "Portfolio (Services & Workshops)",
     "breathworkTitle": "🫁 Breathwork",
-    "breathworkGeneralPhilosophy": "General philosophy:",
-    "breathworkPhilosophyPoints": [
-      "Breath connects the physical and spiritual",
-      "Alters consciousness and accesses theta/delta states",
-      "Brings calm, presence, and insight",
-      "Helps release trauma and emotional tension"
+    "breathworkText": "Breath is the bridge between the physical and the spiritual. Through breath, the ratio of oxygen and carbon dioxide in the body changes, and it is possible to reach non-ordinary states of consciousness. Deep breathing raises theta frequencies, allowing access to deeper states of consciousness. Breathwork can help experience relaxation, calm, and intuition. It is a powerful tool for trauma release and emotional integration.",
+    "bbtrsTitle": "BBTRS – BioDynamic Breathwork & Trauma Release System",
+    "bbtrsPoints": [
+      "Breath: Deep breathing to connect with the body.",
+      "Movement: Trauma freezes the body; movement during breathwork releases energy.",
+      "Sound: Music and sound help release the whole body.",
+      "Touch: Conscious touch and bodywork support trauma release.",
+      "Emotion: Facilitator guides emotional expression safely.",
+      "Meditation: Practice ends with meditation to support integration."
     ],
-    "breathworkMethods": "Methods:",
-    "breathworkMethodPoints": [
-      "Biodynamic Breathwork (BBTRS): Breath, movement, sound, touch, emotional release, and meditation. Trauma-sensitive facilitation.",
-      "Northern Shamanic Breathwork: Shamanic drums and deep breathing in ceremony.",
-      "Somatic Movement & Breath: Movement meditation (shaking, unwinding, free dance). Improves felt-sense and body awareness.",
-      "Shibari + Breathwork: Rope work to deepen body boundaries and safety during breathwork."
-    ],
-    "breathworkBenefits": "Reported benefits:",
-    "breathworkBenefitPoints": [
-      "Relaxation",
-      "Decreased anxiety and negative thoughts",
-      "Emotional integration",
-      "Greater self-awareness"
-    ],
-    "bodyworkTitle": "🧘 Bodywork",
-    "bodyworkDescription": "MER – Myofascial Energetic Release: Deep tissue and fascia work. Combines breath, body reading, trauma release, and craniosacral techniques. Client-centered and trauma-aware. Helps release tension patterns stored in tissue.",
-    "bodyworkShibari": "Shibari-Inspired Bodywork: Touch- and rope-based therapy. Strengthens body boundaries. Used in combination with coaching or breathwork.",
-    "otherServicesTitle": "📦 Other Services",
-    "traumaHealing": "Trauma Healing: Integrates breathwork, bodywork, discussion. Deeper than a single session. Based on client needs and readiness. Builds capacity for safety and healing.",
-    "coaching": "Coaching: Grounded in psychology, social work, and somatic understanding. Focus on acceptance before change. Topics: body acceptance, parenting, youth work. Practical and embodied guidance.",
-    "prananadi": "Prananadi Energy Healing: Tibetan lineage energy healing. Hands-on energy balancing. Done in person for best results."
-  },
-  "contact": {
-    "heading": "📞 Contact",
-    "description": "Get in touch. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "websiteLabel": "🌐 Website:",
-    "instagramLabel": "📸 Instagram:",
-    "facebookLabel": "📘 Facebook:"
+    "breathworkShibari": "Breathwork can be combined with shibari (rope work) to strengthen body boundaries and support surrender and safety.",
+    "somaticMovementTitle": "Somatic Movement Meditation",
+    "somaticMovementText": "Movement meditation includes shaking, unwinding, and free dance. Each part releases tension from the body. Intuitive movement neutralizes stored memories and emotions, and meditative movement improves body awareness (Felt Sense).",
+    "merTitle": "MER – Myofascial Energetic Release",
+    "merText": "MER is a deep, holistic technique to release energy stored in the body. It combines deep tissue massage, supported stretches, craniosacral therapy, energy healing, joint release, and trauma healing. The process is client-led and tailored to individual needs.",
+    "traumaTitle": "Trauma Work",
+    "traumaText": "Trauma work is highly individual and combines breathwork, bodywork, discussion, and other methods as needed. The process is always based on the client’s wishes and readiness, supporting body awareness and deeper healing.",
+    "coachingTitle": "Coaching",
+    "coachingText": "Coaching integrates social work, education, psychology, and NLP with a somatic approach. The focus is on acceptance before change, supporting body connection and self-love. Coaching is available for various life situations, including parenting and youth work.",
+    "prananadiTitle": "Prananadi Energy Healing",
+    "prananadiText": "Prananadi is a Tibetan lineage energy healing method. Energy is channeled through the hands, best done in person. The treatment uses cleansing and energizing energy to help you find new balance, vitality, and inner harmony.",
+    "shibariTitle": "Shibari Rope Work",
+    "shibariText": "Shibari is integrated into workshops, breathwork, or as a standalone practice. It strengthens body boundaries and can be combined with breathwork for a powerful somatic experience. Shibari can be done solo or with a partner, and is a way to explore safety, surrender, and body awareness."
   },
   "events": {
     "heading": "Events",
-    "futureEventTitle": "Embodiment with Breathwork & Shibari",
-    "eventDescription": "A weekend retreat combining breathwork, shibari workshops, and somatic practices to deepen your connection with your body and emotions.",
-    "eventLocation": "Location: Nikkilä Temple",
-    "eventDates": "Dates: May 16-18, 2025",
-    "eventDetailsHeader": "Retreat Highlights",
-    "eventDetails": [
-      "Somatic movement exercises to deepen the experience",
-      "Biodynamic breathwork for balancing the body and nervous system",
-      "Self-tying or partner tying (if experienced)",
-      "Felt sense theory exploration",
-      "Blue tea ceremony & shibari performance on connection and communication",
-      "Sauna and lake relaxation for body and mind"
+    "upcomingTitle": "Upcoming Events & Workshops",
+    "eventList": [
+      "Entheos 9.-11.5. Helsinki",
+      "Paluu Juurille - festarit 23.-25.5. Frantsila",
+      "Pasilan hyvinvointifestarit 24.5. Helsinki (aloitus työpaja)",
+      "Natural High Healing 3.-6.7. Uusikaupunki",
+      "Natural High 29.5.2025 Netherlands",
+      "Het Landjuweel 7.-10.8. Netherlands"
     ],
-    "eventScheduleHeader": "Preliminary Schedule",
-    "eventSchedule": [
-      "Friday 16:00: Opening circle and guided practice",
-      "Friday 18:30: Dinner",
-      "Saturday 08:00: Morning meditation",
-      "Saturday 09:30: Breakfast",
-      "Saturday 11:00: Workshop",
-      "Sunday 08:00: Blue tea ceremony + morning meditation"
-    ]
+    "workshopsTitle": "Workshops in Helsinki (April-May)",
+    "workshopsList": [
+      "Mon 28.4. Expression from Safety, Uudenmaankatu 33",
+      "Registration: merja.rp.kallunki@gmail.com or WhatsApp 0400316541"
+    ],
+    "retreatTitle": "Special Retreat",
+    "retreatText": "Embodiment with Breathwork & Shibari\nNikkilä Temple 16.-18.5.2025\nWeekend retreat with breathwork, shibari workshop, and a powerful breathwork session with optional self-tying. Focus on felt sense, somatic presence, and integrating past experiences. Breath guides deeper into the body, ropes create safe boundaries."
+  },
+  "contact": {
+    "heading": "Contact & Social Media",
+    "email": "merja.rp.kallunki@gmail.com",
+    "whatsapp": "0400316541",
+    "website": "https://merjakallunki.fi",
+    "instagram": "https://instagram.com/merja_kallunki",
+    "facebook": "https://facebook.com/merjakallunki",
+    "telegram": "Breathwork by Merja",
+    "booking": "Calendly Merja",
+    "description": "You can find me from social media and book a session or workshop via email or Calendly."
   }
 }

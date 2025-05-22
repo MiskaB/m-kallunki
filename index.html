@@ -5,6 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title data-i18n="home.title">Merja Kallunki</title>
   <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      background-image: url("images/merja-bg-artistic.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      color: #2f2f2f;
+      font-family: "Georgia", serif;
+      padding: 20px;
+    }
+    header, nav, main {
+      background-color: rgba(255, 255, 255, 0.85);
+      border-radius: 16px;
+      padding: 2em;
+      margin-bottom: 2em;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    }
+    nav a {
+      margin-right: 20px;
+      text-decoration: none;
+      color: #3e3e3e;
+      font-weight: 600;
+      font-family: "Arial", sans-serif;
+    }
+    select {
+      margin-left: 1em;
+      padding: 0.25em;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -23,7 +53,23 @@
     <a href="contact.html" data-i18n="nav.contact"></a>
   </nav>
   <main>
-    <p data-i18n="home.intro"></p>
+    <section>
+      <h2 data-i18n="home.introHeader"></h2>
+      <p data-i18n="home.intro"></p>
+      <h3 data-i18n="home.bioHeader"></h3>
+      <p data-i18n="home.bio1"></p>
+      <p data-i18n="home.bio2"></p>
+    </section>
+    <section>
+      <h2 data-i18n="home.storyHeader"></h2>
+      <ul>
+        <li data-i18n="home.storyPoints.0"></li>
+        <li data-i18n="home.storyPoints.1"></li>
+        <li data-i18n="home.storyPoints.2"></li>
+        <li data-i18n="home.storyPoints.3"></li>
+      </ul>
+      <p data-i18n="home.storyConclusion"></p>
+    </section>
   </main>
   <script src="js/lang.js"></script>
 </body>
