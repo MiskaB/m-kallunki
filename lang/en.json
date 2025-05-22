@@ -8,10 +8,20 @@
   },
   "home": {
     "title": "Merja Kallunki",
-    "heading": "Merja Kallunki",
-    "subheading": "Breathe in. Breathe out.",
-    "introHeader": "Welcome",
-    "intro": "Breathwork By Merja Kallunki. I’m from Lapland. I went to school in Rovaniemi, but in practice, I’ve spent most of my childhood in Salla. My father came from a Sámi family, and reindeer herding was part of my childhood home. I have a strong presence and connection to nature because I’ve lived in close connection with it. I’ve lived in Helsinki for nearly my entire adult life, although my home is in Lapland. Experiences of the physical body have been of interest to me for a long time. Somatic experience. How and where are experiences, emotions, and traumas stored, because I believe that pain which is not allowed to be felt remains in the body, blocking the free flow of energy. Emotions are always linked to trauma, and I don’t think anyone escapes this phenomenon without traumas. It’s perhaps more about how deep they are."
+    "heading": "Welcome to Merja Kallunki's Website",
+    "subheading": "Explore the journey of breathwork, trauma healing, and personal growth.",
+    "introHeader": "What is this website about?",
+    "intro": "This website introduces the transformative practices of breathwork, trauma healing, and coaching. Discover how these methods can help you achieve relaxation, self-awareness, and emotional integration.",
+    "sectionsHeader": "Explore the Sections",
+    "sections": {
+      "breathwork": "Breathwork: Learn how conscious breathing can unlock healing and relaxation.",
+      "trauma": "Trauma Healing: Understand the methods to process and release trauma.",
+      "coaching": "Coaching: Discover personalized guidance for self-growth and overcoming challenges.",
+      "prananadi": "Prananadi: Experience the balance and harmony of Tibetan energy healing.",
+      "shibari": "Shibari: Explore the art of rope work for body awareness and boundaries."
+    },
+    "welcomeHeader": "Welcome Message",
+    "welcome": "Welcome to a space where healing meets self-discovery. Whether you're here to learn about breathwork, explore trauma healing, or seek coaching, this website offers insights and tools to support your journey."
   },
   "about": {
     "heading": "About Merja",
@@ -62,7 +72,7 @@
     "eventList": [
       "Entheos 9.-11.5. Helsinki",
       "Paluu Juurille - festarit 23.-25.5. Frantsila",
-      "Pasilan hyvinvointifestarit 24.5. Helsinki (aloitus työpaja)",
+      "Pasilan hyvinvointifestarit 24.5. Helsinki (Entry Workshop)",
       "Natural High Healing 3.-6.7. Uusikaupunki",
       "Natural High 29.5.2025 Netherlands",
       "Het Landjuweel 7.-10.8. Netherlands"

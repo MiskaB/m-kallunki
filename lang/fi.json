@@ -8,10 +8,20 @@
   },
   "home": {
     "title": "Merja Kallunki",
-    "heading": "Merja Kallunki",
-    "subheading": "Hengitä sisään. Hengitä ulos.",
-    "introHeader": "Tervetuloa",
-    "intro": "Hengitystyöskentelyä Merja Kallunki. Olen kotoisin Lapista. Kävin koulut Rovaniemellä, mutta käytännössä olen viettänyt suurimman osan lapsuudestani Sallassa. Isäni oli saamelaisesta suvusta ja poronhoito oli läsnä lapsuudenkodissani. Omaan vahvan olemuksen ja yhteyden luontoon, koska olen elänyt läsnä luonnon kanssa. Oon lähes koko aikuisikäni asunut Helsingissä, vaikkakin kotini on Lapissa. Fyysisen kehon kokemukset ovat olleet mielenkiintoni kohteena pitkään. Kehollisuus. Miten ja missä ovat kokemukset, tunteet ja traumat, sillä uskon, että kipu, jota ei suostuta tuntemaan, jää kehoon estäen energian vapaan virtaamisen. Tunteet liittyvät aina traumaan, enkä usko, että kukaan selviää tästä ilmiömaailmasta ilman traumoja. Kyse on ehkä enemmänkin siitä, miten syviä ne ovat."
+    "heading": "Tervetuloa Merja Kallunki -sivustolle",
+    "subheading": "Tutustu hengitystyöskentelyn, traumatyöskentelyn ja henkilökohtaisen kasvun maailmaan.",
+    "introHeader": "Mistä tämä sivusto kertoo?",
+    "intro": "Tämä sivusto esittelee hengitystyöskentelyn, traumatyöskentelyn ja valmennuksen muutosvoimaiset käytännöt. Löydä, kuinka nämä menetelmät voivat auttaa sinua saavuttamaan rentoutumisen, itsetietoisuuden ja tunnetason eheytymisen.",
+    "sectionsHeader": "Tutustu osioihin",
+    "sections": {
+      "breathwork": "Hengitystyöskentely: Opi, kuinka tietoinen hengitys voi avata parantumisen ja rentoutumisen.",
+      "trauma": "Traumatyöskentely: Ymmärrä menetelmät trauman käsittelyyn ja vapauttamiseen.",
+      "coaching": "Valmennus: Löydä yksilöllistä ohjausta itsesi kehittämiseen ja haasteiden voittamiseen.",
+      "prananadi": "Prananadi: Koe tiibetiläisen energiahoidon tasapaino ja harmonia.",
+      "shibari": "Shibari: Tutustu köysityöskentelyn taiteeseen kehotietoisuuden ja rajojen vahvistamiseksi."
+    },
+    "welcomeHeader": "Tervetuloviesti",
+    "welcome": "Tervetuloa tilaan, jossa parantuminen kohtaa itsensä löytämisen. Olitpa täällä oppimassa hengitystyöskentelystä, tutkimassa traumatyöskentelyä tai etsimässä valmennusta, tämä sivusto tarjoaa oivalluksia ja työkaluja matkasi tueksi."
   },
   "about": {
     "heading": "Tietoa Merjasta",
