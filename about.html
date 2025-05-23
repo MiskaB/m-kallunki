@@ -33,39 +33,20 @@
       margin-left: 1em;
       padding: 0.25em;
     }
-    .language-selector {
-      position: fixed;
-      top: 10px;
-      right: 10px;
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 10px;
     }
-    .language-dropdown {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      background-color: rgba(255, 255, 255, 0.7);
+    .gallery img {
+      width: 100%;
+      height: auto;
       border-radius: 8px;
-      padding: 0.5em;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: transform 0.2s;
     }
-    /* Ensure .language-menu uses global styles */
-    .language-menu {
-      margin-top: 1em;
-      text-align: right;
-    }
-    .language-menu label {
-      font-weight: bold;
-    }
-    .language-menu select {
-      display: inline-block;
-      width: auto;
-      margin-left: 0.5em;
-      padding: 0.25em 0.5em;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      background-color: #fff;
-      color: #333;
-      font-size: 1em;
-      font-family: "Arial", sans-serif;
+    .gallery img:hover {
+      transform: scale(1.05);
     }
   </style>
 </head>
@@ -77,6 +58,7 @@
       <option value="fi">Suomi</option>
     </select>
   </div>
+
   <header style="background-color: rgba(255, 255, 255, 0.5);">
     <h1 data-i18n="about.heading">About Merja Kallunki</h1>
   </header>
