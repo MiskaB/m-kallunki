@@ -58,30 +58,20 @@
 
   <main style="background-color: rgba(255, 255, 255, 0.5);">
     <section>
-      <h2 data-i18n="events.upcomingTitle"></h2>
-      <ul>
-        <li data-i18n="events.eventList.0"></li>
-        <li data-i18n="events.eventList.1"></li>
-        <li data-i18n="events.eventList.2"></li>
-        <li data-i18n="events.eventList.3"></li>
-        <li data-i18n="events.eventList.4"></li>
-        <li data-i18n="events.eventList.5"></li>
-      </ul>
-      <h3 data-i18n="events.workshopsTitle"></h3>
-      <ul>
-        <li data-i18n="events.workshopsList.0"></li>
-        <li data-i18n="events.workshopsList.1"></li>
-      </ul>
-      <h3 data-i18n="events.retreatTitle"></h3>
-      <p><strong data-i18n="events.retreatName"></strong><br>
-        <span data-i18n="events.retreatDate"></span><br>
-        <span data-i18n="events.retreatText"></span>
-      </p>
-    </section>
-
-    <section>
       <h2 data-i18n="events.upcomingTitle">Upcoming Events</h2>
-      <ul id="events-list"></ul>
+      <div style="overflow-x:auto;">
+        <table id="events-table" style="width:100%;border-collapse:collapse;">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Date</th>
+              <th>Location</th>
+              <th>More information</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
     </section>
   </main>
 
@@ -97,29 +87,59 @@
       "images/TieKnot.png",
       "images/TiesLeg.png"
     ];
-
     const randomImage = images[Math.floor(Math.random() * images.length)];
     document.body.style.backgroundImage = `url(${randomImage})`;
 
     const sheetURL = 'https://docs.google.com/spreadsheets/d/e/1PbQP6MmVUOC0x-E6e3rUHiyqx0gsXJIGwWPN0nBSFeE/pub?output=csv';
 
-    async function fetchEvents() {
-      const response = await fetch(sheetURL);
-      const data = await response.text();
-      const rows = data.split('\n').map(row => row.split(','));
-
-      const eventsList = document.getElementById('events-list');
-      eventsList.innerHTML = ''; // Clear existing content
-
-      rows.forEach((row, index) => {
-        if (index === 0) return; // Skip header row
-        const [name, date, location, info] = row;
-        const listItem = document.createElement('li');
-        listItem.innerHTML = `<strong>${date}</strong>: ${name} (${location}) - ${info}`;
-        eventsList.appendChild(listItem);
+    function parseCSV(text) {
+      const rows = text.split(/\r?\n/).filter(row => row.trim() !== '');
+      return rows.map(row => {
+        // Handle quoted fields and commas inside quotes
+        const cells = [];
+        let cell = '';
+        let inQuotes = false;
+        for (let i = 0; i < row.length; i++) {
+          const char = row[i];
+          if (char === '"') {
+            inQuotes = !inQuotes;
+          } else if (char === ',' && !inQuotes) {
+            cells.push(cell);
+            cell = '';
+          } else {
+            cell += char;
+          }
+        }
+        cells.push(cell);
+        return cells;
       });
     }
 
+    async function fetchEvents() {
+      const response = await fetch(sheetURL);
+      const data = await response.text();
+      const rows = parseCSV(data);
+      if (!rows.length) return;
+      const header = rows[0].map(h => h.trim().toLowerCase());
+      const nameIdx = header.indexOf('name');
+      const dateIdx = header.indexOf('date');
+      const locationIdx = header.indexOf('location');
+      const infoIdx = header.indexOf('more information');
+      const tbody = document.querySelector('#events-table tbody');
+      tbody.innerHTML = '';
+      for (let i = 1; i < rows.length; i++) {
+        const row = rows[i];
+        if (!row[nameIdx] && !row[dateIdx] && !row[locationIdx] && !row[infoIdx]) continue;
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td>${row[nameIdx] ? row[nameIdx].trim() : ''}</td>
+          <td>${row[dateIdx] ? row[dateIdx].trim() : ''}</td>
+          <td>${row[locationIdx] ? row[locationIdx].trim() : ''}</td>
+          <td>${row[infoIdx] ? row[infoIdx].trim() : ''}</td>
+        `;
+        tbody.appendChild(tr);
+      }
+    }
     window.addEventListener('DOMContentLoaded', fetchEvents);
   </script>
 </body>
