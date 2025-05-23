@@ -3,37 +3,37 @@
     "name_en": "Entheos",
     "name_fi": "Entheos",
     "date": "9.-11.5.2025",
-    "location_en": "Helsinki",
-    "location_fi": "Helsinki",
-    "info_en": "Event",
-    "info_fi": "Tapahtuma"
+    "location_en": "Helsinki, Finland",
+    "location_fi": "Helsinki, Suomi",
+    "info_en": "A festival of consciousness and healing.",
+    "info_fi": "Tietoisuuden ja parantumisen festivaali."
   },
   {
-    "name_en": "Paluu Juurille",
+    "name_en": "Return to Roots",
     "name_fi": "Paluu Juurille",
     "date": "23.-25.5.2025",
-    "location_en": "Frantsila",
-    "location_fi": "Frantsila",
-    "info_en": "Event",
-    "info_fi": "Tapahtuma"
+    "location_en": "Frantsila, Finland",
+    "location_fi": "Frantsila, Suomi",
+    "info_en": "A festival for reconnecting with nature and self.",
+    "info_fi": "Luontoon ja itseen palaamisen festivaali."
   },
   {
-    "name_en": "Pasilan hyvinvointifestarit",
+    "name_en": "Pasila Wellness Festival",
     "name_fi": "Pasilan hyvinvointifestarit",
     "date": "24.5.2025",
-    "location_en": "Helsinki",
-    "location_fi": "Helsinki",
-    "info_en": "Entry Workshop at Festival",
-    "info_fi": "Aloitustyöpaja festivaalilla"
+    "location_en": "Helsinki, Finland",
+    "location_fi": "Helsinki, Suomi",
+    "info_en": "Opening workshop for well-being in Pasila.",
+    "info_fi": "Hyvinvoinnin aloitustyöpaja Pasilassa."
   },
   {
     "name_en": "Natural High Healing",
     "name_fi": "Natural High Healing",
     "date": "3.-6.7.2025",
-    "location_en": "Uusikaupunki",
-    "location_fi": "Uusikaupunki",
-    "info_en": "Festival",
-    "info_fi": "Festivaali"
+    "location_en": "Uusikaupunki, Finland",
+    "location_fi": "Uusikaupunki, Suomi",
+    "info_en": "A healing festival in Uusikaupunki.",
+    "info_fi": "Parantava festivaali Uudessakaupungissa."
   },
   {
     "name_en": "Natural High Healing",
@@ -41,8 +41,8 @@
     "date": "29.5.2025",
     "location_en": "Netherlands",
     "location_fi": "Alankomaat",
-    "info_en": "Festival",
-    "info_fi": "Festivaali"
+    "info_en": "Natural High Healing festival in the Netherlands.",
+    "info_fi": "Natural High Healing -festivaali Alankomaissa."
   },
   {
     "name_en": "Het Landjuweel",
@@ -50,7 +50,7 @@
     "date": "7.-10.8.2025",
     "location_en": "Netherlands",
     "location_fi": "Alankomaat",
-    "info_en": "Festival",
-    "info_fi": "Festivaali"
+    "info_en": "A legendary festival in the Netherlands.",
+    "info_fi": "Legendaarinen festivaali Alankomaissa."
   }
 ]

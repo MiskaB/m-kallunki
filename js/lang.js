@@ -5,15 +5,23 @@ async function loadLanguage(lang) {
     const keys = el.getAttribute('data-i18n').split('.');
     let value = translations;
     keys.forEach(key => {
-      value = value[key];
+      value = value ? value[key] : undefined;
     });
-    if (value) el.textContent = value;
+    if (value) {
+      // Use innerHTML for paragraphs to support line breaks and <br>
+      if (el.tagName === 'P' || el.tagName === 'BLOCKQUOTE') {
+        el.innerHTML = value.replace(/\n/g, '<br>');
+      } else {
+        el.textContent = value;
+      }
+    }
   });
 }
 
 function changeLanguage(lang) {
   localStorage.setItem('lang', lang);
   loadLanguage(lang);
+  window.dispatchEvent(new Event('languageChanged'));
 }
 
 document.getElementById('language-switcher').addEventListener('change', (e) => {

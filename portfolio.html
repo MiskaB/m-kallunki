@@ -48,6 +48,27 @@
     .gallery img:hover {
       transform: scale(1.05);
     }
+    .portfolio-main {
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+    }
+    .portfolio-section {
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 2em;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .portfolio-section h2 {
+      margin-top: 0;
+    }
+    blockquote {
+      font-style: italic;
+      color: #555;
+      border-left: 4px solid #ccc;
+      padding-left: 1em;
+      margin: 1em 0;
+    }
   </style>
 </head>
 <body>
@@ -59,7 +80,8 @@
     </select>
   </div>
   <header style="background-color: rgba(255, 255, 255, 0.2);">
-    <h1 data-i18n="portfolio.heading">Portfolio (Services & Workshops)</h1>
+    <h1 data-i18n="portfolio.heading"></h1>
+    <p data-i18n="portfolio.subheading"></p>
   </header>
 
   <nav style="background-color: rgba(255, 255, 255, 0.5);">
@@ -70,47 +92,84 @@
     <a href="contact.html" data-i18n="nav.contact">Contact</a>
   </nav>
 
-  <main style="background-color: rgba(255, 255, 255, 0.5);">
-    <section>
-      <h2 data-i18n="portfolio.breathworkTitle">Breathwork</h2>
-      <p data-i18n="portfolio.breathworkText">Breath is the bridge between the physical and the spiritual. Through breath, the ratio of oxygen and carbon dioxide in the body changes, and it is possible to reach non-ordinary states of consciousness. Deep breathing raises theta frequencies, allowing access to deeper states of consciousness. Breathwork can help experience relaxation, calm, and intuition. It is a powerful tool for trauma release and emotional integration.</p>
-      <h3 data-i18n="portfolio.bbtrsTitle"></h3>
-      <ul>
-        <li data-i18n="portfolio.bbtrsPoints.0"></li>
-        <li data-i18n="portfolio.bbtrsPoints.1"></li>
-        <li data-i18n="portfolio.bbtrsPoints.2"></li>
-        <li data-i18n="portfolio.bbtrsPoints.3"></li>
-        <li data-i18n="portfolio.bbtrsPoints.4"></li>
-        <li data-i18n="portfolio.bbtrsPoints.5"></li>
-      </ul>
-      <p data-i18n="portfolio.breathworkShibari"></p>
+  <main class="portfolio-main">
+    <section class="portfolio-section">
+      <h1 data-i18n="portfolio.heading"></h1>
+      <h2 data-i18n="portfolio.introTitle"></h2>
+      <p data-i18n="portfolio.introText"></p>
     </section>
-    <section>
-      <h2 data-i18n="portfolio.somaticMovementTitle">Somatic Movement Meditation</h2>
-      <p data-i18n="portfolio.somaticMovementText">Movement meditation includes shaking, unwinding, and free dance. Each part releases tension from the body. Intuitive movement neutralizes stored memories and emotions, and meditative movement improves body awareness (Felt Sense).</p>
+    <section class="portfolio-section">
+      <h2 data-i18n="portfolio.bbtrsTitle"></h2>
+      <p data-i18n="portfolio.bbtrsText"></p>
+      <p data-i18n="portfolio.bbtrsBenefits"></p>
+      <blockquote data-i18n="portfolio.bbtrsQuote"></blockquote>
+      <p data-i18n="portfolio.bbtrsScience"></p>
     </section>
-    <section>
-      <h2 data-i18n="portfolio.merTitle"></h2>
-      <p data-i18n="portfolio.merText"></p>
-    </section>
-    <section>
-      <h2 data-i18n="portfolio.traumaTitle"></h2>
-      <p data-i18n="portfolio.traumaText"></p>
-    </section>
-    <section>
-      <h2 data-i18n="portfolio.coachingTitle"></h2>
-      <p data-i18n="portfolio.coachingText"></p>
-    </section>
-    <section>
-      <h2 data-i18n="portfolio.prananadiTitle"></h2>
-      <p data-i18n="portfolio.prananadiText"></p>
-    </section>
-    <section>
+    <section class="portfolio-section">
       <h2 data-i18n="portfolio.shibariTitle"></h2>
       <p data-i18n="portfolio.shibariText"></p>
+      <p data-i18n="portfolio.shibariBenefits"></p>
+      <ul>
+        <li data-i18n="portfolio.shibariSelf"></li>
+        <li data-i18n="portfolio.shibariPartner"></li>
+        <li data-i18n="portfolio.shibariWorkshops"></li>
+      </ul>
+    </section>
+    <section class="portfolio-section">
+      <h2 data-i18n="portfolio.merTitle"></h2>
+      <p data-i18n="portfolio.merText"></p>
+      <ul>
+        <li data-i18n="portfolio.merDeepTissue"></li>
+        <li data-i18n="portfolio.merCranio"></li>
+        <li data-i18n="portfolio.merSomatic"></li>
+        <li data-i18n="portfolio.merEnergy"></li>
+        <li data-i18n="portfolio.merReading"></li>
+      </ul>
+      <p data-i18n="portfolio.merIdeal"></p>
+    </section>
+    <section class="portfolio-section">
+      <h2 data-i18n="portfolio.somaticMovementTitle"></h2>
+      <p data-i18n="portfolio.somaticMovementText"></p>
+      <ul>
+        <li data-i18n="portfolio.somaticShaking"></li>
+        <li data-i18n="portfolio.somaticUnwinding"></li>
+        <li data-i18n="portfolio.somaticDance"></li>
+      </ul>
+      <p data-i18n="portfolio.somaticBenefits"></p>
+    </section>
+    <section class="portfolio-section">
+      <h2 data-i18n="portfolio.coachingTitle"></h2>
+      <p data-i18n="portfolio.coachingText"></p>
+      <ul>
+        <li data-i18n="portfolio.coachingResilience"></li>
+        <li data-i18n="portfolio.coachingParenting"></li>
+        <li data-i18n="portfolio.coachingTrauma"></li>
+        <li data-i18n="portfolio.coachingSelfWorth"></li>
+        <li data-i18n="portfolio.coachingYouth"></li>
+      </ul>
+      <p data-i18n="portfolio.coachingTailored"></p>
+    </section>
+    <section class="portfolio-section">
+      <h2 data-i18n="portfolio.prananadiTitle"></h2>
+      <p data-i18n="portfolio.prananadiText"></p>
+      <p data-i18n="portfolio.prananadiBenefits"></p>
+    </section>
+    <section class="portfolio-section">
+      <h2 data-i18n="portfolio.trainingTitle"></h2>
+      <p data-i18n="portfolio.trainingText"></p>
+      <ul>
+        <li data-i18n="portfolio.trainingSocial"></li>
+        <li data-i18n="portfolio.trainingPsych"></li>
+        <li data-i18n="portfolio.trainingBBTRS"></li>
+        <li data-i18n="portfolio.trainingPrananadi"></li>
+        <li data-i18n="portfolio.trainingShibari"></li>
+        <li data-i18n="portfolio.trainingIntl"></li>
+      </ul>
+      <p data-i18n="portfolio.trainingSummary"></p>
+      <p data-i18n="portfolio.contactNote"></p>
     </section>
     <section>
-      <h2>Gallery</h2>
+      <h2 data-i18n="portfolio.gallery"></h2>
       <div class="gallery">
         <img src="images/Bowl.png" alt="Bowl" onclick="enlargeImage(this)" />
         <img src="images/MerjaDrum.jpg" alt="Merja with Drum" onclick="enlargeImage(this)" />
@@ -120,6 +179,16 @@
         <img src="images/MerjaTeaching.png" alt="Merja Teaching" onclick="enlargeImage(this)" />
         <img src="images/TieKnot.png" alt="Tie Knot" onclick="enlargeImage(this)" />
         <img src="images/TiesLeg.png" alt="Ties Leg" onclick="enlargeImage(this)" />
+        <img src="images/Lapland1.jpg" alt="Lapland 1" onclick="enlargeImage(this)" />
+        <img src="images/Lapldan2.jpg" alt="Lapland 2" onclick="enlargeImage(this)" />
+        <img src="images/LuonnonperintoSaatio.jpg" alt="Luonnonperintösäätiö" onclick="enlargeImage(this)" />
+        <img src="images/MerjaAfter.jpg" alt="Merja After" onclick="enlargeImage(this)" />
+        <img src="images/MerjaDrum3.jpg" alt="Merja Drum 3" onclick="enlargeImage(this)" />
+        <img src="images/MerjaFestival.jpg" alt="Merja Festival" onclick="enlargeImage(this)" />
+        <img src="images/MerjaNisarga.jpg" alt="Merja Nisarga" onclick="enlargeImage(this)" />
+        <img src="images/MerjaTie2.jpg" alt="Merja Tie 2" onclick="enlargeImage(this)" />
+        <img src="images/MerjaTie3.jpg" alt="Merja Tie 3" onclick="enlargeImage(this)" />
+        <img src="images/mkLogo.png" alt="Merja Logo" onclick="enlargeImage(this)" />
       </div>
     </section>
   </main>
@@ -134,9 +203,15 @@
       "images/MerjaPromo.jpg",
       "images/MerjaTeaching.png",
       "images/TieKnot.png",
-      "images/TiesLeg.png"
-    ];
-
+      "images/TiesLeg.png",
+      "images/Lapland1.jpg",
+      "images/Lapldan2.jpg",
+      "images/MerjaAfter.jpg",
+      "images/MerjaDrum3.jpg",
+      "images/MerjaFestival.jpg",
+      "images/MerjaTie2.jpg",
+      "images/MerjaTie3.jpg",
+    ]; // Exclude LuonnonperintoSaatio.jpg and MerjaNisarga.jpg from backgrounds
     const randomImage = images[Math.floor(Math.random() * images.length)];
     document.body.style.backgroundImage = `url(${randomImage})`;
 

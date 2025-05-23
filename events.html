@@ -93,6 +93,7 @@
 
   <header style="background-color: rgba(255, 255, 255, 0.5);">
     <h1 data-i18n="events.heading"></h1>
+    <p data-i18n="events.subheading"></p>
   </header>
 
   <nav style="background-color: rgba(255, 255, 255, 0.5);">
@@ -106,6 +107,9 @@
   <main style="background-color: rgba(255, 255, 255, 0.5);">
     <section>
       <h2 data-i18n="events.upcomingTitle">Upcoming Events</h2>
+      <div class="events-intro" style="margin-bottom:2em;">
+        <p data-i18n="events.intro"></p>
+      </div>
       <div class="events-table-container">
         <table id="events-table" class="events-table">
           <thead>
@@ -125,14 +129,21 @@
   <script>
     const images = [
       "images/Bowl.png",
+      "images/Lapland1.jpg",
+      "images/Lapldan2.jpg",
+      "images/MerjaAfter.jpg",
       "images/MerjaDrum.jpg",
+      "images/MerjaDrum3.jpg",
       "images/MerjaDrumNordic.png",
+      "images/MerjaFestival.jpg",
       "images/MerjaPerson.png",
       "images/MerjaPromo.jpg",
       "images/MerjaTeaching.png",
+      "images/MerjaTie2.jpg",
+      "images/MerjaTie3.jpg",
       "images/TieKnot.png",
       "images/TiesLeg.png"
-    ];
+    ]; // Exclude LuonnonperintoSaatio.jpg and MerjaNisarga.jpg
     const randomImage = images[Math.floor(Math.random() * images.length)];
     document.body.style.backgroundImage = `url(${randomImage})`;
 
@@ -147,12 +158,15 @@
       const tbody = document.querySelector('#events-table tbody');
       tbody.innerHTML = '';
       events.forEach(event => {
+        const name = lang === 'fi' ? event.name_fi : event.name_en;
+        const location = lang === 'fi' ? event.location_fi : event.location_en;
+        const info = lang === 'fi' ? event.info_fi : event.info_en;
         const tr = document.createElement('tr');
         tr.innerHTML = `
-          <td>${event[`name_${lang}`]}</td>
+          <td>${name}</td>
           <td>${event.date}</td>
-          <td>${event[`location_${lang}`]}</td>
-          <td>${event[`info_${lang}`]}</td>
+          <td>${location}</td>
+          <td>${info}</td>
         `;
         tbody.appendChild(tr);
       });

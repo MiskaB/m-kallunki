@@ -45,7 +45,8 @@
   </div>
 
   <header style="background-color: rgba(255, 255, 255, 0.5);">
-    <h1 data-i18n="contact.heading">Contact & Social Media</h1>
+    <h1 data-i18n="contact.heading"></h1>
+    <p data-i18n="contact.subheading"></p>
   </header>
 
   <nav style="background-color: rgba(255, 255, 255, 0.5);">
@@ -82,15 +83,21 @@
   <script>
     const images = [
       "images/Bowl.png",
+      "images/Lapland1.jpg",
+      "images/Lapldan2.jpg",
+      "images/MerjaAfter.jpg",
       "images/MerjaDrum.jpg",
+      "images/MerjaDrum3.jpg",
       "images/MerjaDrumNordic.png",
+      "images/MerjaFestival.jpg",
       "images/MerjaPerson.png",
       "images/MerjaPromo.jpg",
       "images/MerjaTeaching.png",
+      "images/MerjaTie2.jpg",
+      "images/MerjaTie3.jpg",
       "images/TieKnot.png",
       "images/TiesLeg.png"
-    ];
-
+    ]; // Exclude LuonnonperintoSaatio.jpg and MerjaNisarga.jpg
     const randomImage = images[Math.floor(Math.random() * images.length)];
     document.body.style.backgroundImage = `url(${randomImage})`;
   </script>
