@@ -33,6 +33,53 @@
       margin-left: 1em;
       padding: 0.25em;
     }
+    .events-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 0 auto;
+      padding: 1em 0;
+      display: flex;
+      justify-content: center;
+    }
+    .events-table {
+      width: 100%;
+      max-width: 800px;
+      border-collapse: separate;
+      border-spacing: 0;
+      background: rgba(255,255,255,0.85);
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      overflow: hidden;
+    }
+    .events-table th, .events-table td {
+      padding: 1em 0.75em;
+      text-align: left;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    .events-table th {
+      background: rgba(240,240,240,0.95);
+      font-weight: 700;
+      font-size: 1.1em;
+      letter-spacing: 0.02em;
+    }
+    .events-table tr:last-child td {
+      border-bottom: none;
+    }
+    .events-table tr {
+      transition: background 0.2s;
+    }
+    .events-table tr:hover {
+      background: rgba(220,220,255,0.15);
+    }
+    @media (max-width: 600px) {
+      .events-table th, .events-table td {
+        padding: 0.5em 0.3em;
+        font-size: 0.95em;
+      }
+      .events-table {
+        max-width: 100vw;
+      }
+    }
   </style>
 </head>
 <body>
@@ -59,14 +106,14 @@
   <main style="background-color: rgba(255, 255, 255, 0.5);">
     <section>
       <h2 data-i18n="events.upcomingTitle">Upcoming Events</h2>
-      <div style="overflow-x:auto;">
-        <table id="events-table" style="width:100%;border-collapse:collapse;">
+      <div class="events-table-container">
+        <table id="events-table" class="events-table">
           <thead>
             <tr>
-              <th>Name</th>
-              <th>Date</th>
-              <th>Location</th>
-              <th>More information</th>
+              <th data-i18n="events.table.name">Name</th>
+              <th data-i18n="events.table.date">Date</th>
+              <th data-i18n="events.table.location">Location</th>
+              <th data-i18n="events.table.info">More information</th>
             </tr>
           </thead>
           <tbody></tbody>
@@ -74,7 +121,6 @@
       </div>
     </section>
   </main>
-
   <script src="js/lang.js"></script>
   <script>
     const images = [
@@ -90,57 +136,29 @@
     const randomImage = images[Math.floor(Math.random() * images.length)];
     document.body.style.backgroundImage = `url(${randomImage})`;
 
-    const sheetURL = 'https://docs.google.com/spreadsheets/d/e/1PbQP6MmVUOC0x-E6e3rUHiyqx0gsXJIGwWPN0nBSFeE/pub?output=csv';
-
-    function parseCSV(text) {
-      const rows = text.split(/\r?\n/).filter(row => row.trim() !== '');
-      return rows.map(row => {
-        // Handle quoted fields and commas inside quotes
-        const cells = [];
-        let cell = '';
-        let inQuotes = false;
-        for (let i = 0; i < row.length; i++) {
-          const char = row[i];
-          if (char === '"') {
-            inQuotes = !inQuotes;
-          } else if (char === ',' && !inQuotes) {
-            cells.push(cell);
-            cell = '';
-          } else {
-            cell += char;
-          }
-        }
-        cells.push(cell);
-        return cells;
-      });
+    function getCurrentLang() {
+      return localStorage.getItem('lang') || 'en';
     }
 
     async function fetchEvents() {
-      const response = await fetch(sheetURL);
-      const data = await response.text();
-      const rows = parseCSV(data);
-      if (!rows.length) return;
-      const header = rows[0].map(h => h.trim().toLowerCase());
-      const nameIdx = header.indexOf('name');
-      const dateIdx = header.indexOf('date');
-      const locationIdx = header.indexOf('location');
-      const infoIdx = header.indexOf('more information');
+      const response = await fetch('events.json');
+      const events = await response.json();
+      const lang = getCurrentLang();
       const tbody = document.querySelector('#events-table tbody');
       tbody.innerHTML = '';
-      for (let i = 1; i < rows.length; i++) {
-        const row = rows[i];
-        if (!row[nameIdx] && !row[dateIdx] && !row[locationIdx] && !row[infoIdx]) continue;
+      events.forEach(event => {
         const tr = document.createElement('tr');
         tr.innerHTML = `
-          <td>${row[nameIdx] ? row[nameIdx].trim() : ''}</td>
-          <td>${row[dateIdx] ? row[dateIdx].trim() : ''}</td>
-          <td>${row[locationIdx] ? row[locationIdx].trim() : ''}</td>
-          <td>${row[infoIdx] ? row[infoIdx].trim() : ''}</td>
+          <td>${event[`name_${lang}`]}</td>
+          <td>${event.date}</td>
+          <td>${event[`location_${lang}`]}</td>
+          <td>${event[`info_${lang}`]}</td>
         `;
         tbody.appendChild(tr);
-      }
+      });
     }
     window.addEventListener('DOMContentLoaded', fetchEvents);
+    window.addEventListener('languageChanged', fetchEvents);
   </script>
 </body>
 </html>

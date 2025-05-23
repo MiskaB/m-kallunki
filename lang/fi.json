@@ -69,6 +69,12 @@
   "events": {
     "heading": "Tapahtumat",
     "upcomingTitle": "Tulevat tapahtumat & työpajat",
+    "table": {
+      "name": "Nimi",
+      "date": "Päivä",
+      "location": "Paikka",
+      "info": "Lisätietoja"
+    },
     "eventList": [
       "Entheos 9.-11.5. Helsinki",
       "Paluu Juurille - festarit 23.-25.5. Frantsila",
@@ -87,6 +93,7 @@
   },
   "contact": {
     "heading": "Yhteystiedot & Sosiaalinen media",
+    "title": "Ota yhteyttä",
     "email": "merja.rp.kallunki@gmail.com",
     "whatsapp": "+358400316541",
     "website": "https://merjakallunki.fi",
