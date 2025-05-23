@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="css/style.css" />
   <style>
     body {
-      background-image: url("images/merja-bg-artistic.jpg");
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
@@ -34,29 +33,47 @@
       margin-left: 1em;
       padding: 0.25em;
     }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 10px;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
   </style>
 </head>
 <body>
-  <header>
-    <h1 data-i18n="portfolio.heading"></h1>
-    <select id="language-switcher">
-      <option value="en">🇬🇧 English</option>
-      <option value="fi">🇫🇮 Suomi</option>
+  <div class="language-menu">
+    <label for="language-switcher">Language:</label>
+    <select id="language-switcher" onchange="changeLanguage(this.value)">
+      <option value="en">English</option>
+      <option value="fi">Suomi</option>
     </select>
+  </div>
+  <header style="background-color: rgba(255, 255, 255, 0.2);">
+    <h1 data-i18n="portfolio.heading">Portfolio (Services & Workshops)</h1>
   </header>
 
-  <nav>
-    <a href="index.html" data-i18n="nav.home"></a>
-    <a href="about.html" data-i18n="nav.about"></a>
-    <a href="portfolio.html" data-i18n="nav.portfolio"></a>
-    <a href="events.html" data-i18n="nav.exhibitions"></a>
-    <a href="contact.html" data-i18n="nav.contact"></a>
+  <nav style="background-color: rgba(255, 255, 255, 0.5);">
+    <a href="index.html" data-i18n="nav.home">Home</a>
+    <a href="about.html" data-i18n="nav.about">About</a>
+    <a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a>
+    <a href="events.html" data-i18n="nav.exhibitions">Events</a>
+    <a href="contact.html" data-i18n="nav.contact">Contact</a>
   </nav>
-  
-  <main>
+
+  <main style="background-color: rgba(255, 255, 255, 0.5);">
     <section>
-      <h2 data-i18n="portfolio.breathworkTitle"></h2>
-      <p data-i18n="portfolio.breathworkText"></p>
+      <h2 data-i18n="portfolio.breathworkTitle">Breathwork</h2>
+      <p data-i18n="portfolio.breathworkText">Breath is the bridge between the physical and the spiritual. Through breath, the ratio of oxygen and carbon dioxide in the body changes, and it is possible to reach non-ordinary states of consciousness. Deep breathing raises theta frequencies, allowing access to deeper states of consciousness. Breathwork can help experience relaxation, calm, and intuition. It is a powerful tool for trauma release and emotional integration.</p>
       <h3 data-i18n="portfolio.bbtrsTitle"></h3>
       <ul>
         <li data-i18n="portfolio.bbtrsPoints.0"></li>
@@ -69,8 +86,8 @@
       <p data-i18n="portfolio.breathworkShibari"></p>
     </section>
     <section>
-      <h2 data-i18n="portfolio.somaticMovementTitle"></h2>
-      <p data-i18n="portfolio.somaticMovementText"></p>
+      <h2 data-i18n="portfolio.somaticMovementTitle">Somatic Movement Meditation</h2>
+      <p data-i18n="portfolio.somaticMovementText">Movement meditation includes shaking, unwinding, and free dance. Each part releases tension from the body. Intuitive movement neutralizes stored memories and emotions, and meditative movement improves body awareness (Felt Sense).</p>
     </section>
     <section>
       <h2 data-i18n="portfolio.merTitle"></h2>
@@ -92,8 +109,61 @@
       <h2 data-i18n="portfolio.shibariTitle"></h2>
       <p data-i18n="portfolio.shibariText"></p>
     </section>
+    <section>
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <img src="images/Bowl.png" alt="Bowl" onclick="enlargeImage(this)" />
+        <img src="images/MerjaDrum.jpg" alt="Merja with Drum" onclick="enlargeImage(this)" />
+        <img src="images/MerjaDrumNordic.png" alt="Merja Nordic Drum" onclick="enlargeImage(this)" />
+        <img src="images/MerjaPerson.png" alt="Merja Portrait" onclick="enlargeImage(this)" />
+        <img src="images/MerjaPromo.jpg" alt="Merja Promo" onclick="enlargeImage(this)" />
+        <img src="images/MerjaTeaching.png" alt="Merja Teaching" onclick="enlargeImage(this)" />
+        <img src="images/TieKnot.png" alt="Tie Knot" onclick="enlargeImage(this)" />
+        <img src="images/TiesLeg.png" alt="Ties Leg" onclick="enlargeImage(this)" />
+      </div>
+    </section>
   </main>
 
   <script src="js/lang.js"></script>
+  <script>
+    const images = [
+      "images/Bowl.png",
+      "images/MerjaDrum.jpg",
+      "images/MerjaDrumNordic.png",
+      "images/MerjaPerson.png",
+      "images/MerjaPromo.jpg",
+      "images/MerjaTeaching.png",
+      "images/TieKnot.png",
+      "images/TiesLeg.png"
+    ];
+
+    const randomImage = images[Math.floor(Math.random() * images.length)];
+    document.body.style.backgroundImage = `url(${randomImage})`;
+
+    function enlargeImage(img) {
+      const modal = document.createElement('div');
+      modal.style.position = 'fixed';
+      modal.style.top = '0';
+      modal.style.left = '0';
+      modal.style.width = '100%';
+      modal.style.height = '100%';
+      modal.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+      modal.style.display = 'flex';
+      modal.style.justifyContent = 'center';
+      modal.style.alignItems = 'center';
+      modal.style.zIndex = '1000';
+
+      const enlargedImg = document.createElement('img');
+      enlargedImg.src = img.src;
+      enlargedImg.style.maxWidth = '90%';
+      enlargedImg.style.maxHeight = '90%';
+      enlargedImg.style.border = '5px solid white';
+
+      modal.appendChild(enlargedImg);
+      modal.onclick = () => document.body.removeChild(modal);
+
+      document.body.appendChild(modal);
+    }
+  </script>
 </body>
 </html>

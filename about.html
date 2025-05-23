@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="css/style.css" />
   <style>
     body {
-      background-image: url("images/merja-bg-artistic.jpg");
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
@@ -34,26 +33,63 @@
       margin-left: 1em;
       padding: 0.25em;
     }
+    .language-selector {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+    }
+    .language-dropdown {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: rgba(255, 255, 255, 0.7);
+      border-radius: 8px;
+      padding: 0.5em;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    /* Ensure .language-menu uses global styles */
+    .language-menu {
+      margin-top: 1em;
+      text-align: right;
+    }
+    .language-menu label {
+      font-weight: bold;
+    }
+    .language-menu select {
+      display: inline-block;
+      width: auto;
+      margin-left: 0.5em;
+      padding: 0.25em 0.5em;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background-color: #fff;
+      color: #333;
+      font-size: 1em;
+      font-family: "Arial", sans-serif;
+    }
   </style>
 </head>
 <body>
-  <header>
-    <h1 data-i18n="about.heading">About Merja Kallunki</h1>
-    <select id="language-switcher">
-      <option value="en">🇬🇧 English</option>
-      <option value="fi">🇫🇮 Suomi</option>
+  <div class="language-menu">
+    <label for="language-switcher">Language:</label>
+    <select id="language-switcher" onchange="changeLanguage(this.value)">
+      <option value="en">English</option>
+      <option value="fi">Suomi</option>
     </select>
+  </div>
+  <header style="background-color: rgba(255, 255, 255, 0.5);">
+    <h1 data-i18n="about.heading">About Merja Kallunki</h1>
   </header>
 
-  <nav>
-    <a href="index.html" data-i18n="nav.home"></a>
-    <a href="about.html" data-i18n="nav.about"></a>
-    <a href="portfolio.html" data-i18n="nav.portfolio"></a>
-    <a href="events.html" data-i18n="nav.exhibitions"></a>
-    <a href="contact.html" data-i18n="nav.contact"></a>
+  <nav style="background-color: rgba(255, 255, 255, 0.5);">
+    <a href="index.html" data-i18n="nav.home">Home</a>
+    <a href="about.html" data-i18n="nav.about">About</a>
+    <a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a>
+    <a href="events.html" data-i18n="nav.exhibitions">Events</a>
+    <a href="contact.html" data-i18n="nav.contact">Contact</a>
   </nav>
 
-  <main>
+  <main style="background-color: rgba(255, 255, 255, 0.5);">
     <section>
       <h2 data-i18n="about.bioHeader">Biography</h2>
       <p data-i18n="about.bioText">Merja Kallunki is a professional with deep roots in Lapland, Finland. Growing up in a Sámi family, her childhood was enriched by the traditions of reindeer herding and a profound connection to nature. This upbringing instilled in her a strong sense of presence and harmony with the natural world. Although she has spent most of her adult life in Helsinki, her heart remains in Lapland, where her journey of self-discovery and professional growth began.</p>
@@ -82,5 +118,20 @@
   </main>
 
   <script src="js/lang.js"></script>
+  <script>
+    const images = [
+      "images/Bowl.png",
+      "images/MerjaDrum.jpg",
+      "images/MerjaDrumNordic.png",
+      "images/MerjaPerson.png",
+      "images/MerjaPromo.jpg",
+      "images/MerjaTeaching.png",
+      "images/TieKnot.png",
+      "images/TiesLeg.png"
+    ];
+
+    const randomImage = images[Math.floor(Math.random() * images.length)];
+    document.body.style.backgroundImage = `url(${randomImage})`;
+  </script>
 </body>
 </html>

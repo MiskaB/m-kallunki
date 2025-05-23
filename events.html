@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="css/style.css" />
   <style>
     body {
-      background-image: url("images/merja-bg-artistic.jpg");
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
@@ -37,23 +36,27 @@
   </style>
 </head>
 <body>
-  <header>
-    <h1 data-i18n="events.heading"></h1>
-    <select id="language-switcher">
-      <option value="en">🇬🇧 English</option>
-      <option value="fi">🇫🇮 Suomi</option>
+  <div class="language-menu">
+    <label for="language-switcher">Language:</label>
+    <select id="language-switcher" onchange="changeLanguage(this.value)">
+      <option value="en">English</option>
+      <option value="fi">Suomi</option>
     </select>
+  </div>
+
+  <header style="background-color: rgba(255, 255, 255, 0.5);">
+    <h1 data-i18n="events.heading"></h1>
   </header>
 
-  <nav>
-    <a href="index.html" data-i18n="nav.home"></a>
-    <a href="about.html" data-i18n="nav.about"></a>
-    <a href="portfolio.html" data-i18n="nav.portfolio"></a>
-    <a href="events.html" data-i18n="nav.exhibitions"></a>
-    <a href="contact.html" data-i18n="nav.contact"></a>
+  <nav style="background-color: rgba(255, 255, 255, 0.5);">
+    <a href="index.html" data-i18n="nav.home">Home</a>
+    <a href="about.html" data-i18n="nav.about">About</a>
+    <a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a>
+    <a href="events.html" data-i18n="nav.exhibitions">Events</a>
+    <a href="contact.html" data-i18n="nav.contact">Contact</a>
   </nav>
 
-  <main>
+  <main style="background-color: rgba(255, 255, 255, 0.5);">
     <section>
       <h2 data-i18n="events.upcomingTitle"></h2>
       <ul>
@@ -75,9 +78,50 @@
         <span data-i18n="events.retreatText"></span>
       </p>
     </section>
+
+    <section>
+      <h2 data-i18n="events.upcomingTitle">Upcoming Events</h2>
+      <ul id="events-list"></ul>
+    </section>
   </main>
 
   <script src="js/lang.js"></script>
+  <script>
+    const images = [
+      "images/Bowl.png",
+      "images/MerjaDrum.jpg",
+      "images/MerjaDrumNordic.png",
+      "images/MerjaPerson.png",
+      "images/MerjaPromo.jpg",
+      "images/MerjaTeaching.png",
+      "images/TieKnot.png",
+      "images/TiesLeg.png"
+    ];
+
+    const randomImage = images[Math.floor(Math.random() * images.length)];
+    document.body.style.backgroundImage = `url(${randomImage})`;
+
+    const sheetURL = 'https://docs.google.com/spreadsheets/d/e/1PbQP6MmVUOC0x-E6e3rUHiyqx0gsXJIGwWPN0nBSFeE/pub?output=csv';
+
+    async function fetchEvents() {
+      const response = await fetch(sheetURL);
+      const data = await response.text();
+      const rows = data.split('\n').map(row => row.split(','));
+
+      const eventsList = document.getElementById('events-list');
+      eventsList.innerHTML = ''; // Clear existing content
+
+      rows.forEach((row, index) => {
+        if (index === 0) return; // Skip header row
+        const [name, date, location, info] = row;
+        const listItem = document.createElement('li');
+        listItem.innerHTML = `<strong>${date}</strong>: ${name} (${location}) - ${info}`;
+        eventsList.appendChild(listItem);
+      });
+    }
+
+    window.addEventListener('DOMContentLoaded', fetchEvents);
+  </script>
 </body>
 </html>
 

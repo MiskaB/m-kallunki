@@ -17,7 +17,6 @@
       padding: 20px;
     }
     header, nav, main {
-      background-color: rgba(255, 255, 255, 0.85);
       border-radius: 16px;
       padding: 2em;
       margin-bottom: 2em;
@@ -37,22 +36,25 @@
   </style>
 </head>
 <body>
-  <header>
+  <div class="language-menu">
+    <label for="language-switcher">Language:</label>
+    <select id="language-switcher" onchange="changeLanguage(this.value)">
+      <option value="en">English</option>
+      <option value="fi">Suomi</option>
+    </select>
+  </div>
+  <header style="background-color: rgba(255, 255, 255, 0.5);">
     <h1 data-i18n="home.heading">Welcome to Merja Kallunki's Website</h1>
     <p data-i18n="home.subheading">Explore the journey of breathwork, trauma healing, and personal growth.</p>
-    <select id="language-switcher">
-      <option value="en">🇬🇧 English</option>
-      <option value="fi">🇫🇮 Suomi</option>
-    </select>
   </header>
-  <nav>
-    <a href="index.html" data-i18n="nav.home"></a>
-    <a href="about.html" data-i18n="nav.about"></a>
-    <a href="portfolio.html" data-i18n="nav.portfolio"></a>
-    <a href="events.html" data-i18n="nav.exhibitions"></a>
-    <a href="contact.html" data-i18n="nav.contact"></a>
+  <nav style="background-color: rgba(255, 255, 255, 0.5);">
+    <a href="index.html" data-i18n="nav.home">Home</a>
+    <a href="about.html" data-i18n="nav.about">About</a>
+    <a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a>
+    <a href="events.html" data-i18n="nav.exhibitions">Events</a>
+    <a href="contact.html" data-i18n="nav.contact">Contact</a>
   </nav>
-  <main>
+  <main style="background-color: rgba(255, 255, 255, 0.5);">
     <section>
       <h2 data-i18n="home.introHeader">What is this website about?</h2>
       <p data-i18n="home.intro">This website introduces the transformative practices of breathwork, trauma healing, and coaching. Discover how these methods can help you achieve relaxation, self-awareness, and emotional integration.</p>
@@ -73,5 +75,20 @@
     </section>
   </main>
   <script src="js/lang.js"></script>
+  <script>
+    const images = [
+      "images/Bowl.png",
+      "images/MerjaDrum.jpg",
+      "images/MerjaDrumNordic.png",
+      "images/MerjaPerson.png",
+      "images/MerjaPromo.jpg",
+      "images/MerjaTeaching.png",
+      "images/TieKnot.png",
+      "images/TiesLeg.png"
+    ];
+
+    const randomImage = images[Math.floor(Math.random() * images.length)];
+    document.body.style.backgroundImage = `url(${randomImage})`;
+  </script>
 </body>
 </html>

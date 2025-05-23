@@ -9,11 +9,15 @@ async function loadLanguage(lang) {
     });
     if (value) el.textContent = value;
   });
+}
+
+function changeLanguage(lang) {
   localStorage.setItem('lang', lang);
+  loadLanguage(lang);
 }
 
 document.getElementById('language-switcher').addEventListener('change', (e) => {
-  loadLanguage(e.target.value);
+  changeLanguage(e.target.value);
 });
 
 window.addEventListener('DOMContentLoaded', () => {

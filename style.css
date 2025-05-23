@@ -1,0 +1,27 @@
+.language-menu {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+}
+
+.language-menu label {
+  margin-right: 10px;
+  font-weight: 600;
+}
+
+.language-menu select {
+  padding: 0.25em 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+  font-size: 1em;
+  font-family: "Arial", sans-serif;
+}
