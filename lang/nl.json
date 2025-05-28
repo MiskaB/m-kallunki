@@ -4,7 +4,8 @@
     "about": "Merja",
     "portfolio": "Portfolio",
     "exhibitions": "Evenementen",
-    "contact": "Contact"
+    "contact": "Contact",
+    "collaboration": "Samenwerking"
   },
   "home": {
     "title": "Merja Kallunki",
@@ -63,7 +64,7 @@
     "breathSoftens": "Omdat ik heb gezien hoe adem kan verzachten wat onmogelijk lijkt.",
     "safetyDeserve": "Omdat ik geloof dat we allemaal het recht hebben ons veilig te voelen in ons eigen lichaam.",
     "myWay": "Dit is mijn manier. Dit is mijn toewijding. Aan waarheid. Aan aanwezigheid. Aan terugkeren.",
-    "contact": "—<br>Je vindt mijn contactgegevens op de Contact-pagina."
+    "contact": ""
   },
   "portfolio": {
     "heading": "Portfolio",
@@ -114,8 +115,7 @@
     "trainingPrananadi": "Beoefenaar van Prananadi Energieheling",
     "trainingShibari": "Intensieve studies in shibari, somatische beweging en trauma-geïnformeerde coaching",
     "trainingIntl": "Internationale ervaring als facilitator in Finland, Estland en het VK",
-    "trainingSummary": "Haar werk is niet alleen gebaseerd op academische training, maar ook op diepgaande levenservaring, spiritueel onderzoek en een vurige toewijding aan belichaamde transformatie.",
-    "contactNote": "Voor volledige details over sessies, workshops en aankomende retraites, raadpleeg de Contact-pagina om contact op te nemen."
+    "trainingSummary": "Haar werk is niet alleen gebaseerd op academische training, maar ook op diepgaande levenservaring, spiritueel onderzoek en een vurige toewijding aan belichaamde transformatie."
   },
   "events": {
     "heading": "Evenementen",
@@ -145,6 +145,13 @@
     "facebook_label": "Facebook:",
     "telegram_label": "Telegram:",
     "description": "Neem contact op via bovenstaande methoden of op sociale media, en laten we de volgende stappen bespreken.",
-    "instagramWidgetHeader": "Volg Merja op Instagram"
+    "instagramWidgetHeader": ""
+  },
+  "collaboration": {
+    "heading": "Samenwerking",
+    "subheading": "Laten we samen nieuwe mogelijkheden creëren.",
+    "loremlimpsum1Title": "Luonnonperintösäätiö",
+    "loremlimpsum1": "Breathwork by Merja Kallunki maakt deel uit van een natuurcompensatiecampagne, georganiseerd door Sallan matkailu en de Finse Natural Heritage Foundation. Merja zegt: 'De campagne vindt plaats in mijn jeugdlandschappen in Salla en heeft als doel geld in te zamelen voor de aankoop van een beschermd gebied langs de Oulankajoki-rivier, in het landschap van het Oulanka Nationaal Park.' Het gebied is al tientallen jaren gespaard gebleven van kaalkap en de dieren zijn 40 jaar geleden vrijwillig beschermd tegen de jacht. De gevarieerde natuur omvat meer dan 160 jaar oude dennenbossen, volwassen gemengde bossen en overstromingsbossen langs de rivier. Aan de randen en in het midden van het bos zijn verschillende soorten moerassen te vinden: dennenmoeras, sparrenmoeras en open veen. Het bos herbergt veel bedreigde habitats en soorten. In delen van het gebied worden herstelmaatregelen genomen om de natuur terug te brengen naar de staat van voor de wederopbouw na de oorlog. Meer informatie over de campagne vind je hier (https://luonnonperintosaatio.fi/sallan-luontohyvitys/)",
+    "gallery": "Galerij"
   }
 }

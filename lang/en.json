@@ -4,7 +4,8 @@
     "about": "Merja",
     "portfolio": "Portfolio",
     "exhibitions": "Events",
-    "contact": "Contact"
+    "contact": "Contact",
+    "collaboration": "Collaboration"
   },
   "home": {
     "title": "Merja Kallunki",
@@ -63,7 +64,7 @@
     "breathSoftens": "Because I’ve seen how breath can soften what feels impossible.",
     "safetyDeserve": "Because I believe we all deserve to feel safe in our own bodies.",
     "myWay": "This is my way. This is my devotion. To truth. To presence. To return.",
-    "contact": "—<br>You can find how to reach me on the Contact page."
+    "contact": ""
   },
   "portfolio": {
     "heading": "Portfolio",
@@ -145,6 +146,13 @@
     "facebook_label": "Facebook:",
     "telegram_label": "Telegram:",
     "description": "Reach out using the above methods or on social media, and let’s discuss the next steps.",
-    "instagramWidgetHeader": "Follow Merja on Instagram"
+    "instagramWidgetHeader": ""
+  },
+  "collaboration": {
+    "heading": "Collaboration",
+    "subheading": "Let’s work together for new possibilities.",
+    "loremlimpsum1Title": "Luonnonperintösäätiö",
+    "loremlimpsum1": "Breathwork by Merja Kallunki is part of a nature compensation campaign organized by Sallan matkailu and the Finnish Natural Heritage Foundation. Merja says, 'The campaign takes place in my childhood landscapes in Salla, and it aims to raise funds to acquire a protected area along the Oulankajoki River, in the scenery of Oulanka National Park.' The area has been spared from clear-cutting for decades, and its animals were voluntarily protected from hunting 40 years ago. The diverse nature includes over 160-year-old pine forests, maturing mixed forests, and floodplain forests by the river. The forest edges and center feature various types of mires: pine bogs, spruce mires, and open fens. The forest is home to many endangered habitats and species. Some parts of the area are being restored to their natural state, as they were before the post-war reconstruction era. You can learn more about the campaign here (https://luonnonperintosaatio.fi/sallan-luontohyvitys/)",
+    "gallery": "Gallery"
   }
 }

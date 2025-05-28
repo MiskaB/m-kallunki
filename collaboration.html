@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="collaboration.heading"></title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      color: #2f2f2f;
+      font-family: "Georgia", serif;
+      padding: 20px;
+    }
+    header, nav, main {
+      background-color: rgba(255, 255, 255, 0.85);
+      border-radius: 16px;
+      padding: 2em;
+      margin-bottom: 2em;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    }
+    nav a {
+      margin-right: 20px;
+      text-decoration: none;
+      color: #3e3e3e;
+      font-weight: 600;
+      font-family: "Arial", sans-serif;
+    }
+    select {
+      margin-left: 1em;
+      padding: 0.25em;
+    }
+    .collaboration-main {
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+    }
+    .collaboration-section {
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 2em;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .collaboration-section h2 {
+      margin-top: 0;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 10px;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="language-menu">
+    <label for="language-switcher">Language:</label>
+    <select id="language-switcher" onchange="changeLanguage(this.value)">
+      <option value="en">English</option>
+      <option value="fi">Suomi</option>
+      <option value="nl">Nederlands</option>
+      <option value="es">Español</option>
+    </select>
+  </div>
+  <header style="background-color: rgba(255, 255, 255, 0.2);">
+    <h1 data-i18n="collaboration.heading"></h1>
+    <p data-i18n="collaboration.subheading"></p>
+  </header>
+  <nav style="background-color: rgba(255, 255, 255, 0.5);">
+    <a href="index.html" data-i18n="nav.home">Home</a>
+    <a href="about.html" data-i18n="nav.about">About</a>
+    <a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a>
+    <a href="events.html" data-i18n="nav.exhibitions">Events</a>
+    <a href="contact.html" data-i18n="nav.contact">Contact</a>
+    <a href="collaboration.html" data-i18n="nav.collaboration">Collaboration</a>
+  </nav>
+  <main class="collaboration-main">
+    <section class="collaboration-section">
+      <h2><a href="https://luonnonperintosaatio.fi/sallan-luontohyvitys/" target="_blank" rel="noopener noreferrer">Luonnonperintösäätiö</a></h2>
+      <p data-i18n="collaboration.loremlimpsum1"></p>
+    </section>
+    <section>
+      <h2 data-i18n="collaboration.gallery">Gallery</h2>
+      <div class="gallery">
+        <img src="images/MerjaPromo.jpg" alt="Merja Promo" onclick="enlargeImage(this)" />
+        <img src="images/mkLogo.png" alt="Merja Logo" onclick="enlargeImage(this)" />
+        <img src="images/LuonnonperintoSaatio.jpg" alt="Luonnonperintösäätiö" onclick="enlargeImage(this)" />
+      </div>
+    </section>
+  </main>
+  <script src="js/lang.js"></script>
+  <script>
+    const images = [
+      "images/MerjaPromo.jpg",
+      "images/mkLogo.png",
+      "images/LuonnonperintoSaatio.jpg"
+    ];
+    const randomImage = images[Math.floor(Math.random() * images.length)];
+    document.body.style.backgroundImage = `url(${randomImage})`;
+    function enlargeImage(img) {
+      const modal = document.createElement('div');
+      modal.style.position = 'fixed';
+      modal.style.top = '0';
+      modal.style.left = '0';
+      modal.style.width = '100%';
+      modal.style.height = '100%';
+      modal.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+      modal.style.display = 'flex';
+      modal.style.justifyContent = 'center';
+      modal.style.alignItems = 'center';
+      modal.style.zIndex = '1000';
+      const enlargedImg = document.createElement('img');
+      enlargedImg.src = img.src;
+      enlargedImg.style.maxWidth = '90%';
+      enlargedImg.style.maxHeight = '90%';
+      enlargedImg.style.border = '5px solid white';
+      modal.appendChild(enlargedImg);
+      modal.onclick = () => document.body.removeChild(modal);
+      document.body.appendChild(modal);
+    }
+  </script>
+</body>
+</html>

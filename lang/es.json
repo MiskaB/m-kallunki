@@ -4,7 +4,8 @@
     "about": "Merja",
     "portfolio": "Portafolio",
     "exhibitions": "Eventos",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "collaboration": "Colaboración"
   },
   "home": {
     "title": "Merja Kallunki",
@@ -63,7 +64,7 @@
     "breathSoftens": "Porque he visto cómo la respiración puede suavizar lo que parece imposible.",
     "safetyDeserve": "Porque creo que todos merecemos sentirnos seguros en nuestro propio cuerpo.",
     "myWay": "Este es mi camino. Esta es mi devoción. A la verdad. A la presencia. Al regreso.",
-    "contact": "—<br>Puedes encontrar cómo contactarme en la página de Contacto."
+    "contact": ""
   },
   "portfolio": {
     "heading": "Portafolio",
@@ -114,8 +115,7 @@
     "trainingPrananadi": "Practicante de Sanación Energética Prananadi",
     "trainingShibari": "Estudios intensivos en shibari, movimiento somático y coaching informado sobre el trauma",
     "trainingIntl": "Experiencia internacional como facilitadora en Finlandia, Estonia y el Reino Unido",
-    "trainingSummary": "Su trabajo no solo está informado por la formación académica, sino por una profunda experiencia vivida, indagación espiritual y una devoción feroz a la transformación encarnada.",
-    "contactNote": "Para obtener detalles completos sobre sesiones, talleres y próximos retiros, consulta la página de Contacto para ponerte en contacto."
+    "trainingSummary": "Su trabajo no solo está informado por la formación académica, sino por una profunda experiencia vivida, indagación espiritual y una devoción feroz a la transformación encarnada."
   },
   "events": {
     "heading": "Eventos",
@@ -145,6 +145,13 @@
     "facebook_label": "Facebook:",
     "telegram_label": "Telegram:",
     "description": "Comunícate usando los métodos anteriores o en redes sociales, y discutamos los próximos pasos.",
-    "instagramWidgetHeader": "Sigue a Merja en Instagram"
+    "instagramWidgetHeader": ""
+  },
+  "collaboration": {
+    "heading": "Colaboración",
+    "subheading": "Colaboremos para nuevas posibilidades.",
+    "loremlimpsum1Title": "Luonnonperintösäätiö",
+    "loremlimpsum1": "Breathwork by Merja Kallunki participa en una campaña de compensación de la naturaleza organizada por Sallan matkailu y la Fundación Finlandesa del Patrimonio Natural. Merja cuenta: 'La campaña se realiza en los paisajes de mi infancia en Salla y tiene como objetivo recaudar fondos para adquirir un área protegida a lo largo del río Oulankajoki, en el entorno del Parque Nacional de Oulanka.' La zona se ha salvado de la tala rasa durante décadas y sus animales fueron protegidos voluntariamente de la caza hace 40 años. La naturaleza diversa incluye bosques de pinos de más de 160 años, bosques mixtos en crecimiento y bosques de ribera inundables. En los bordes y el centro del bosque hay varios tipos de turberas: turberas de pino, de abeto y ciénagas abiertas. El bosque alberga muchos hábitats y especies en peligro de extinción. En parte del área se están realizando acciones de restauración para devolver la naturaleza a su estado anterior a la reconstrucción de la posguerra. Puedes conocer más sobre la campaña aquí (https://luonnonperintosaatio.fi/sallan-luontohyvitys/)",
+    "gallery": "Galería"
   }
 }

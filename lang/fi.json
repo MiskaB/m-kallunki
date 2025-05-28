@@ -4,7 +4,8 @@
     "about": "Merja",
     "portfolio": "Portfolio",
     "exhibitions": "Tapahtumat",
-    "contact": "Yhteystiedot"
+    "contact": "Yhteystiedot",
+    "collaboration": "Yhteistyö"
   },
   "home": {
     "title": "Merja Kallunki",
@@ -63,7 +64,7 @@
     "breathSoftens": "Koska olen nähnyt, miten hengitys voi pehmentää mahdottoman tuntuisen.",
     "safetyDeserve": "Koska uskon, että jokainen ansaitsee tuntea olonsa turvalliseksi omassa kehossaan.",
     "myWay": "Tämä on minun tieni. Minun omistautumiseni. Totuudelle. Läsnäololle. Paluulle.",
-    "contact": "—<br>Yhteystiedot löydät Contact-sivulta."
+    "contact": ""
   },
   "portfolio": {
     "heading": "Portfolio",
@@ -88,7 +89,7 @@
     "merSomatic": "Somaattinen dialogi ja tunteiden käsittely",
     "merEnergy": "Energeettinen kosketus ja faskian kartoitus",
     "merReading": "Kehon ja energian havainnointi",
-    "merIdeal": "Tämä työ sopii erityisesti stressistä, traumasta, fyysisistä rajoituksista toipuville tai niille, jotka haluavat palauttaa yhteyden kehonsa viisauteen.",
+    "merIdeal": "Tämä työ sopii erityisesti stressistä, traumasta, fyysistä rajoituksista toipuville tai niille, jotka haluavat palauttaa yhteyden kehonsa viisauteen.",
     "somaticMovementTitle": "Somaattinen Liikemeditaatio",
     "somaticMovementText": "Liike on lääke. Useimpien hengitys- tai kehoterapiasessioiden alussa Merja ohjaa somaattista liikettä kehotietoisuuden herättämiseksi ja läsnäolon pehmentämiseksi. Kolmivaiheinen prosessi sisältää:",
     "somaticShaking": "Shaking – jännityksen purku ja hermoston aktivointi",
@@ -145,6 +146,13 @@
     "facebook_label": "Facebook:",
     "telegram_label": "Telegram:",
     "description": "Ota yhteyttä yläpuolella olevilla tavoilla tai somessa, ja sovitaan jatkosta.",
-    "instagramWidgetHeader": "Seuraa Merjaa Instagramissa"
+    "instagramWidgetHeader": ""
+  },
+  "collaboration": {
+    "heading": "Yhteistyö",
+    "subheading": "Tehdään yhdessä uutta.",
+    "loremlimpsum1Title": "Luonnonperintösäätiö",
+    "loremlimpsum1": "Breathwork by Merja Kallunki on mukana luontohyvityskampanjassa, joka toteutetaan Sallan matkailun ja Luonnonperintösäätiön toimesta. Merja kertoo, \"Kampanja toteutetaan lapsuuden maisemissani Sallassa, ja kampanjalla kerätään varoja suojelualueen hankkimiseksi Oulankajoen varrelta, Oulangan kansallispuiston maisemista.\" Alue on säästetty avohakkuilta vuosikymmeniä ja sen eläimet on omatoimisesti rauhoitettu metsästykseltä 40 v sitten. Alueen monimuotoiseen luontoon kuuluu yli 160-vuotiasta mäntymetsää, varttuvaa sekametsää sekä jokirannan tulvametsää. Metsän reunoilta ja keskeltä löytyy erilaisia suotyyppejä: rämettä, korpea ja nevaa. Metsästä löytyy monia uhanlaisia luontotyyppejä, joita asuttavat monet uhanalaiset metsä- ja suolajit. Osassa alueesta tehdään ennallistamistoimenpiteitä, jotta luonto palautuu siihen tilaan, jossa se oli ennen sotien jälleenrakennuksen aikaa. Pääset tutustumaan luontohyvityskampanjaan täältä (https://luonnonperintosaatio.fi/sallan-luontohyvitys/) ",
+    "gallery": "Galleria"
   }
 }
