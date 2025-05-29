@@ -29,15 +29,18 @@
     "subheading": "Een reis van heling en transformatie",
     "brandTitle": "Welkom, fijn je te ontmoeten.",
     "intro": "Ademen is herinneren. Voelen is helen.",
-    "imMerja": "Ik ben Merja.",
-    "north": "Ik kom uit het noorden. Uit de stilte van Lapland, uit besneeuwde bossen, uit Sámi-wortels en rendierpaden. Dat land heeft mij gevormd. Dat doet het nog steeds. Ook al woon ik het grootste deel van mijn volwassen leven in Helsinki, mijn lichaam hoort bij de wildernis. Bij stilte. Bij adem. Bij de tussenruimtes.",
-    "journeyWithin": "Maar mijn echte reis begon niet buiten. Die begon van binnen.",
-    "cracks": "Wat mij opende",
-    "addiction": "Verslaving brak mij open.",
-    "violence": "Geweld leerde mij de vorm van angst.",
-    "father": "Mijn vader vasthouden toen hij stierf, leerde mij het ritme van leven en dood.",
-    "children": "En mijn kinderen — Zij zijn mijn spiegels geweest. Hun pijn liet mij mijn eigen pijn onder ogen zien. Liet mij schreeuwen. Liet mij overgeven.",
-    "breath": "En in dit alles... ontdekte ik de adem. De eerste bij onze geboorte. De laatste als we vertrekken. Alles daartussen is een kans om terug te keren naar het lichaam.",
+    "bio": {
+      "backgroundTitle": "Mijn achtergrond",
+      "background": "Ik kom uit Lapland. Ik ging naar school in Rovaniemi, maar in de praktijk heb ik het grootste deel van mijn jeugd in Salla doorgebracht. Mijn vader kwam uit een Sami-familie en rendierhouderij was aanwezig in mijn ouderlijk huis. Ik heb een sterke aanwezigheid en verbinding met de natuur omdat ik dicht bij de natuur heb geleefd. Ik heb bijna mijn hele volwassen leven in Helsinki gewoond, hoewel mijn thuis in Lapland is.",
+      "embodimentTitle": "Belichaming en ervaringen",
+      "embodiment": "De ervaringen van het fysieke lichaam zijn al lange tijd het middelpunt van mijn interesse. Belichaming. Hoe en waar zijn ervaringen, gevoelens en trauma's, want ik geloof dat pijn die niet gevoeld mag worden in het lichaam blijft, waardoor de vrije stroom van energie wordt belemmerd. Emoties zijn altijd verbonden met trauma, en ik geloof niet dat iemand deze fenomenale wereld zonder trauma overleeft. Misschien gaat het meer om hoe diep ze zijn.",
+      "whoTitle": "Wie is Merja Kallunki?",
+      "who": "De grootste lessen die ik tot nu toe heb geleerd, kwamen voort uit verslaving, die me leerde te ontsnappen.",
+      "violence": "Verschillende vormen van geweld, die me de kracht van angst leerden.",
+      "father": "Het verzorgen van mijn vader aan het einde van zijn leven, wat me lichaamsliefde leerde, de afwisseling van adem tussen geboorte (inademing), dood (uitademing) en leegte, evenals stilte, de aanwezigheid van de eeuwigheid tegenover de dood van het fysieke lichaam.",
+      "children": "Natuurlijk ook mijn eigen kinderen, wier pijn me heeft gedwongen mijn eigen pijn onder ogen te zien, te schreeuwen, te voelen en te huilen. Om machteloosheid te voelen. Om me over te geven.",
+      "end": "Dus... uit mijn eigen ervaring ontstaat de passie om los te komen van het verhaal van het verleden en licht te brengen in ervaringen die moeilijk in woorden uit te leggen zijn."
+    },
     "painQuote": "Pijn die niet wordt gevoeld, blijft in het lichaam. En het lichaam onthoudt altijd.",
     "bodyKnows": "Het lichaam weet het. Daar begin ik.",
     "holdingSpace": "Ik geloof niet in het repareren van mensen. Ik geloof in ruimte houden. In luisteren. In het voelen van de randen van wat verborgen is — en het zachtjes laten opkomen.",
@@ -115,7 +118,8 @@
     "trainingPrananadi": "Beoefenaar van Prananadi Energieheling",
     "trainingShibari": "Intensieve studies in shibari, somatische beweging en trauma-geïnformeerde coaching",
     "trainingIntl": "Internationale ervaring als facilitator in Finland, Estland en het VK",
-    "trainingSummary": "Haar werk is niet alleen gebaseerd op academische training, maar ook op diepgaande levenservaring, spiritueel onderzoek en een vurige toewijding aan belichaamde transformatie."
+    "trainingSummary": "Haar werk is niet alleen gebaseerd op academische training, maar ook op diepgaande levenservaring, spiritueel onderzoek en een vurige toewijding aan belichaamde transformatie.",
+    "contactNote": "Voor volledige details over sessies, workshops en aankomende retraites, raadpleeg de Contact-pagina om contact op te nemen."
   },
   "events": {
     "heading": "Evenementen",

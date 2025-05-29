@@ -29,9 +29,18 @@
     "subheading": "Un viaje de sanación y transformación",
     "brandTitle": "Bienvenido, es un placer conocerte.",
     "intro": "Respirar es recordar. Sentir es sanar.",
-    "imMerja": "Soy Merja.",
-    "north": "Vengo del norte. Del silencio de Laponia, de bosques nevados, de raíces sami y caminos de renos. Esa tierra me formó. Todavía lo hace. Aunque he vivido la mayor parte de mi vida adulta en Helsinki, mi cuerpo pertenece a lo salvaje. Al silencio. A la respiración. A los espacios intermedios.",
-    "journeyWithin": "Pero mi verdadero viaje no comenzó afuera. Comenzó dentro de mí.",
+    "bio": {
+      "backgroundTitle": "Mi trasfondo",
+      "background": "Soy de Laponia. Fui a la escuela en Rovaniemi, pero en la práctica pasé la mayor parte de mi infancia en Salla. Mi padre era de una familia sami y la cría de renos estaba presente en mi hogar de la infancia. Tengo una fuerte presencia y conexión con la naturaleza porque he vivido cerca de ella. He vivido casi toda mi vida adulta en Helsinki, aunque mi hogar está en Laponia.",
+      "embodimentTitle": "Corporalidad y experiencias",
+      "embodiment": "Las experiencias del cuerpo físico han sido durante mucho tiempo el centro de mi interés. Corporalidad. Cómo y dónde están las experiencias, los sentimientos y los traumas, porque creo que el dolor que no se permite sentir permanece en el cuerpo, impidiendo el libre flujo de energía. Las emociones siempre están relacionadas con el trauma, y no creo que nadie sobreviva a este mundo fenomenal sin traumas. Quizás se trate más bien de cuán profundos son.",
+      "whoTitle": "¿Quién es Merja Kallunki?",
+      "who": "Las mayores lecciones que he aprendido hasta ahora han venido de la adicción, que me enseñó a huir.",
+      "violence": "Muchas formas de violencia, que me enseñaron el poder del miedo.",
+      "father": "Cuidar a mi padre al final de su vida, lo que me enseñó el amor corporal, la alternancia de la respiración entre el nacimiento (inhalación), la muerte (exhalación) y el vacío, así como la quietud, la presencia de la eternidad ante la muerte del cuerpo físico.",
+      "children": "Por supuesto, también mis propios hijos, cuyo dolor me ha obligado a enfrentar el mío, a gritar, a sentir y a llorar. A sentir impotencia. A rendirme.",
+      "end": "Así que... de mi propia experiencia nace la pasión de liberarse de la historia del pasado y de dar luz a experiencias que son difíciles de explicar con palabras."
+    },
     "cracks": "Lo que me abrió",
     "addiction": "La adicción me abrió.",
     "violence": "La violencia me enseñó la forma del miedo.",
@@ -115,7 +124,8 @@
     "trainingPrananadi": "Practicante de Sanación Energética Prananadi",
     "trainingShibari": "Estudios intensivos en shibari, movimiento somático y coaching informado sobre el trauma",
     "trainingIntl": "Experiencia internacional como facilitadora en Finlandia, Estonia y el Reino Unido",
-    "trainingSummary": "Su trabajo no solo está informado por la formación académica, sino por una profunda experiencia vivida, indagación espiritual y una devoción feroz a la transformación encarnada."
+    "trainingSummary": "Su trabajo no solo está informado por la formación académica, sino por una profunda experiencia vivida, indagación espiritual y una devoción feroz a la transformación encarnada.",
+    "contactNote": "Para obtener detalles completos sobre sesiones, talleres y próximos retiros, consulta la página de Contacto para ponerte en contacto."
   },
   "events": {
     "heading": "Eventos",
