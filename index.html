@@ -33,9 +33,42 @@
       margin-left: 1em;
       padding: 0.25em;
     }
+    /* Preloader styles */
+    #preloader-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.8);
+      z-index: 9999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #preloader-img {
+      max-width: 90%;
+      max-height: 90%;
+    }
+    /* Fade-out effect for preloader */
+    #preloader-bg.hide {
+      opacity: 0;
+      transition: opacity 0.2s ease-out;
+      pointer-events: none;
+    }
+    /* Fade-in/out effect for body */
+    body.fade-out {
+      opacity: 0;
+      transition: opacity 0.4s ease-out;
+    }
+    body.fade-in {
+      opacity: 1;
+      transition: opacity 0.4s ease-in;
+    }
   </style>
 </head>
 <body>
+  <div id="preloader-bg"><img id="preloader-img" src="" alt="Loading background..." /></div>
   <div class="language-menu">
     <label for="language-switcher">Language:</label>
     <select id="language-switcher" onchange="changeLanguage(this.value)">
@@ -77,27 +110,62 @@
       <p data-i18n="home.welcome">Welcome to a space where healing meets self-discovery. Whether you're here to learn about breathwork, explore trauma healing, or seek coaching, this website offers insights and tools to support your journey.</p>
     </section>
   </main>
+  <footer style="width:100%;text-align:right;margin-top:2em;">
+    <a href="https://github.com/MiskaB" target="_blank" style="font-size:12px;color:#444;opacity:0.7;text-decoration:none;background:rgba(255,255,255,0.7);border-radius:6px;padding:2px 8px;transition:opacity 0.2s;">Copywright Miska Oy 2025</a>
+  </footer>
   <script src="js/lang.js"></script>
   <script>
+    // Preloader and fade-in logic
     const images = [
       "images/Bowl.png",
+      "images/DarkDrumMerja.JPG",
       "images/Lapland1.jpg",
       "images/Lapldan2.jpg",
       "images/MerjaAfter.jpg",
+      "images/MerjaBlackDrum.JPG",
       "images/MerjaDrum.jpg",
       "images/MerjaDrum3.jpg",
       "images/MerjaDrumNordic.png",
       "images/MerjaFestival.jpg",
       "images/MerjaPerson.png",
       "images/MerjaPromo.jpg",
+      "images/MerjaShamanicDrum.JPG",
+      "images/MerjaSitdown.jpg",
       "images/MerjaTeaching.png",
       "images/MerjaTie2.jpg",
       "images/MerjaTie3.jpg",
+      "images/RopesLeg2.JPG",
+      "images/SkiSnow.JPG",
+      "images/Snow.JPG",
       "images/TieKnot.png",
-      "images/TiesLeg.png"
-    ]; // Exclude LuonnonperintoSaatio.jpg and MerjaNisarga.jpg
+      "images/TiesLeg.png",
+      "images/Victory.JPG",
+      "images/mkLogo.png"
+    ];
     const randomImage = images[Math.floor(Math.random() * images.length)];
-    document.body.style.backgroundImage = `url(${randomImage})`;
+    const preloader = document.getElementById('preloader-bg');
+    const preloaderImg = document.getElementById('preloader-img');
+    preloaderImg.src = randomImage;
+    const bgImg = new window.Image();
+    bgImg.src = randomImage;
+    bgImg.onload = function() {
+      document.body.style.backgroundImage = `url(${randomImage})`;
+      setTimeout(() => {
+        preloader.classList.add('hide');
+      }, 200); // quick fade out
+    };
+    // Smooth page transition on navigation
+    document.querySelectorAll('a').forEach(link => {
+      if (link.target !== '_blank' && link.href && !link.href.startsWith('mailto:')) {
+        link.addEventListener('click', function(e) {
+          if (link.hostname === location.hostname) {
+            e.preventDefault();
+            document.body.classList.add('fade-out');
+            setTimeout(() => { window.location = link.href; }, 400);
+          }
+        });
+      }
+    });
   </script>
 </body>
 </html>

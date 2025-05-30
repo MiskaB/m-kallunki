@@ -80,169 +80,231 @@
         max-width: 100vw;
       }
     }
+    #preloader-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.9);
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #preloader-img {
+      max-width: 90%;
+      max-height: 90%;
+    }
+    .fade-out {
+      animation: fadeOut 0.4s forwards;
+    }
+    @keyframes fadeOut {
+      from { opacity: 1; }
+      to { opacity: 0; }
+    }
+    .hide {
+      display: none !important;
+    }
   </style>
 </head>
 <body>
-  <div class="language-menu">
-    <label for="language-switcher">Language:</label>
-    <select id="language-switcher" onchange="changeLanguage(this.value)">
-      <option value="en">English</option>
-      <option value="fi">Suomi</option>
-      <option value="nl">Nederlands</option>
-      <option value="es">Español</option>
-    </select>
-  </div>
+    <div id="preloader-bg"><img id="preloader-img" src="" alt="Loading background..." /></div>
+    <div class="language-menu">
+      <label for="language-switcher">Language:</label>
+      <select id="language-switcher" onchange="changeLanguage(this.value)">
+        <option value="en">English</option>
+        <option value="fi">Suomi</option>
+        <option value="nl">Nederlands</option>
+        <option value="es">Español</option>
+      </select>
+    </div>
 
-  <header style="background-color: rgba(255, 255, 255, 0.5);">
-    <h1 data-i18n="events.heading"></h1>
-    <p data-i18n="events.subheading"></p>
-  </header>
+    <header style="background-color: rgba(255, 255, 255, 0.5);">
+      <h1 data-i18n="events.heading"></h1>
+      <p data-i18n="events.subheading"></p>
+    </header>
 
-  <nav style="background-color: rgba(255, 255, 255, 0.5);">
-    <a href="index.html" data-i18n="nav.home">Home</a>
-    <a href="about.html" data-i18n="nav.about">About</a>
-    <a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a>
-    <a href="events.html" data-i18n="nav.exhibitions">Events</a>
-    <a href="contact.html" data-i18n="nav.contact">Contact</a>
-    <a href="collaboration.html" data-i18n="nav.collaboration">Collaboration</a>
-  </nav>
+    <nav style="background-color: rgba(255, 255, 255, 0.5);">
+      <a href="index.html" data-i18n="nav.home">Home</a>
+      <a href="about.html" data-i18n="nav.about">About</a>
+      <a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a>
+      <a href="events.html" data-i18n="nav.exhibitions">Events</a>
+      <a href="contact.html" data-i18n="nav.contact">Contact</a>
+      <a href="collaboration.html" data-i18n="nav.collaboration">Collaboration</a>
+    </nav>
 
-  <main style="background-color: rgba(255, 255, 255, 0.5);">
-    <section>
-      <h2 data-i18n="events.upcomingTitle">Upcoming Events</h2>
-      <div class="events-intro" style="margin-bottom:2em;">
-        <p data-i18n="events.intro"></p>
-      </div>
-      <div class="events-table-container">
-        <table id="events-table-upcoming" class="events-table">
-          <thead>
-            <tr>
-              <th data-i18n="events.table.name">Name</th>
-              <th data-i18n="events.table.date">Date</th>
-              <th data-i18n="events.table.location">Location</th>
-              <th data-i18n="events.table.info">More information</th>
-            </tr>
-          </thead>
-          <tbody></tbody>
-        </table>
-      </div>
-    </section>
-    <section>
-      <h2 data-i18n="events.pastTitle">Past Events</h2>
-      <div class="events-table-container">
-        <table id="events-table-past" class="events-table">
-          <thead>
-            <tr>
-              <th data-i18n="events.table.name">Name</th>
-              <th data-i18n="events.table.date">Date</th>
-              <th data-i18n="events.table.location">Location</th>
-              <th data-i18n="events.table.info">More information</th>
-            </tr>
-          </thead>
-          <tbody></tbody>
-        </table>
-      </div>
-    </section>
-  </main>
-  <script src="js/lang.js"></script>
-  <script>
-    const images = [
-      "images/Bowl.png",
-      "images/Lapland1.jpg",
-      "images/Lapldan2.jpg",
-      "images/MerjaAfter.jpg",
-      "images/MerjaDrum.jpg",
-      "images/MerjaDrum3.jpg",
-      "images/MerjaDrumNordic.png",
-      "images/MerjaFestival.jpg",
-      "images/MerjaPerson.png",
-      "images/MerjaPromo.jpg",
-      "images/MerjaTeaching.png",
-      "images/MerjaTie2.jpg",
-      "images/MerjaTie3.jpg",
-      "images/TieKnot.png",
-      "images/TiesLeg.png"
-    ]; // Exclude LuonnonperintoSaatio.jpg and MerjaNisarga.jpg
-    const randomImage = images[Math.floor(Math.random() * images.length)];
-    document.body.style.backgroundImage = `url(${randomImage})`;
-
-    function getCurrentLang() {
-      return localStorage.getItem('lang') || 'en';
-    }
-
-    async function fetchEvents() {
-      const response = await fetch('events.json');
-      const events = await response.json();
-      const lang = getCurrentLang();
-      const tbodyUpcoming = document.querySelector('#events-table-upcoming tbody');
-      const tbodyPast = document.querySelector('#events-table-past tbody');
-      tbodyUpcoming.innerHTML = '';
-      tbodyPast.innerHTML = '';
-      function parseEventDate(dateStr) {
-        // Handles formats like '3.-6.7.2025' or '24.5.2025'
-        const rangeMatch = dateStr.match(/(\d{1,2})\.?-(\d{1,2})\.(\d{1,2})\.(\d{4})/);
-        if (rangeMatch) {
-          // Use the end date of the range for comparison
-          return new Date(`${rangeMatch[4]}-${rangeMatch[3].padStart(2, '0')}-${rangeMatch[2].padStart(2, '0')}`);
+    <main style="background-color: rgba(255, 255, 255, 0.5);">
+      <section>
+        <h2 data-i18n="events.upcomingTitle">Upcoming Events</h2>
+        <div class="events-intro" style="margin-bottom:2em;">
+          <p data-i18n="events.intro"></p>
+        </div>
+        <div class="events-table-container">
+          <table id="events-table-upcoming" class="events-table">
+            <thead>
+              <tr>
+                <th data-i18n="events.table.name">Name</th>
+                <th data-i18n="events.table.date">Date</th>
+                <th data-i18n="events.table.location">Location</th>
+                <th data-i18n="events.table.info">More information</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+      <section>
+        <h2 data-i18n="events.pastTitle">Past Events</h2>
+        <div class="events-table-container">
+          <table id="events-table-past" class="events-table">
+            <thead>
+              <tr>
+                <th data-i18n="events.table.name">Name</th>
+                <th data-i18n="events.table.date">Date</th>
+                <th data-i18n="events.table.location">Location</th>
+                <th data-i18n="events.table.info">More information</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+    <script src="js/lang.js"></script>
+    <script>
+      // Preloader and fade-in logic
+      const images = [
+        "images/Bowl.png",
+        "images/DarkDrumMerja.JPG",
+        "images/Lapland1.jpg",
+        "images/Lapldan2.jpg",
+        "images/MerjaAfter.jpg",
+        "images/MerjaBlackDrum.JPG",
+        "images/MerjaDrum.jpg",
+        "images/MerjaDrum3.jpg",
+        "images/MerjaDrumNordic.png",
+        "images/MerjaFestival.jpg",
+        "images/MerjaPerson.png",
+        "images/MerjaPromo.jpg",
+        "images/MerjaShamanicDrum.JPG",
+        "images/MerjaSitdown.jpg",
+        "images/MerjaTeaching.png",
+        "images/MerjaTie2.jpg",
+        "images/MerjaTie3.jpg",
+        "images/RopesLeg2.JPG",
+        "images/SkiSnow.JPG",
+        "images/Snow.JPG",
+        "images/TieKnot.png",
+        "images/TiesLeg.png",
+        "images/Victory.JPG",
+        "images/mkLogo.png"
+      ];
+      const randomImage = images[Math.floor(Math.random() * images.length)];
+      const preloader = document.getElementById('preloader-bg');
+      const preloaderImg = document.getElementById('preloader-img');
+      preloaderImg.src = randomImage;
+      const bgImg = new window.Image();
+      bgImg.src = randomImage;
+      bgImg.onload = function() {
+        document.body.style.backgroundImage = `url(${randomImage})`;
+        setTimeout(() => {
+          preloader.classList.add('hide');
+        }, 200);
+      };
+      // Smooth page transition on navigation
+      document.querySelectorAll('a').forEach(link => {
+        if (link.target !== '_blank' && link.href && !link.href.startsWith('mailto:')) {
+          link.addEventListener('click', function(e) {
+            if (link.hostname === location.hostname) {
+              e.preventDefault();
+              document.body.classList.add('fade-out');
+              setTimeout(() => { window.location = link.href; }, 400);
+            }
+          });
         }
-        const singleMatch = dateStr.match(/(\d{1,2})\.(\d{1,2})\.(\d{4})/);
-        if (singleMatch) {
-          return new Date(`${singleMatch[3]}-${singleMatch[2].padStart(2, '0')}-${singleMatch[1].padStart(2, '0')}`);
-        }
-        return new Date(dateStr); // fallback
+      });
+
+      function getCurrentLang() {
+        return localStorage.getItem('lang') || 'en';
       }
-      const now = new Date();
-      // Sort events into upcoming and past, and sort each group
-      const upcoming = [];
-      const past = [];
-      events.forEach(event => {
-        const eventDate = parseEventDate(event.date);
-        if (eventDate >= now) {
-          upcoming.push({ event, eventDate });
-        } else {
-          past.push({ event, eventDate });
+
+      async function fetchEvents() {
+        const response = await fetch('events.json');
+        const events = await response.json();
+        const lang = getCurrentLang();
+        const tbodyUpcoming = document.querySelector('#events-table-upcoming tbody');
+        const tbodyPast = document.querySelector('#events-table-past tbody');
+        tbodyUpcoming.innerHTML = '';
+        tbodyPast.innerHTML = '';
+        function parseEventDate(dateStr) {
+          // Handles formats like '3.-6.7.2025' or '24.5.2025'
+          const rangeMatch = dateStr.match(/(\d{1,2})\.?-(\d{1,2})\.(\d{1,2})\.(\d{4})/);
+          if (rangeMatch) {
+            // Use the end date of the range for comparison
+            return new Date(`${rangeMatch[4]}-${rangeMatch[3].padStart(2, '0')}-${rangeMatch[2].padStart(2, '0')}`);
+          }
+          const singleMatch = dateStr.match(/(\d{1,2})\.(\d{1,2})\.(\d{4})/);
+          if (singleMatch) {
+            return new Date(`${singleMatch[3]}-${singleMatch[2].padStart(2, '0')}-${singleMatch[1].padStart(2, '0')}`);
+          }
+          return new Date(dateStr); // fallback
         }
-      });
-      // Sort upcoming: soonest first
-      upcoming.sort((a, b) => a.eventDate - b.eventDate);
-      // Sort past: most recent first
-      past.sort((a, b) => b.eventDate - a.eventDate);
-      // Render upcoming events
-      upcoming.forEach(({ event }) => {
-        let useLang = lang;
-        if (lang !== 'en' && lang !== 'fi') useLang = 'en';
-        const name = useLang === 'fi' ? event.name_fi : event.name_en;
-        const location = useLang === 'fi' ? event.location_fi : event.location_en;
-        const info = useLang === 'fi' ? event.info_fi : event.info_en;
-        const tr = document.createElement('tr');
-        tr.innerHTML = `
-          <td>${name}</td>
-          <td>${event.date}</td>
-          <td>${location}</td>
-          <td>${info}</td>
-        `;
-        tbodyUpcoming.appendChild(tr);
-      });
-      // Render past events
-      past.forEach(({ event }) => {
-        let useLang = lang;
-        if (lang !== 'en' && lang !== 'fi') useLang = 'en';
-        const name = useLang === 'fi' ? event.name_fi : event.name_en;
-        const location = useLang === 'fi' ? event.location_fi : event.location_en;
-        const info = useLang === 'fi' ? event.info_fi : event.info_en;
-        const tr = document.createElement('tr');
-        tr.innerHTML = `
-          <td>${name}</td>
-          <td>${event.date}</td>
-          <td>${location}</td>
-          <td>${info}</td>
-        `;
-        tbodyPast.appendChild(tr);
-      });
-    }
-    window.addEventListener('DOMContentLoaded', fetchEvents);
-    window.addEventListener('languageChanged', fetchEvents);
-  </script>
+        const now = new Date();
+        // Sort events into upcoming and past, and sort each group
+        const upcoming = [];
+        const past = [];
+        events.forEach(event => {
+          const eventDate = parseEventDate(event.date);
+          if (eventDate >= now) {
+            upcoming.push({ event, eventDate });
+          } else {
+            past.push({ event, eventDate });
+          }
+        });
+        // Sort upcoming: soonest first
+        upcoming.sort((a, b) => a.eventDate - b.eventDate);
+        // Sort past: most recent first
+        past.sort((a, b) => b.eventDate - a.eventDate);
+        // Render upcoming events
+        upcoming.forEach(({ event }) => {
+          let useLang = lang;
+          if (lang !== 'en' && lang !== 'fi') useLang = 'en';
+          const name = useLang === 'fi' ? event.name_fi : event.name_en;
+          const location = useLang === 'fi' ? event.location_fi : event.location_en;
+          const info = useLang === 'fi' ? event.info_fi : event.info_en;
+          const tr = document.createElement('tr');
+          tr.innerHTML = `
+            <td>${name}</td>
+            <td>${event.date}</td>
+            <td>${location}</td>
+            <td>${info}</td>
+          `;
+          tbodyUpcoming.appendChild(tr);
+        });
+        // Render past events
+        past.forEach(({ event }) => {
+          let useLang = lang;
+          if (lang !== 'en' && lang !== 'fi') useLang = 'en';
+          const name = useLang === 'fi' ? event.name_fi : event.name_en;
+          const location = useLang === 'fi' ? event.location_fi : event.location_en;
+          const info = useLang === 'fi' ? event.info_fi : event.info_en;
+          const tr = document.createElement('tr');
+          tr.innerHTML = `
+            <td>${name}</td>
+            <td>${event.date}</td>
+            <td>${location}</td>
+            <td>${info}</td>
+          `;
+          tbodyPast.appendChild(tr);
+        });
+      }
+      window.addEventListener('DOMContentLoaded', fetchEvents);
+      window.addEventListener('languageChanged', fetchEvents);
+    </script>
+    <footer style="width:100%;text-align:right;margin-top:2em;">
+      <a href="https://github.com/MiskaB" target="_blank" style="font-size:12px;color:#444;opacity:0.7;text-decoration:none;background:rgba(255,255,255,0.7);border-radius:6px;padding:2px 8px;transition:opacity 0.2s;">Copywright Miska Oy 2025</a>
+    </footer>
 </body>
 </html>
 

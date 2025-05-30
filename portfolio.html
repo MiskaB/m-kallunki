@@ -69,178 +69,251 @@
       padding-left: 1em;
       margin: 1em 0;
     }
+    #preloader-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.9);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+    #preloader-img {
+      max-width: 80%;
+      height: auto;
+    }
+    .fade-out {
+      animation: fadeOut 0.4s forwards;
+    }
+    @keyframes fadeOut {
+      to {
+        opacity: 0;
+      }
+    }
+    .hide {
+      display: none !important;
+    }
   </style>
 </head>
 <body>
-  <div class="language-menu">
-    <label for="language-switcher">Language:</label>
-    <select id="language-switcher" onchange="changeLanguage(this.value)">
-      <option value="en">English</option>
-      <option value="fi">Suomi</option>
-      <option value="nl">Nederlands</option>
-      <option value="es">Español</option>
-    </select>
-  </div>
-  <header style="background-color: rgba(255, 255, 255, 0.2);">
-    <h1 data-i18n="portfolio.heading"></h1>
-    <p data-i18n="portfolio.subheading"></p>
-  </header>
-
-  <nav style="background-color: rgba(255, 255, 255, 0.5);">
-    <a href="index.html" data-i18n="nav.home">Home</a>
-    <a href="about.html" data-i18n="nav.about">About</a>
-    <a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a>
-    <a href="events.html" data-i18n="nav.exhibitions">Events</a>
-    <a href="contact.html" data-i18n="nav.contact">Contact</a>
-    <a href="collaboration.html" data-i18n="nav.collaboration">Collaboration</a>
-  </nav>
-
-  <main class="portfolio-main">
-    <section class="portfolio-section">
+    <div id="preloader-bg"><img id="preloader-img" src="" alt="Loading background..." /></div>
+    <div class="language-menu">
+      <label for="language-switcher">Language:</label>
+      <select id="language-switcher" onchange="changeLanguage(this.value)">
+        <option value="en">English</option>
+        <option value="fi">Suomi</option>
+        <option value="nl">Nederlands</option>
+        <option value="es">Español</option>
+      </select>
+    </div>
+    <header style="background-color: rgba(255, 255, 255, 0.2);">
       <h1 data-i18n="portfolio.heading"></h1>
-      <h2 data-i18n="portfolio.introTitle"></h2>
-      <p data-i18n="portfolio.introText"></p>
-    </section>
-    <section class="portfolio-section">
-      <h2 data-i18n="portfolio.bbtrsTitle"></h2>
-      <p data-i18n="portfolio.bbtrsText"></p>
-      <p data-i18n="portfolio.bbtrsBenefits"></p>
-      <blockquote data-i18n="portfolio.bbtrsQuote"></blockquote>
-      <p data-i18n="portfolio.bbtrsScience"></p>
-    </section>
-    <section class="portfolio-section">
-      <h2 data-i18n="portfolio.shibariTitle"></h2>
-      <p data-i18n="portfolio.shibariText"></p>
-      <p data-i18n="portfolio.shibariBenefits"></p>
-      <ul>
-        <li data-i18n="portfolio.shibariSelf"></li>
-        <li data-i18n="portfolio.shibariPartner"></li>
-        <li data-i18n="portfolio.shibariWorkshops"></li>
-      </ul>
-    </section>
-    <section class="portfolio-section">
-      <h2 data-i18n="portfolio.merTitle"></h2>
-      <p data-i18n="portfolio.merText"></p>
-      <ul>
-        <li data-i18n="portfolio.merDeepTissue"></li>
-        <li data-i18n="portfolio.merCranio"></li>
-        <li data-i18n="portfolio.merSomatic"></li>
-        <li data-i18n="portfolio.merEnergy"></li>
-        <li data-i18n="portfolio.merReading"></li>
-      </ul>
-      <p data-i18n="portfolio.merIdeal"></p>
-    </section>
-    <section class="portfolio-section">
-      <h2 data-i18n="portfolio.somaticMovementTitle"></h2>
-      <p data-i18n="portfolio.somaticMovementText"></p>
-      <ul>
-        <li data-i18n="portfolio.somaticShaking"></li>
-        <li data-i18n="portfolio.somaticUnwinding"></li>
-        <li data-i18n="portfolio.somaticDance"></li>
-      </ul>
-      <p data-i18n="portfolio.somaticBenefits"></p>
-    </section>
-    <section class="portfolio-section">
-      <h2 data-i18n="portfolio.coachingTitle"></h2>
-      <p data-i18n="portfolio.coachingText"></p>
-      <ul>
-        <li data-i18n="portfolio.coachingResilience"></li>
-        <li data-i18n="portfolio.coachingParenting"></li>
-        <li data-i18n="portfolio.coachingTrauma"></li>
-        <li data-i18n="portfolio.coachingSelfWorth"></li>
-        <li data-i18n="portfolio.coachingYouth"></li>
-      </ul>
-      <p data-i18n="portfolio.coachingTailored"></p>
-    </section>
-    <section class="portfolio-section">
-      <h2 data-i18n="portfolio.prananadiTitle"></h2>
-      <p data-i18n="portfolio.prananadiText"></p>
-      <p data-i18n="portfolio.prananadiBenefits"></p>
-    </section>
-    <section class="portfolio-section">
-      <h2 data-i18n="portfolio.trainingTitle"></h2>
-      <p data-i18n="portfolio.trainingText"></p>
-      <ul>
-        <li data-i18n="portfolio.trainingSocial"></li>
-        <li data-i18n="portfolio.trainingPsych"></li>
-        <li data-i18n="portfolio.trainingBBTRS"></li>
-        <li data-i18n="portfolio.trainingPrananadi"></li>
-        <li data-i18n="portfolio.trainingIntl"></li>
-      </ul>
-      <p data-i18n="portfolio.trainingSummary"></p>
-      <p data-i18n="portfolio.contactNote"></p>
-    </section>
-    <section>
-      <h2 data-i18n="portfolio.gallery"></h2>
-      <div class="gallery">
-        <img src="images/Bowl.png" alt="Bowl" onclick="enlargeImage(this)" />
-        <img src="images/MerjaDrum.jpg" alt="Merja with Drum" onclick="enlargeImage(this)" />
-        <img src="images/MerjaDrumNordic.png" alt="Merja Nordic Drum" onclick="enlargeImage(this)" />
-        <img src="images/MerjaPerson.png" alt="Merja Portrait" onclick="enlargeImage(this)" />
-        <img src="images/MerjaPromo.jpg" alt="Merja Promo" onclick="enlargeImage(this)" />
-        <img src="images/MerjaTeaching.png" alt="Merja Teaching" onclick="enlargeImage(this)" />
-        <img src="images/TieKnot.png" alt="Tie Knot" onclick="enlargeImage(this)" />
-        <img src="images/TiesLeg.png" alt="Ties Leg" onclick="enlargeImage(this)" />
-        <img src="images/Lapland1.jpg" alt="Lapland 1" onclick="enlargeImage(this)" />
-        <img src="images/Lapldan2.jpg" alt="Lapland 2" onclick="enlargeImage(this)" />
-        <img src="images/LuonnonperintoSaatio.jpg" alt="Luonnonperintösäätiö" onclick="enlargeImage(this)" />
-        <img src="images/MerjaAfter.jpg" alt="Merja After" onclick="enlargeImage(this)" />
-        <img src="images/MerjaDrum3.jpg" alt="Merja Drum 3" onclick="enlargeImage(this)" />
-        <img src="images/MerjaFestival.jpg" alt="Merja Festival" onclick="enlargeImage(this)" />
-        <img src="images/MerjaNisarga.jpg" alt="Merja Nisarga" onclick="enlargeImage(this)" />
-        <img src="images/MerjaTie2.jpg" alt="Merja Tie 2" onclick="enlargeImage(this)" />
-        <img src="images/MerjaTie3.jpg" alt="Merja Tie 3" onclick="enlargeImage(this)" />
-        <img src="images/mkLogo.png" alt="Merja Logo" onclick="enlargeImage(this)" />
-      </div>
-    </section>
-  </main>
+      <p data-i18n="portfolio.subheading"></p>
+    </header>
 
-  <script src="js/lang.js"></script>
-  <script>
-    const images = [
-      "images/Bowl.png",
-      "images/MerjaDrum.jpg",
-      "images/MerjaDrumNordic.png",
-      "images/MerjaPerson.png",
-      "images/MerjaPromo.jpg",
-      "images/MerjaTeaching.png",
-      "images/TieKnot.png",
-      "images/TiesLeg.png",
-      "images/Lapland1.jpg",
-      "images/Lapldan2.jpg",
-      "images/MerjaAfter.jpg",
-      "images/MerjaDrum3.jpg",
-      "images/MerjaFestival.jpg",
-      "images/MerjaTie2.jpg",
-      "images/MerjaTie3.jpg",
-    ]; // Exclude LuonnonperintoSaatio.jpg and MerjaNisarga.jpg from backgrounds
-    const randomImage = images[Math.floor(Math.random() * images.length)];
-    document.body.style.backgroundImage = `url(${randomImage})`;
+    <nav style="background-color: rgba(255, 255, 255, 0.5);">
+      <a href="index.html" data-i18n="nav.home">Home</a>
+      <a href="about.html" data-i18n="nav.about">About</a>
+      <a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a>
+      <a href="events.html" data-i18n="nav.exhibitions">Events</a>
+      <a href="contact.html" data-i18n="nav.contact">Contact</a>
+      <a href="collaboration.html" data-i18n="nav.collaboration">Collaboration</a>
+    </nav>
 
-    function enlargeImage(img) {
-      const modal = document.createElement('div');
-      modal.style.position = 'fixed';
-      modal.style.top = '0';
-      modal.style.left = '0';
-      modal.style.width = '100%';
-      modal.style.height = '100%';
-      modal.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
-      modal.style.display = 'flex';
-      modal.style.justifyContent = 'center';
-      modal.style.alignItems = 'center';
-      modal.style.zIndex = '1000';
+    <main class="portfolio-main">
+      <section class="portfolio-section">
+        <h1 data-i18n="portfolio.heading"></h1>
+        <h2 data-i18n="portfolio.introTitle"></h2>
+        <p data-i18n="portfolio.introText"></p>
+      </section>
+      <section class="portfolio-section">
+        <h2 data-i18n="portfolio.bbtrsTitle"></h2>
+        <p data-i18n="portfolio.bbtrsText"></p>
+        <p data-i18n="portfolio.bbtrsBenefits"></p>
+        <blockquote data-i18n="portfolio.bbtrsQuote"></blockquote>
+        <p data-i18n="portfolio.bbtrsScience"></p>
+      </section>
+      <section class="portfolio-section">
+        <h2 data-i18n="portfolio.shibariTitle"></h2>
+        <p data-i18n="portfolio.shibariText"></p>
+        <p data-i18n="portfolio.shibariBenefits"></p>
+        <ul>
+          <li data-i18n="portfolio.shibariSelf"></li>
+          <li data-i18n="portfolio.shibariPartner"></li>
+          <li data-i18n="portfolio.shibariWorkshops"></li>
+        </ul>
+      </section>
+      <section class="portfolio-section">
+        <h2 data-i18n="portfolio.merTitle"></h2>
+        <p data-i18n="portfolio.merText"></p>
+        <ul>
+          <li data-i18n="portfolio.merDeepTissue"></li>
+          <li data-i18n="portfolio.merCranio"></li>
+          <li data-i18n="portfolio.merSomatic"></li>
+          <li data-i18n="portfolio.merEnergy"></li>
+          <li data-i18n="portfolio.merReading"></li>
+        </ul>
+        <p data-i18n="portfolio.merIdeal"></p>
+      </section>
+      <section class="portfolio-section">
+        <h2 data-i18n="portfolio.somaticMovementTitle"></h2>
+        <p data-i18n="portfolio.somaticMovementText"></p>
+        <ul>
+          <li data-i18n="portfolio.somaticShaking"></li>
+          <li data-i18n="portfolio.somaticUnwinding"></li>
+          <li data-i18n="portfolio.somaticDance"></li>
+        </ul>
+        <p data-i18n="portfolio.somaticBenefits"></p>
+      </section>
+      <section class="portfolio-section">
+        <h2 data-i18n="portfolio.coachingTitle"></h2>
+        <p data-i18n="portfolio.coachingText"></p>
+        <ul>
+          <li data-i18n="portfolio.coachingResilience"></li>
+          <li data-i18n="portfolio.coachingParenting"></li>
+          <li data-i18n="portfolio.coachingTrauma"></li>
+          <li data-i18n="portfolio.coachingSelfWorth"></li>
+          <li data-i18n="portfolio.coachingYouth"></li>
+        </ul>
+        <p data-i18n="portfolio.coachingTailored"></p>
+      </section>
+      <section class="portfolio-section">
+        <h2 data-i18n="portfolio.prananadiTitle"></h2>
+        <p data-i18n="portfolio.prananadiText"></p>
+        <p data-i18n="portfolio.prananadiBenefits"></p>
+      </section>
+      <section class="portfolio-section">
+        <h2 data-i18n="portfolio.trainingTitle"></h2>
+        <p data-i18n="portfolio.trainingText"></p>
+        <ul>
+          <li data-i18n="portfolio.trainingSocial"></li>
+          <li data-i18n="portfolio.trainingPsych"></li>
+          <li data-i18n="portfolio.trainingBBTRS"></li>
+          <li data-i18n="portfolio.trainingPrananadi"></li>
+          <li data-i18n="portfolio.trainingIntl"></li>
+        </ul>
+        <p data-i18n="portfolio.trainingSummary"></p>
+        <p data-i18n="portfolio.contactNote"></p>
+      </section>
+      <section>
+        <h2 data-i18n="portfolio.gallery"></h2>
+        <div class="gallery">
+          <img src="images/Bowl.png" alt="Bowl" onclick="enlargeImage(this)" />
+          <img src="images/MerjaDrum.jpg" alt="Merja with Drum" onclick="enlargeImage(this)" />
+          <img src="images/MerjaDrumNordic.png" alt="Merja Nordic Drum" onclick="enlargeImage(this)" />
+          <img src="images/MerjaPerson.png" alt="Merja Portrait" onclick="enlargeImage(this)" />
+          <img src="images/MerjaPromo.jpg" alt="Merja Promo" onclick="enlargeImage(this)" />
+          <img src="images/MerjaTeaching.png" alt="Merja Teaching" onclick="enlargeImage(this)" />
+          <img src="images/TieKnot.png" alt="Tie Knot" onclick="enlargeImage(this)" />
+          <img src="images/TiesLeg.png" alt="Ties Leg" onclick="enlargeImage(this)" />
+          <img src="images/Lapland1.jpg" alt="Lapland 1" onclick="enlargeImage(this)" />
+          <img src="images/Lapldan2.jpg" alt="Lapland 2" onclick="enlargeImage(this)" />
+          <img src="images/LuonnonperintoSaatio.jpg" alt="Luonnonperintösäätiö" onclick="enlargeImage(this)" />
+          <img src="images/MerjaAfter.jpg" alt="Merja After" onclick="enlargeImage(this)" />
+          <img src="images/MerjaDrum3.jpg" alt="Merja Drum 3" onclick="enlargeImage(this)" />
+          <img src="images/MerjaFestival.jpg" alt="Merja Festival" onclick="enlargeImage(this)" />
+          <img src="images/MerjaNisarga.jpg" alt="Merja Nisarga" onclick="enlargeImage(this)" />
+          <img src="images/MerjaTie2.jpg" alt="Merja Tie 2" onclick="enlargeImage(this)" />
+          <img src="images/MerjaTie3.jpg" alt="Merja Tie 3" onclick="enlargeImage(this)" />
+          <img src="images/mkLogo.png" alt="Merja Logo" onclick="enlargeImage(this)" />
+          <!-- New images below -->
+          <img src="images/DarkDrumMerja.JPG" alt="Dark Drum Merja" onclick="enlargeImage(this)" />
+          <img src="images/MerjaBlackDrum.JPG" alt="Merja Black Drum" onclick="enlargeImage(this)" />
+          <img src="images/MerjaShamanicDrum.JPG" alt="Merja Shamanic Drum" onclick="enlargeImage(this)" />
+          <img src="images/MerjaSitdown.jpg" alt="Merja Sitdown" onclick="enlargeImage(this)" />
+          <img src="images/RopesLeg2.JPG" alt="Ropes Leg 2" onclick="enlargeImage(this)" />
+          <img src="images/SkiSnow.JPG" alt="Ski Snow" onclick="enlargeImage(this)" />
+          <img src="images/Snow.JPG" alt="Snow" onclick="enlargeImage(this)" />
+          <img src="images/Victory.JPG" alt="Victory" onclick="enlargeImage(this)" />
+        </div>
+      </section>
+    </main>
 
-      const enlargedImg = document.createElement('img');
-      enlargedImg.src = img.src;
-      enlargedImg.style.maxWidth = '90%';
-      enlargedImg.style.maxHeight = '90%';
-      enlargedImg.style.border = '5px solid white';
+    <footer style="width:100%;text-align:right;margin-top:2em;">
+      <a href="https://github.com/MiskaB" target="_blank" style="font-size:12px;color:#444;opacity:0.7;text-decoration:none;background:rgba(255,255,255,0.7);border-radius:6px;padding:2px 8px;transition:opacity 0.2s;">Copywright Miska Oy 2025</a>
+    </footer>
 
-      modal.appendChild(enlargedImg);
-      modal.onclick = () => document.body.removeChild(modal);
+    <script src="js/lang.js"></script>
+    <script>
+      // Preloader and fade-in logic
+      const images = [
+        "images/Bowl.png",
+        "images/DarkDrumMerja.JPG",
+        "images/Lapland1.jpg",
+        "images/Lapldan2.jpg",
+        "images/MerjaAfter.jpg",
+        "images/MerjaBlackDrum.JPG",
+        "images/MerjaDrum.jpg",
+        "images/MerjaDrum3.jpg",
+        "images/MerjaDrumNordic.png",
+        "images/MerjaFestival.jpg",
+        "images/MerjaPerson.png",
+        "images/MerjaPromo.jpg",
+        "images/MerjaShamanicDrum.JPG",
+        "images/MerjaSitdown.jpg",
+        "images/MerjaTeaching.png",
+        "images/MerjaTie2.jpg",
+        "images/MerjaTie3.jpg",
+        "images/RopesLeg2.JPG",
+        "images/SkiSnow.JPG",
+        "images/Snow.JPG",
+        "images/TieKnot.png",
+        "images/TiesLeg.png",
+        "images/Victory.JPG",
+        "images/mkLogo.png"
+      ];
+      const randomImage = images[Math.floor(Math.random() * images.length)];
+      const preloader = document.getElementById('preloader-bg');
+      const preloaderImg = document.getElementById('preloader-img');
+      preloaderImg.src = randomImage;
+      const bgImg = new window.Image();
+      bgImg.src = randomImage;
+      bgImg.onload = function() {
+        document.body.style.backgroundImage = `url(${randomImage})`;
+        setTimeout(() => {
+          preloader.classList.add('hide');
+        }, 200);
+      };
+      // Smooth page transition on navigation
+      document.querySelectorAll('a').forEach(link => {
+        if (link.target !== '_blank' && link.href && !link.href.startsWith('mailto:')) {
+          link.addEventListener('click', function(e) {
+            if (link.hostname === location.hostname) {
+              e.preventDefault();
+              document.body.classList.add('fade-out');
+              setTimeout(() => { window.location = link.href; }, 400);
+            }
+          });
+        }
+      });
 
-      document.body.appendChild(modal);
-    }
-  </script>
+      function enlargeImage(img) {
+        const modal = document.createElement('div');
+        modal.style.position = 'fixed';
+        modal.style.top = '0';
+        modal.style.left = '0';
+        modal.style.width = '100%';
+        modal.style.height = '100%';
+        modal.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+        modal.style.display = 'flex';
+        modal.style.justifyContent = 'center';
+        modal.style.alignItems = 'center';
+        modal.style.zIndex = '1000';
+
+        const enlargedImg = document.createElement('img');
+        enlargedImg.src = img.src;
+        enlargedImg.style.maxWidth = '90%';
+        enlargedImg.style.maxHeight = '90%';
+        enlargedImg.style.border = '5px solid white';
+
+        modal.appendChild(enlargedImg);
+        modal.onclick = () => document.body.removeChild(modal);
+
+        document.body.appendChild(modal);
+      }
+    </script>
 </body>
 </html>

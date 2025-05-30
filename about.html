@@ -48,72 +48,169 @@
     .gallery img:hover {
       transform: scale(1.05);
     }
+    #preloader-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.9);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+    #preloader-img {
+      max-width: 90%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    }
+    .fade-out {
+      animation: fadeOut 0.4s forwards;
+    }
+    @keyframes fadeOut {
+      from { opacity: 1; }
+      to { opacity: 0; }
+    }
+    .hide {
+      display: none !important;
+    }
   </style>
 </head>
 <body>
-  <div class="language-menu">
-    <label for="language-switcher">Language:</label>
-    <select id="language-switcher" onchange="changeLanguage(this.value)">
-      <option value="en">English</option>
-      <option value="fi">Suomi</option>
-      <option value="nl">Nederlands</option>
-      <option value="es">Español</option>
-    </select>
-  </div>
+    <div id="preloader-bg"><img id="preloader-img" src="" alt="Loading background..." /></div>
+    <div class="language-menu">
+      <label for="language-switcher">Language:</label>
+      <select id="language-switcher" onchange="changeLanguage(this.value)">
+        <option value="en">English</option>
+        <option value="fi">Suomi</option>
+        <option value="nl">Nederlands</option>
+        <option value="es">Español</option>
+      </select>
+    </div>
 
-  <header style="background-color: rgba(255, 255, 255, 0.5);">
-    <h1 data-i18n="about.heading"></h1>
-    <p data-i18n="about.subheading"></p>
-  </header>
+    <header style="background-color: rgba(255, 255, 255, 0.5);">
+      <h1 data-i18n="about.heading"></h1>
+      <p data-i18n="about.subheading"></p>
+    </header>
 
-  <nav style="background-color: rgba(255, 255, 255, 0.5);">
-    <a href="index.html" data-i18n="nav.home">Home</a>
-    <a href="about.html" data-i18n="nav.about">About</a>
-    <a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a>
-    <a href="events.html" data-i18n="nav.exhibitions">Events</a>
-    <a href="contact.html" data-i18n="nav.contact">Contact</a>
-    <a href="collaboration.html" data-i18n="nav.collaboration">Collaboration</a>
-  </nav>
+    <nav style="background-color: rgba(255, 255, 255, 0.5);">
+      <a href="index.html" data-i18n="nav.home">Home</a>
+      <a href="about.html" data-i18n="nav.about">About</a>
+      <a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a>
+      <a href="events.html" data-i18n="nav.exhibitions">Events</a>
+      <a href="contact.html" data-i18n="nav.contact">Contact</a>
+      <a href="collaboration.html" data-i18n="nav.collaboration">Collaboration</a>
+    </nav>
 
-  <main style="background-color: rgba(255, 255, 255, 0.5);">
-    <section>
-      <h1 data-i18n="about.brandTitle">About Merja Kallunki</h1>
-      <h2 data-i18n="about.intro">Breathing is remembering. Feeling is healing.</h2>
-      <!-- Finnish bio, formatted for readability with subtitles -->
-      <h3 data-i18n="about.bio.backgroundTitle">Taustani</h3>
-      <p data-i18n="about.bio.background"></p>
-      <h3 data-i18n="about.bio.embodimentTitle">Kehollisuus ja kokemukset</h3>
-      <p data-i18n="about.bio.embodiment"></p>
-      <h3 data-i18n="about.bio.whoTitle">Kuka Merja Kallunki on?</h3>
-      <p data-i18n="about.bio.who"></p>
-      <p data-i18n="about.bio.violence"></p>
-      <p data-i18n="about.bio.father"></p>
-      <p data-i18n="about.bio.children"></p>
-      <p data-i18n="about.bio.end"></p>
-    </section>
-  </main>
+    <main style="background-color: rgba(255, 255, 255, 0.5);">
+      <section>
+        <h1 data-i18n="about.brandTitle">About Merja Kallunki</h1>
+        <h2 data-i18n="about.intro">Breathing is remembering. Feeling is healing.</h2>
+        <!-- Finnish bio, formatted for readability with subtitles -->
+        <h3 data-i18n="about.bio.backgroundTitle">Taustani</h3>
+        <p data-i18n="about.bio.background"></p>
+        <h3 data-i18n="about.bio.embodimentTitle">Kehollisuus ja kokemukset</h3>
+        <p data-i18n="about.bio.embodiment"></p>
+        <h3 data-i18n="about.bio.whoTitle">Kuka Merja Kallunki on?</h3>
+        <p data-i18n="about.bio.who"></p>
+        <p data-i18n="about.bio.violence"></p>
+        <p data-i18n="about.bio.father"></p>
+        <p data-i18n="about.bio.children"></p>
+        <p data-i18n="about.bio.end"></p>
+        <!-- Responsive autoplay video with mute/unmute button -->
+        <div style="margin-top:2em; text-align:center; position:relative; display:inline-block; width:100%; max-width:600px;">
+          <video id="merja-work-video" src="images/Merja_Work_Video.mov" playsinline autoplay muted controls style="width:70%; border-radius:12px; box-shadow:0 4px 16px rgba(0,0,0,0.15); background:#000; display:block; margin:0 auto;">
+            Your browser does not support the video tag.
+          </video>
+          <button id="mute-toggle" style="position:absolute; top:10px; right:15%; transform:translateY(-50%); padding:0.5em 1em; border-radius:6px; border:none; background:#eee; font-size:1em; cursor:pointer; z-index:2; opacity:0.9;">Unmute</button>
+        </div>
+        <script>
+          document.addEventListener('DOMContentLoaded', function() {
+            var video = document.getElementById('merja-work-video');
+            var btn = document.getElementById('mute-toggle');
+            var playCount = 0;
+            function updateBtn() {
+              btn.textContent = video.muted ? 'Unmute' : 'Mute';
+            }
+            btn.onclick = function() {
+              video.muted = !video.muted;
+              updateBtn();
+            };
+            video.muted = true;
+            updateBtn();
+            video.addEventListener('ended', function() {
+              playCount++;
+              if (playCount < 2) {
+                video.currentTime = 0;
+                video.play();
+              } else {
+                btn.disabled = true;
+              }
+            });
+          });
+        </script>
+      </section>
+    </main>
 
-  <script src="js/lang.js"></script>
-  <script>
-    const images = [
-      "images/Bowl.png",
-      "images/Lapland1.jpg",
-      "images/Lapldan2.jpg",
-      "images/MerjaAfter.jpg",
-      "images/MerjaDrum.jpg",
-      "images/MerjaDrum3.jpg",
-      "images/MerjaDrumNordic.png",
-      "images/MerjaFestival.jpg",
-      "images/MerjaPerson.png",
-      "images/MerjaPromo.jpg",
-      "images/MerjaTeaching.png",
-      "images/MerjaTie2.jpg",
-      "images/MerjaTie3.jpg",
-      "images/TieKnot.png",
-      "images/TiesLeg.png"
-    ]; // Exclude LuonnonperintoSaatio.jpg and MerjaNisarga.jpg
-    const randomImage = images[Math.floor(Math.random() * images.length)];
-    document.body.style.backgroundImage = `url(${randomImage})`;
-  </script>
-</body>
+    <footer style="width:100%;text-align:right;margin-top:2em;">
+      <a href="https://github.com/MiskaB" target="_blank" style="font-size:12px;color:#444;opacity:0.7;text-decoration:none;background:rgba(255,255,255,0.7);border-radius:6px;padding:2px 8px;transition:opacity 0.2s;">Copywright Miska Oy 2025</a>
+    </footer>
+
+    <script src="js/lang.js"></script>
+    <script>
+      // Preloader and fade-in logic
+      const images = [
+        "images/Bowl.png",
+        "images/DarkDrumMerja.JPG",
+        "images/Lapland1.jpg",
+        "images/Lapldan2.jpg",
+        "images/MerjaAfter.jpg",
+        "images/MerjaBlackDrum.JPG",
+        "images/MerjaDrum.jpg",
+        "images/MerjaDrum3.jpg",
+        "images/MerjaDrumNordic.png",
+        "images/MerjaFestival.jpg",
+        "images/MerjaPerson.png",
+        "images/MerjaPromo.jpg",
+        "images/MerjaShamanicDrum.JPG",
+        "images/MerjaSitdown.jpg",
+        "images/MerjaTeaching.png",
+        "images/MerjaTie2.jpg",
+        "images/MerjaTie3.jpg",
+        "images/RopesLeg2.JPG",
+        "images/SkiSnow.JPG",
+        "images/Snow.JPG",
+        "images/TieKnot.png",
+        "images/TiesLeg.png",
+        "images/Victory.JPG",
+        "images/mkLogo.png"
+      ];
+      const randomImage = images[Math.floor(Math.random() * images.length)];
+      const preloader = document.getElementById('preloader-bg');
+      const preloaderImg = document.getElementById('preloader-img');
+      preloaderImg.src = randomImage;
+      const bgImg = new window.Image();
+      bgImg.src = randomImage;
+      bgImg.onload = function() {
+        document.body.style.backgroundImage = `url(${randomImage})`;
+        setTimeout(() => {
+          preloader.classList.add('hide');
+        }, 200);
+      };
+      // Smooth page transition on navigation
+      document.querySelectorAll('a').forEach(link => {
+        if (link.target !== '_blank' && link.href && !link.href.startsWith('mailto:')) {
+          link.addEventListener('click', function(e) {
+            if (link.hostname === location.hostname) {
+              e.preventDefault();
+              document.body.classList.add('fade-out');
+              setTimeout(() => { window.location = link.href; }, 400);
+            }
+          });
+        }
+      });
+    </script>
+  </body>
 </html>

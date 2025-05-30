@@ -2,24 +2,60 @@ body {
   font-family: sans-serif;
   padding: 2rem;
   opacity: 0;
-  animation: fadeIn 0.5s forwards;
+  animation: fadeInBody 0.8s forwards;
+  animation-delay: 0.3s;
+  min-height: 100vh;
+  background: #f7f7f7;
+}
+
+/* Preloader overlay for background image */
+#preloader-bg {
+  position: fixed;
+  z-index: 2000;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100vw; height: 100vh;
+  background: #f7f7f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.5s;
+}
+#preloader-bg img {
+  max-width: 40vw;
+  max-height: 40vh;
+  filter: blur(2px) brightness(0.9);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+}
+#preloader-bg.hide {
+  opacity: 0;
+  pointer-events: none;
 }
 
 header, nav, main {
-  background-color: rgba(255, 255, 255, 1.0); /* Increased transparency */
-  border-radius: 16px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 18px;
   padding: 2em;
   margin-bottom: 2em;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease-in-out;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.13), 0 1.5px 8px rgba(0,0,0,0.08);
+  transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 nav a {
   margin-right: 1rem;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border-radius: 6px;
+  padding: 0.3em 0.7em;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s, opacity 0.3s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
-select {
-  margin-top: 1rem;
+nav a:hover {
+  background: #e0e7ff;
+  color: #2f2f2f;
+  opacity: 0.8;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
 }
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -34,31 +70,33 @@ select {
   width: 100%;
   height: auto;
   cursor: pointer;
-  border-radius: 8px;
-  transition: transform 0.3s, filter 0.3s;
-  filter: grayscale(50%);
+  border-radius: 12px;
+  transition: transform 0.4s, filter 0.4s, box-shadow 0.4s;
+  filter: grayscale(40%) brightness(0.97);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.13);
 }
 .gallery img:hover {
-  transform: scale(1.1);
-  filter: grayscale(0%);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transform: scale(1.08) rotate(-1deg);
+  filter: grayscale(0%) brightness(1.03);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
 }
 
-/* Smooth fade-in and fade-out for page transitions */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+/* Smooth fade-in for main content */
+@keyframes fadeInBody {
+  0% { opacity: 0; }
+  37% { opacity: 0.2; }
+  100% { opacity: 1; }
 }
 
-/* Add fade-out effect when navigating */
+/* Fade-out for navigation */
+body.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
 a {
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s, color 0.3s;
 }
-
 a:hover {
   opacity: 0.7;
 }
@@ -84,7 +122,6 @@ a:hover {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-/* Language dropdown menu styling */
 .language-menu {
   position: fixed;
   top: 10px;
@@ -107,4 +144,34 @@ a:hover {
 }
 .language-menu select:hover {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 700px) {
+  header, nav, main {
+    padding: 1em;
+    border-radius: 10px;
+  }
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 8px;
+    padding: 5px;
+  }
+  .gallery img {
+    border-radius: 8px;
+  }
+}
+@media (max-width: 500px) {
+  body {
+    padding: 0.5rem;
+  }
+  .language-menu {
+    top: 4px;
+    right: 4px;
+    font-size: 13px;
+  }
+  header, nav, main {
+    padding: 0.7em;
+    border-radius: 7px;
+  }
 }
