@@ -130,7 +130,8 @@
       "event": "Tapahtuma",
       "workshop": "Työpaja",
       "festival": "Festivaali"
-    }
+    },
+    "pastTitle": "Menneet tapahtumat"
   },
   "contact": {
     "heading": "Yhteystiedot & Sosiaalinen media",

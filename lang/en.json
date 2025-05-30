@@ -142,7 +142,8 @@
       "event": "Event",
       "workshop": "Workshop",
       "festival": "Festival"
-    }
+    },
+    "pastTitle": "Past Events"
   },
   "contact": {
     "heading": "Contact & Social Media",

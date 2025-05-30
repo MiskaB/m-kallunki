@@ -52,5 +52,23 @@
     "location_fi": "Alankomaat",
     "info_en": "A legendary festival in the Netherlands.",
     "info_fi": "Legendaarinen festivaali Alankomaissa."
+  },
+  {
+    "name_en": "Workshop",
+    "name_fi": "Työpaja",
+    "date": "9.6.2025",
+    "location_en": "Helsinki, Finland",
+    "location_fi": "Helsinki, Suomi",
+    "info_en": "Northern Shamanic Breathwork. Deep breathwork session in Helsinki. 3 hours workshop starting at 17:15.",
+    "info_fi": "Northern Shamanic Breathwork. Syvähengitysharjoitus Helsingissä. 3h työpaja, joka alkaa klo 17:15."
+  },
+  {
+    "name_en": "Workshop",
+    "name_fi": "Työpaja",
+    "date": "28.9.2025",
+    "location_en": "Amsterdam, Netherlands",
+    "location_fi": "Amsterdam, Alankomaat",
+    "info_en": "Somatic Movement & Power of Breath. A workshop in Amsterdam.",
+    "info_fi": "Somatic Movement & Power of Breath. Työpaja Amsterdamissa."
   }
 ]
