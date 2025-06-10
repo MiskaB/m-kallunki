@@ -133,7 +133,9 @@
     "subheading": "Aquí es donde puedes encontrarme.",
     "upcomingTitle": "Próximos eventos",
     "pastTitle": "Eventos pasados",
-    "intro": "Este espacio contiene invitaciones.\n\nPara respirar juntos.\nPara moverse, sentir, suavizar.\nPara volver al cuerpo — en ritmo, en quietud, en confianza.\n\nYa sea un taller, un retiro o una sola respiración compartida en un círculo, cada encuentro es una oportunidad para encontrarte más profundamente. Para ser visto. Para recordar. Para ser sostenido.\n\nMis eventos no son solo actuaciones. Son espacios de devenir.\n\nEres bienvenido aquí — tal como eres.",
+    "intro": "Este espacio contiene invitaciones.\n\nPara respirar juntos,\nPara moverse, sentir, suavizar,\nPara volver al cuerpo, en ritmo, en quietud, en confianza.\n\nYa sea un taller, un retiro o una sola respiración compartida en un círculo, cada encuentro es una oportunidad para encontrarte más profundamente, para ser visto, para recordar, para ser sostenido.\n\nMis eventos no son solo actuaciones, son espacios de transformación.\n\nEres bienvenido aquí, tal como eres.",
+    "registration": "Para inscribirte en eventos individuales, por favor contáctame por correo electrónico o WhatsApp. Puedes encontrar mis datos de contacto en la página de Contacto. Para los talleres internacionales, también puedes comunicarte directamente conmigo, te pondré en contacto con los organizadores locales que gestionan la logística. ¡Espero verte pronto!",
+    "registrationSubheading": "Registro e información de contacto",
     "table": {
       "name": "Nombre",
       "date": "Fecha",
@@ -144,7 +146,9 @@
       "event": "Evento",
       "workshop": "Taller",
       "festival": "Festival"
-    }
+    },
+    "privateSubheading": "Sesiones Privadas",
+    "privateSessions": "En conexión con eventos y retiros, especialmente los internacionales, también ofrezco sesiones individuales 1:1. Estas son para quienes desean explorar una presencia más profunda, integración personal o simplemente desean ser recibidos en un espacio más íntimo.\n\nSi esto resuena contigo, no dudes en contactarme por WhatsApp o correo electrónico. Estaré encantada de contarte más."
   },
   "contact": {
     "heading": "Contacto y redes sociales",

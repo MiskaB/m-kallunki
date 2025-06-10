@@ -127,7 +127,9 @@
     "subheading": "Hier kun je mij ontmoeten.",
     "upcomingTitle": "Aankomende Evenementen",
     "pastTitle": "Afgelopen evenementen",
-    "intro": "Deze ruimte bevat uitnodigingen.\n\nOm samen te ademen.\nOm te bewegen, te voelen, te verzachten.\nOm terug te keren naar het lichaam — in ritme, in stilte, in vertrouwen.\n\nOf het nu een workshop, een retraite of een enkele ademhaling in een cirkel is, elke bijeenkomst is een kans om jezelf dieper te ontmoeten. Om gezien te worden. Om te herinneren. Om vastgehouden te worden.\n\nMijn evenementen zijn niet alleen optredens. Het zijn ruimtes van worden.\n\nJe bent hier welkom — precies zoals je bent.",
+    "intro": "Deze ruimte bevat uitnodigingen.\n\nOm samen te ademen,\nOm te bewegen, te voelen, te verzachten,\nOm terug te keren naar het lichaam, in ritme, in stilte, in vertrouwen.\n\nOf het nu een workshop, een retraite of een enkele ademhaling in een cirkel is, elke bijeenkomst is een kans om jezelf dieper te ontmoeten, om gezien te worden, om te herinneren, om vastgehouden te worden.\n\nMijn evenementen zijn niet alleen optredens, het zijn ruimtes van worden.\n\nJe bent hier welkom, precies zoals je bent.",
+    "registration": "Om je aan te melden voor individuele evenementen, neem contact met mij op via e-mail of WhatsApp. Je vindt mijn contactgegevens op de Contact-pagina. Voor internationale workshops kun je ook direct contact opnemen, ik verbind je met de lokale organisatoren die de logistiek regelen. Hopelijk tot snel!",
+    "registrationSubheading": "Registratie & Contact opnemen",
     "table": {
       "name": "Naam",
       "date": "Datum",
@@ -138,7 +140,9 @@
       "event": "Evenement",
       "workshop": "Workshop",
       "festival": "Festival"
-    }
+    },
+    "privateSubheading": "Privésessies",
+    "privateSessions": "In aansluiting op evenementen en retraites, vooral internationale, bied ik ook individuele 1-op-1 sessies aan. Deze zijn voor wie dieper aanwezig wil zijn, persoonlijke integratie zoekt of gewoon in een meer intieme setting wil worden ontmoet.\n\nAls dit je aanspreekt, neem gerust contact op via WhatsApp of e-mail. Ik vertel je graag meer."
   },
   "contact": {
     "heading": "Contact & Sociale Media",

@@ -132,7 +132,9 @@
     "heading": "Events",
     "subheading": "This is where you can meet me.",
     "upcomingTitle": "Upcoming Events",
-    "intro": "This space holds invitations.\n\nTo breathe together.\nTo move, to feel, to soften.\nTo return to the body — in rhythm, in stillness, in trust.\n\nWhether it's a workshop, a retreat, or a single breath shared in a circle, each gathering is an opportunity to meet yourself more deeply. To be witnessed. To remember. To be held.\n\nMy events are not only performances. They are spaces of becoming.\n\nYou're welcome here — just as you are.",
+    "intro": "This space holds invitations.\n\nTo breathe together,\nTo move, to feel, to soften,\nTo return to the body, in rhythm, in stillness, in trust.\n\nWhether it's a workshop, a retreat, or a single breath shared in a circle, each gathering is an opportunity to meet yourself more deeply, to be witnessed, to remember, to be held.\n\nMy events are not only performances, they are spaces of becoming.\n\nYou're welcome here, just as you are.",
+    "registration": "To register for individual events, please contact me via email or WhatsApp. You can find my contact details from Contacts page. For the international workshops, you’re also welcome to reach out directly, I will connect you with the local organizers who handle the logistics. Hope to see you soon!",
+    "registrationSubheading": "Registering & Reaching out",
     "table": {
       "name": "Name",
       "date": "Date",
@@ -144,7 +146,9 @@
       "workshop": "Workshop",
       "festival": "Festival"
     },
-    "pastTitle": "Past Events"
+    "pastTitle": "Past Events",
+    "privateSubheading": "Private Sessions",
+    "privateSessions": "In connection with events and retreats, especially international ones, I also offer individual 1:1 sessions. These are for those who feel like exploring deeper presence, personal integration, or simply wish to be met in a more intimate space.\n\nIf this resonates with you, feel free to reach out to me via WhatsApp or Email. I’m happy to share more."
   },
   "contact": {
     "heading": "Contact & Social Media",

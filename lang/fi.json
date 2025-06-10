@@ -120,7 +120,9 @@
     "heading": "Tapahtumat",
     "subheading": "Täällä voit kohdata minut.",
     "upcomingTitle": "Tulevat tapahtumat & työpajat",
-    "intro": "Tämä tila on kutsu.\n\nHengittämään yhdessä.\nLiikkumaan, tuntemaan, pehmenemään.\nPalaamaan kehoon — rytmissä, hiljaisuudessa, luottamuksessa.\n\nOlipa kyseessä työpaja, retriitti tai yksi jaettu hengitys piirissä, jokainen kokoontuminen on mahdollisuus kohdata itsesi syvemmin.\nTulla nähdyksi. Muistaa. Tulla kannatelluksi.\n\nTapahtumani eivät ole esityksiä. Ne ovat tiloja, joissa saa olla matkalla.\n\nOlet tervetullut — juuri sellaisena kuin olet.",
+    "intro": "Tämä tila on kutsu.\n\nHengittämään yhdessä,\nLiikkumaan, tuntemaan, pehmenemään,\nPalaamaan kehoon, rytmissä, hiljaisuudessa, luottamuksessa.\n\nOlipa kyseessä työpaja, retriitti tai yksi jaettu hengitys piirissä, jokainen kokoontuminen on mahdollisuus kohdata itsesi syvemmin, tulla nähdyksi, muistaa, tulla kannatelluksi.\n\nTapahtumani eivät ole esityksiä, ne ovat tiloja, joissa saa olla matkalla.\n\nOlet tervetullut tänne, juuri sellaisena kuin olet.",
+    "registration": "Ilmoittautuaksesi yksittäisiin tapahtumiin, otathan yhteyttä sähköpostitse tai WhatsAppilla. Yhteystietoni löydät Yhteystiedot-sivulta. Kansainvälisten työpajojen osalta voit olla yhteydessä suoraan minuun, yhdistän sinut paikallisiin järjestäjiin, jotka hoitavat käytännön järjestelyt. Toivottavasti nähdään pian!",
+    "registrationSubheading": "Ilmoittautuminen ja yhteydenotto",
     "table": {
       "name": "Nimi",
       "date": "Päivä",
@@ -132,7 +134,9 @@
       "workshop": "Työpaja",
       "festival": "Festivaali"
     },
-    "pastTitle": "Menneet tapahtumat"
+    "pastTitle": "Menneet tapahtumat",
+    "privateSubheading": "Yksityissessiot",
+    "privateSessions": "Tapahtumien ja retriittien yhteydessä, erityisesti kansainvälisissä tapahtumissa, tarjoan myös yksilöllisiä 1:1-sessioita. Nämä ovat sinulle, joka haluat syventää läsnäoloa, henkilökohtaista integraatiota tai kaipaat tulla kohdatuksi intiimimmässä tilassa.\n\nJos tämä resonoi kanssasi, voit ottaa yhteyttä WhatsAppilla tai sähköpostilla. Kerron mielelläni lisää."
   },
   "contact": {
     "heading": "Yhteystiedot & Sosiaalinen media",
@@ -205,5 +209,10 @@
       "name": "Saara",
       "time": "2024"
     }
+  },
+  "private": {
+    "heading": "Yksityiset sessiot",
+    "subheading": "Syvällisempää työtä kanssani",
+    "description": "Tapahtumien ja retriittien yhteydessä, erityisesti kansainvälisissä tapahtumissa, tarjoan myös yksilöllisiä 1:1-sessioita. Nämä ovat sinulle, joka haluat syventää läsnäoloa, henkilökohtaista integraatiota tai kaipaat tulla kohdatuksi intiimimmässä tilassa.\n\nJos tämä resonoi kanssasi, voit ottaa yhteyttä WhatsAppilla tai sähköpostilla. Kerron mielelläni lisää."
   }
 }
