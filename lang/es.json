@@ -5,7 +5,8 @@
     "portfolio": "Portafolio",
     "exhibitions": "Eventos",
     "contact": "Contacto",
-    "collaboration": "Colaboración"
+    "collaboration": "Colaboración",
+    "testimonials": "Testimonios"
   },
   "home": {
     "title": "Merja Kallunki",
@@ -164,5 +165,57 @@
     "loremlimpsum1Title": "Luonnonperintösäätiö",
     "loremlimpsum1": "Breathwork by Merja Kallunki participa en una campaña de compensación de la naturaleza organizada por Sallan matkailu y la Fundación Finlandesa del Patrimonio Natural. Merja cuenta: 'La campaña se realiza en los paisajes de mi infancia en Salla y tiene como objetivo recaudar fondos para adquirir un área protegida a lo largo del río Oulankajoki, en el entorno del Parque Nacional de Oulanka.' La zona se ha salvado de la tala rasa durante décadas y sus animales fueron protegidos voluntariamente de la caza hace 40 años. La naturaleza diversa incluye bosques de pinos de más de 160 años, bosques mixtos en crecimiento y bosques de ribera inundables. En los bordes y el centro del bosque hay varios tipos de turberas: turberas de pino, de abeto y ciénagas abiertas. El bosque alberga muchos hábitats y especies en peligro de extinción. En parte del área se están realizando acciones de restauración para devolver la naturaleza a su estado anterior a la reconstrucción de la posguerra. Puedes conocer más sobre la campaña aquí (https://luonnonperintosaatio.fi/sallan-luontohyvitys/)",
     "gallery": "Galería"
+  },
+  "testimonials": {
+    "heading": "Testimonios y Referencias",
+    "intro": "Lee lo que dicen los clientes sobre sus experiencias con los servicios de Merja.",
+    "t1": {
+      "original": "",
+      "translation": "(Traducción al español) Querida Merja, estuve en tu sesión en el Natural High Festival. Me impresionaste mucho tú y lo que la respiración hizo por mí. Fui a tu taller completamente en blanco, sin ninguna expectativa. El título de tu taller me dio curiosidad. Y qué maravilloso fue. La relajación que sentí después de tu sesión es algo que no había experimentado en mucho tiempo.",
+      "name": "Suus",
+      "time": "2025"
+    },
+    "t2": {
+      "original": "",
+      "translation": "(Traducción al español) Hola Merja, qué encuentro tan encantador. Recibí una guía muy clara para tu taller del sábado y realmente sucedió lo que me habían preparado. Estoy agradecida de haber podido experimentar esto allí contigo, bajo tu guía. Eres una gran inspiración para mí y espero que nuestros caminos se crucen pronto de nuevo.",
+      "name": "Netta",
+      "time": "2024"
+    },
+    "t3": {
+      "original": "",
+      "translation": "(Traducción al español) Escuché en la sauna y de un par de amigos que en tu taller en Natuilla la gente llegó a frecuencias totalmente diferentes a cualquier otro lugar. ¡Eres increíble! ¡Fue maravilloso encontrarnos cara a cara!",
+      "name": "Mari",
+      "time": "2024"
+    },
+    "t4": {
+      "original": "",
+      "translation": "(Traducción al español) Hola :) buenos días y gracias por Natuilla. Tu taller resonó mucho. Haces un trabajo increíble y con gusto trabajaría más contigo.",
+      "name": "Petra",
+      "time": "2024"
+    },
+    "t5": {
+      "original": "",
+      "translation": "(Traducción al español) Hola Merja, quiero agradecerte de todo corazón por el taller de ayer por la mañana. Por suerte me atreví a ir y a dirigirme hacia lo desconocido. Ni siquiera sé cómo describir la energía en el tipi, porque fue algo tan grande y mágico, y tan seguro. La práctica abrió algo tan profundo en mí que aún no he tenido tiempo de procesarlo todo, pero aún así quería agradecerte por hacer posible esta experiencia tan significativa. Seguramente esto fue un punto de inflexión en mi vida. Todo lo mejor para ti.",
+      "name": "Sofi",
+      "time": "2024"
+    },
+    "t6": {
+      "original": "",
+      "translation": "(Traducción al español) Gracias de nuevo por el retiro, fue un fin de semana encantador. Fue bueno estar un rato fuera de los círculos familiares. Los talleres fueron educativos pero amables. Me gusta tu forma de guiar 'exigente' pero aceptante. Da la sensación de que no tienes que intentar ser más de lo que eres, pero precisamente a través de esa gracia terminas desafiándote a ti mismo casi sin darte cuenta. Hay que hacer el trabajo uno mismo, de lo contrario uno podría quedarse vacío. Como siempre pediste al final de la práctica, agradecer el trabajo que cada uno de nosotros hizo. Una semana después todavía siento que mi respiración es más libre y estoy más presente. También he visto los pequeños problemas cotidianos desde una perspectiva un poco más amplia y se ha abierto espacio para otros sentimientos en lugar de ansiedad. Espero que nos volvamos a encontrar pronto. Que tengas una semana maravillosa.",
+      "name": "Soila",
+      "time": "2024"
+    },
+    "t7": {
+      "original": "",
+      "translation": "(Traducción al español) Gracias Merja, una vez más por el fin de semana. Fue un retiro realmente maravilloso aunque también fue intenso y desafiante. El horario estaba bien pensado y había la cantidad justa de programa y descansos para poder recuperarse entre los talleres. Tienes una increíble capacidad para crear un espacio seguro y amoroso donde te atreves a soltar y profundizar. Y luego al final siempre relajamos y volvemos a la paz. Gracias gracias gracias. Ha sido maravilloso conocerte y encontrar tus prácticas. Definitivamente vendré a ser atada / a respirar contigo y ojalá haya un nuevo retiro en otoño o el próximo año.",
+      "name": "Laura Hyrkäs",
+      "time": "2024"
+    },
+    "t8": {
+      "original": "",
+      "translation": "(Traducción al español) Un hermoso agradecimiento por el tratamiento MER. Hace mucho tiempo que mi cuerpo no se sentía tan abierto y alineado como después del tratamiento. A veces la sensación ha sido realmente milagrosa. Mi caminar y postura se enderezaron. También reconozco mejor los momentos y situaciones en los que todavía llevo los hombros hacia adelante como protección. También en el plano mental, gané más confianza en simplemente ser yo misma. Puedo ser más fácilmente yo misma sin tener que pedir permiso o perdón a nadie por ser quien soy. Esa es una comprensión enorme y que cambia la vida, que se está abriendo... Y todo después de un solo tratamiento. Reconozco que todavía hay mucha ira y tristeza enterradas dentro, en las tensiones del cuerpo, pero capa por capa incluso el hielo de acero se derrite y se libera hacia la primavera.",
+      "name": "Saara",
+      "time": "2024"
+    }
   }
 }

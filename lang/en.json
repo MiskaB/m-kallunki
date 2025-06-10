@@ -5,7 +5,8 @@
     "portfolio": "Portfolio",
     "exhibitions": "Events",
     "contact": "Contact",
-    "collaboration": "Collaboration"
+    "collaboration": "Collaboration",
+    "testimonials": "Testimonials"
   },
   "home": {
     "title": "Merja Kallunki",
@@ -164,5 +165,57 @@
     "loremlimpsum1Title": "Luonnonperintösäätiö",
     "loremlimpsum1": "Breathwork by Merja Kallunki is part of a nature compensation campaign organized by Sallan matkailu and the Finnish Natural Heritage Foundation. Merja says, 'The campaign takes place in my childhood landscapes in Salla, and it aims to raise funds to acquire a protected area along the Oulankajoki River, in the scenery of Oulanka National Park.' The area has been spared from clear-cutting for decades, and its animals were voluntarily protected from hunting 40 years ago. The diverse nature includes over 160-year-old pine forests, maturing mixed forests, and floodplain forests by the river. The forest edges and center feature various types of mires: pine bogs, spruce mires, and open fens. The forest is home to many endangered habitats and species. Some parts of the area are being restored to their natural state, as they were before the post-war reconstruction era. You can learn more about the campaign here (https://luonnonperintosaatio.fi/sallan-luontohyvitys/)",
     "gallery": "Gallery"
+  },
+  "testimonials": {
+    "heading": "Testimonials & References",
+    "intro": "Read what clients say about their experiences with Merja's services.",
+    "t1": {
+      "original": "Dear Merja, I was at your session at Natural High Festival. I was so impressed by you and by what the breathing did for me. I went to your workshop completely blank, without any expections. The title of your workshop made me curious. And how wonderful it was.\nThe relaxation I felt after your session, is something I haven’t experienced in a long time.",
+      "translation": "(Translation in English)\nDear Merja, I was at your session at Natural High Festival. I was so impressed by you and by what the breathing did for me. I went to your workshop completely blank, without any expections. The title of your workshop made me curious. And how wonderful it was.\nThe relaxation I felt after your session, is something I haven’t experienced in a long time.",
+      "name": "Suus",
+      "time": "2025"
+    },
+    "t2": {
+      "original": "Hei Merja, Olipahan ihana kohtaaminen. Mulle tuli hyvin selvä ohjaus sun lauantain workshoppiin ja siellä tapahtui todella se mihin mua on valmisteltu. Oon kiitollinen että pääsin kokemaan tämän sielä sun kanssa, sun ohjauksessa. Oot mulle iso inspiraatio ja toivottavasti meidän polut kohtaa pian uudestaan.",
+      "translation": "(Translation in English)\nHi Merja, What a lovely encounter. I got a very clear guidance to your Saturday workshop and there really happened what I had been prepared for. I am grateful that I got to experience this there with you, under your guidance. You are a big inspiration to me and I hope our paths cross again soon.",
+      "name": "Netta",
+      "time": "2024"
+    },
+    "t3": {
+      "original": "Kuulin saunomassa ohi mennen ja parilta kaverilta että sun työpajassa Natuilla oli päässyt ihan eri taajuuksille kuin ikinä missään. Oot aivan huikee!!! Oli ihana kohdata kasvokkain!",
+      "translation": "(Translation in English)\nI heard in the sauna and from a couple of friends that in your workshop at Natuilla people reached totally different frequencies than ever before anywhere. You are amazing!!! It was wonderful to meet face to face!",
+      "name": "Mari",
+      "time": "2024"
+    },
+    "t4": {
+      "original": "Hei :) huomenta ja kiitos natuista. sun työpaja resonoi tosi paljon. Teet huikeeta työtä ja mielelläni työskentelisin lisää sun kanssa.",
+      "translation": "(Translation in English)\nHi :) good morning and thank you for Natuilla. Your workshop resonated a lot. You do amazing work and I would gladly work more with you.",
+      "name": "Petra",
+      "time": "2024"
+    },
+    "t5": {
+      "original": "Hei Merja, Haluan kiittää sinua koko sydämestäni eilis­aamun työpajasta. Onneksi uskalsin tulla paikalle ja lähteä kohti tuntematonta. En edes tiedä miten kuvailisin sitä energiaa tiipiissä, koska se oli jotain niin suurta ja maagista – sekä niin turvallista. Harjoitus avasi minussa jotain niin syvää, etten ole sitä vielä luonnollisesti ehtinyt kokonaan prosessoimaan, mutta halusin silti kiittää sinua että mahdollistit tämän merkittävän kokemuksen. Tämä oli varmasti jonkinlainen käännekohta elämässäni. Kaikkea hyvää sinulle",
+      "translation": "(Translation in English)\nHi Merja, I want to thank you from the bottom of my heart for yesterday morning's workshop. Luckily I dared to come and head towards the unknown. I don't even know how to describe the energy in the tipi, because it was something so big and magical – and so safe. The practice opened something so deep in me that I haven't naturally had time to process it all yet, but I still wanted to thank you for making this significant experience possible. This was surely some kind of turning point in my life. All the best to you.",
+      "name": "Sofi",
+      "time": "2024"
+    },
+    "t6": {
+      "original": "Kiitos vielä retriitistä, oli ihana viikonloppu. Teki hyvää olla hetki poissa tutuista ympyröistä. Työpajat olivat opettavaisia, mutta lempeitä. Pidän ‘vaativasta’, mutta hyväksyvästä ohjaustavastasi. Tulee sellainen tunne ettei tarvitse yrittää olla enemmän kuin on, mutta juuri sen armollisuuden kautta tulee sitten kuitenkin haastettua itseään kuin huomaamatta. Asioiden eteen on itse tehtävä se työ, muuten voisi jäädä tyhjä olo. Kuten harjoituksen lopuksi aina pyysitkin kiittämään siitä työstä mitä kukin teimme.\nNäin viikon jälkeen tuntuu edelleen, että hengitys kulkee vapaammin ja olen enemmän läsnä. Olen myös katsonut arjen pieniä ongelmia vähän suuremmasta perspektiivistä ja tilaa on vapautunut ahdistuksen sijaan muille tunteille.\nToivottavasti kohtaamme taas pian. Ihanaa viikkoa.",
+      "translation": "(Translation in English)\nThank you again for the retreat, it was a lovely weekend. It was good to be away from familiar circles for a while. The workshops were educational but gentle. I like your 'demanding' but accepting way of guiding. It makes you feel like you don't have to try to be more than you are, but through that grace you end up challenging yourself almost without noticing. You have to do the work yourself, otherwise you might be left feeling empty. As you always asked at the end of the practice, to thank for the work each of us did.\nA week later I still feel that my breathing is freer and I am more present. I have also looked at the small problems of everyday life from a slightly bigger perspective and space has opened up for other feelings instead of anxiety.\nI hope we meet again soon. Have a wonderful week.",
+      "name": "Soila",
+      "time": "2024"
+    },
+    "t7": {
+      "original": "Kiitos Merja, vielä kerran viikonlopusta. Oli tosi upea retriitti vaikka olikin myös intensiivinen ja haastava. Aikataulu oli hyvin mietitty ja oli just sopivasti ohjelmaa ja taukoa että ehti myös palautua työpajojen välissä. Sulla on mieletön kyky luoda turvallinen ja rakkaudellinen tila, jossa uskaltaa päästää irti ja mennä syvällekin. Ja sit aina lopussa höllätään ja palataan rauhaan. Kiitos kiitos kiitos. On ollut upeaa tutustua suhun ja löytää sun harjoitusten äärelle. Tuun ehdottomasti sulle sidottavaksi / hengittämään ja toivottavasti tulee uusi retriitti syksyllä tai vuoden päästä.",
+      "translation": "(Translation in English)\nThank you Merja, once again for the weekend. It was a really wonderful retreat even though it was also intense and challenging. The schedule was well thought out and there was just the right amount of program and breaks so you could also recover between workshops. You have an incredible ability to create a safe and loving space where you dare to let go and go deep. And then at the end we always relax and return to peace. Thank you thank you thank you. It has been wonderful to get to know you and find your practices. I will definitely come to be tied / to breathe with you and hopefully there will be a new retreat in the autumn or next year.",
+      "name": "Laura Hyrkäs",
+      "time": "2024"
+    },
+    "t8": {
+      "original": "Kaunis kiitos MER-hoidosta.\nEi ole ollut pitkään aikaan niin avonaisen tuntuinen, oikeassa linjassa oleva keho kuin hoidon jlk. Todella ihmeellinen olo ollut välillä. Kävely ja ryhti oikenivat. Tunnistan myös paremmin hetket ja tilanteet, kun vedän vielä olkapäät kyyryyn eteen suojaksi.\nMyös henkisellä puolella tuli varmuutta omaan olemiseen. Voin helpommin vain olla oma itseni tarvitsematta pyytää keneltäkään lupaa tai anteeksi sitä että olen. Se on valtavan iso ja elämää muuttava ymmärrys, mikä on avautumassa... Ja kaikki vain yhden hoidon jälkeen.\nTunnistan, että sisälle haudattua vihaa ja surua on kehon jännityksissä vielä paljon mutta kerros kerrokselta teräsjäätäkin kevättä kohden sulaa ja vapautuu kahleistaan.",
+      "translation": "(Translation in English)\nA beautiful thank you for the MER treatment.\nIt has been a long time since my body has felt so open and aligned as after the treatment. Sometimes the feeling has been truly miraculous. My walk and posture straightened. I also recognize better the moments and situations when I still pull my shoulders forward for protection.\nAlso on the mental side, I gained more confidence in just being myself. I can more easily just be myself without needing to ask anyone's permission or forgiveness for being who I am. That is a huge and life-changing realization that is opening up... And all after just one treatment.\nI recognize that there is still a lot of anger and sadness buried inside, in the tensions of the body, but layer by layer even the steel ice melts and is released towards spring.",
+      "name": "Saara",
+      "time": "2024"
+    }
   }
 }

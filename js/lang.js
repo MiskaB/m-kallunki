@@ -16,6 +16,8 @@ async function loadLanguage(lang) {
       }
     }
   });
+  // Ensure testimonials are shown only once per language
+  renderTestimonialTranslations(lang);
 }
 
 function changeLanguage(lang) {
@@ -33,3 +35,33 @@ window.addEventListener('DOMContentLoaded', () => {
   document.getElementById('language-switcher').value = savedLang;
   loadLanguage(savedLang);
 });
+
+function renderTestimonialTranslations(lang) {
+  document.querySelectorAll('.testimonial').forEach(testimonial => {
+    const quoteOriginal = testimonial.querySelector('[data-i18n$=".original"]');
+    const quoteTranslation = testimonial.querySelector('.testimonial-translation');
+    if (!quoteOriginal || !quoteTranslation) return;
+    // English testimonial (t1) is in English, others are in Finnish
+    const isEnglishOriginal = quoteOriginal.innerText.trim().startsWith('Dear Merja');
+    if (lang === 'en') {
+      if (isEnglishOriginal) {
+        quoteOriginal.style.display = '';
+        quoteTranslation.style.display = 'none';
+      } else {
+        quoteOriginal.style.display = 'none';
+        quoteTranslation.style.display = '';
+      }
+    } else if (lang === 'fi') {
+      if (!isEnglishOriginal) {
+        quoteOriginal.style.display = '';
+        quoteTranslation.style.display = 'none';
+      } else {
+        quoteOriginal.style.display = 'none';
+        quoteTranslation.style.display = '';
+      }
+    } else {
+      quoteOriginal.style.display = '';
+      quoteTranslation.style.display = '';
+    }
+  });
+}
