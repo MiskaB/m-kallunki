@@ -39,11 +39,18 @@ This project is a multilingual, static website for a breathwork and somatic heal
 - Copy the structure from `en.json` and translate all values.
 - Update the language switcher in HTML and `/js/lang.js`.
 
+## Testimonials Page
+- Each testimonial is accompanied by a solo image of Merja (no images with other people are used for privacy and context clarity).
+- Testimonial images are placed to the left of the testimonial on desktop, and above on mobile for better responsiveness.
+- Images are clickable: clicking a testimonial image opens it in a fullscreen modal, similar to the portfolio gallery.
+- Images scale up on hover for a more interactive experience.
+
 ## Styling
 - Main styles are in `/css/style.css`.
 - Responsive design is handled via media queries.
 - The `.language-menu` is fixed in the top-right for language selection.
 - Preloader overlay is styled for smooth background image loading.
+- Testimonial images are styled to be visually balanced, responsive, and maintain aspect ratio. Only solo images of Merja are used in testimonials, and images open in a modal on click.
 
 ## JavaScript
 - `/js/lang.js` handles language switching, i18n text replacement, and event table population.

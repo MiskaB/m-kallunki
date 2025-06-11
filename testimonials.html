@@ -38,7 +38,27 @@
       flex-direction: column;
       gap: 2em;
     }
+    .testimonial-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 1em;
+    }
+    .testimonial-image {
+      flex: 0 0 auto;
+      max-width: 100px;
+      height: auto;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      cursor: pointer;
+    }
+    .testimonial-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
     .testimonial {
+      flex: 1;
       background-color: rgba(255,255,255,0.7);
       padding: 2em;
       border-radius: 12px;
@@ -84,6 +104,24 @@
     .hide {
       display: none !important;
     }
+    .testimonial-modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 10000;
+    }
+    .testimonial-modal img {
+      max-width: 90%;
+      max-height: 80%;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
   </style>
 </head>
 <body>
@@ -112,69 +150,109 @@
     </nav>
     <main>
       <section class="testimonial-list">
-        <div class="testimonial">
-          <div class="testimonial-quote">
-            <span data-i18n="testimonials.t1.original"></span>
-            <br><br>
-            <span class="testimonial-translation" data-i18n="testimonials.t1.translation"></span>
+        <div class="testimonial-row">
+          <div class="testimonial-image">
+            <img src="images/MerjaDrum.jpg" alt="Merja with Drum" />
           </div>
-          <div class="testimonial-meta"><span data-i18n="testimonials.t1.name"></span> | <span data-i18n="testimonials.t1.time"></span></div>
+          <div class="testimonial">
+            <div class="testimonial-quote">
+              <span data-i18n="testimonials.t1.original"></span>
+              <br><br>
+              <span class="testimonial-translation" data-i18n="testimonials.t1.translation"></span>
+            </div>
+            <div class="testimonial-meta"><span data-i18n="testimonials.t1.name"></span> | <span data-i18n="testimonials.t1.time"></span></div>
+          </div>
         </div>
-        <div class="testimonial">
-          <div class="testimonial-quote">
-            <span data-i18n="testimonials.t2.original"></span>
-            <br><br>
-            <span class="testimonial-translation" data-i18n="testimonials.t2.translation"></span>
+        <div class="testimonial-row">
+          <div class="testimonial-image">
+            <img src="images/MerjaTeaching.png" alt="Merja Teaching" />
           </div>
-          <div class="testimonial-meta"><span data-i18n="testimonials.t2.name"></span> | <span data-i18n="testimonials.t2.time"></span></div>
+          <div class="testimonial">
+            <div class="testimonial-quote">
+              <span data-i18n="testimonials.t2.original"></span>
+              <br><br>
+              <span class="testimonial-translation" data-i18n="testimonials.t2.translation"></span>
+            </div>
+            <div class="testimonial-meta"><span data-i18n="testimonials.t2.name"></span> | <span data-i18n="testimonials.t2.time"></span></div>
+          </div>
         </div>
-        <div class="testimonial">
-          <div class="testimonial-quote">
-            <span data-i18n="testimonials.t3.original"></span>
-            <br><br>
-            <span class="testimonial-translation" data-i18n="testimonials.t3.translation"></span>
+        <div class="testimonial-row">
+          <div class="testimonial-image">
+            <img src="images/MerjaBlackDrum.JPG" alt="Merja Tie 2" />
           </div>
-          <div class="testimonial-meta"><span data-i18n="testimonials.t3.name"></span> | <span data-i18n="testimonials.t3.time"></span></div>
+          <div class="testimonial">
+            <div class="testimonial-quote">
+              <span data-i18n="testimonials.t3.original"></span>
+              <br><br>
+              <span class="testimonial-translation" data-i18n="testimonials.t3.translation"></span>
+            </div>
+            <div class="testimonial-meta"><span data-i18n="testimonials.t3.name"></span> | <span data-i18n="testimonials.t3.time"></span></div>
+          </div>
         </div>
-        <div class="testimonial">
-          <div class="testimonial-quote">
-            <span data-i18n="testimonials.t4.original"></span>
-            <br><br>
-            <span class="testimonial-translation" data-i18n="testimonials.t4.translation"></span>
+        <div class="testimonial-row">
+          <div class="testimonial-image">
+            <img src="images/MerjaDrum4.jpg" alt="Merja Drum 4" />
           </div>
-          <div class="testimonial-meta"><span data-i18n="testimonials.t4.name"></span> | <span data-i18n="testimonials.t4.time"></span></div>
+          <div class="testimonial">
+            <div class="testimonial-quote">
+              <span data-i18n="testimonials.t4.original"></span>
+              <br><br>
+              <span class="testimonial-translation" data-i18n="testimonials.t4.translation"></span>
+            </div>
+            <div class="testimonial-meta"><span data-i18n="testimonials.t4.name"></span> | <span data-i18n="testimonials.t4.time"></span></div>
+          </div>
         </div>
-        <div class="testimonial">
-          <div class="testimonial-quote">
-            <span data-i18n="testimonials.t5.original"></span>
-            <br><br>
-            <span class="testimonial-translation" data-i18n="testimonials.t5.translation"></span>
+        <div class="testimonial-row">
+          <div class="testimonial-image">
+            <img src="images/Lapland1.jpg" alt="Lapland 1" />
           </div>
-          <div class="testimonial-meta"><span data-i18n="testimonials.t5.name"></span> | <span data-i18n="testimonials.t5.time"></span></div>
+          <div class="testimonial">
+            <div class="testimonial-quote">
+              <span data-i18n="testimonials.t5.original"></span>
+              <br><br>
+              <span class="testimonial-translation" data-i18n="testimonials.t5.translation"></span>
+            </div>
+            <div class="testimonial-meta"><span data-i18n="testimonials.t5.name"></span> | <span data-i18n="testimonials.t5.time"></span></div>
+          </div>
         </div>
-        <div class="testimonial">
-          <div class="testimonial-quote">
-            <span data-i18n="testimonials.t6.original"></span>
-            <br><br>
-            <span class="testimonial-translation" data-i18n="testimonials.t6.translation"></span>
+        <div class="testimonial-row">
+          <div class="testimonial-image">
+            <img src="images/MerjaDrum3.jpg" alt="Merja Drum 3" />
           </div>
-          <div class="testimonial-meta"><span data-i18n="testimonials.t6.name"></span> | <span data-i18n="testimonials.t6.time"></span></div>
+          <div class="testimonial">
+            <div class="testimonial-quote">
+              <span data-i18n="testimonials.t6.original"></span>
+              <br><br>
+              <span class="testimonial-translation" data-i18n="testimonials.t6.translation"></span>
+            </div>
+            <div class="testimonial-meta"><span data-i18n="testimonials.t6.name"></span> | <span data-i18n="testimonials.t6.time"></span></div>
+          </div>
         </div>
-        <div class="testimonial">
-          <div class="testimonial-quote">
-            <span data-i18n="testimonials.t7.original"></span>
-            <br><br>
-            <span class="testimonial-translation" data-i18n="testimonials.t7.translation"></span>
+        <div class="testimonial-row">
+          <div class="testimonial-image">
+            <img src="images/MerjaDrumSitting.jpg" alt="Merja Drum Sitting" />
           </div>
-          <div class="testimonial-meta"><span data-i18n="testimonials.t7.name"></span> | <span data-i18n="testimonials.t7.time"></span></div>
+          <div class="testimonial">
+            <div class="testimonial-quote">
+              <span data-i18n="testimonials.t7.original"></span>
+              <br><br>
+              <span class="testimonial-translation" data-i18n="testimonials.t7.translation"></span>
+            </div>
+            <div class="testimonial-meta"><span data-i18n="testimonials.t7.name"></span> | <span data-i18n="testimonials.t7.time"></span></div>
+          </div>
         </div>
-        <div class="testimonial">
-          <div class="testimonial-quote">
-            <span data-i18n="testimonials.t8.original"></span>
-            <br><br>
-            <span class="testimonial-translation" data-i18n="testimonials.t8.translation"></span>
+        <div class="testimonial-row">
+          <div class="testimonial-image">
+            <img src="images/MerjaPerson.png" alt="Merja Portrait" />
           </div>
-          <div class="testimonial-meta"><span data-i18n="testimonials.t8.name"></span> | <span data-i18n="testimonials.t8.time"></span></div>
+          <div class="testimonial">
+            <div class="testimonial-quote">
+              <span data-i18n="testimonials.t8.original"></span>
+              <br><br>
+              <span class="testimonial-translation" data-i18n="testimonials.t8.translation"></span>
+            </div>
+            <div class="testimonial-meta"><span data-i18n="testimonials.t8.name"></span> | <span data-i18n="testimonials.t8.time"></span></div>
+          </div>
         </div>
       </section>
     </main>
@@ -213,6 +291,19 @@
             }
           });
         }
+      });
+      // Testimonial image click-to-enlarge modal
+      document.querySelectorAll('.testimonial-image img').forEach(img => {
+        img.addEventListener('click', function() {
+          const modal = document.createElement('div');
+          modal.className = 'testimonial-modal';
+          const enlargedImg = document.createElement('img');
+          enlargedImg.src = img.src;
+          enlargedImg.alt = img.alt;
+          modal.appendChild(enlargedImg);
+          modal.onclick = () => document.body.removeChild(modal);
+          document.body.appendChild(modal);
+        });
       });
     </script>
 </body>

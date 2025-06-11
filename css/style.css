@@ -81,6 +81,79 @@ nav a:hover {
   box-shadow: 0 8px 32px rgba(0,0,0,0.18);
 }
 
+/* Testimonial images */
+.testimonial-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7em;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+.testimonial-images img {
+  max-width: 120px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.13);
+  object-fit: contain;
+  aspect-ratio: auto;
+  background: #fff;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.testimonial-images img:hover {
+  transform: scale(1.07);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+}
+
+.testimonial-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1em;
+  margin-bottom: 1.5em;
+}
+.testimonial-image {
+  flex: 0 0 auto;
+  max-width: 150px;
+  width: 150px;
+  height: 150px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+.testimonial-image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+  display: block;
+  cursor: pointer;
+  transition: transform 0.25s cubic-bezier(.4,2,.6,1), box-shadow 0.25s;
+}
+.testimonial-image img:hover {
+  transform: scale(1.25);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+}
+.testimonial-modal {
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+.testimonial-modal img {
+  max-width: 92vw;
+  max-height: 92vh;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  background: #fff;
+}
+
 /* Smooth fade-in for main content */
 @keyframes fadeInBody {
   0% { opacity: 0; }
@@ -160,6 +233,28 @@ a:hover {
   .gallery img {
     border-radius: 8px;
   }
+  .testimonial-images {
+    gap: 0.4em;
+  }
+  .testimonial-images img {
+    max-width: 90px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+}
+@media (max-width: 600px) {
+  .testimonial-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+  }
+  .testimonial-image {
+    max-width: 110px;
+    width: 110px;
+    height: 110px;
+    border-radius: 10px;
+  }
 }
 @media (max-width: 500px) {
   body {
@@ -172,6 +267,19 @@ a:hover {
   }
   header, nav, main {
     padding: 0.7em;
+    border-radius: 7px;
+  }
+  .testimonial-images {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.3em;
+    margin-bottom: 1.2em;
+  }
+  .testimonial-images img {
+    max-width: 45vw;
+    min-width: 80px;
+    width: 100%;
+    height: auto;
     border-radius: 7px;
   }
 }
